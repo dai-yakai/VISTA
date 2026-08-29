@@ -1,0 +1,82 @@
+LLM Command: ```kubectl get networkpolicy frontend -o yaml```
+Output: ```apiVersion: networking.k8s.io/v1
+kind: NetworkPolicy
+metadata:
+  annotations:
+    kubectl.kubernetes.io/last-applied-configuration: |
+      {"apiVersion":"networking.k8s.io/v1","kind":"NetworkPolicy","metadata":{"annotations":{},"name":"frontend","namespace":"default"},"spec":{"egress":[{}],"ingress":[{}],"podSelector":{"matchLabels":{"app":"frontend"}},"policyTypes":["Ingress","Egress"]}}
+  creationTimestamp: "2026-05-13T20:40:21Z"
+  generation: 44
+  name: frontend
+  namespace: default
+  resourceVersion: "367720"
+  uid: 07174b3a-dd44-4738-bdc8-32c899640d56
+spec:
+  egress:
+  - {}
+  ingress:
+  - {}
+  podSelector:
+    matchLabels:
+      app: frontend
+  policyTypes:
+  - Ingress
+  - Egress
+```
+Mismatch Summary: ```Mismatch: checkoutservice → emailservice:5000 (Expected: True, Actual: False)
+Mismatch: checkoutservice → paymentservice:50051 (Expected: True, Actual: False)```
+
+LLM Command: ```kubectl get networkpolicy checkout -o yaml```
+Output: ```Error from server (NotFound): networkpolicies.networking.k8s.io "checkout" not found
+```
+Mismatch Summary: ```Mismatch: checkoutservice → emailservice:5000 (Expected: True, Actual: False)
+Mismatch: checkoutservice → paymentservice:50051 (Expected: True, Actual: False)```
+
+LLM Command: ```kubectl get networkpolicy checkout -o yaml```
+Output: ```Error from server (NotFound): networkpolicies.networking.k8s.io "checkout" not found
+```
+Mismatch Summary: ```Mismatch: checkoutservice → emailservice:5000 (Expected: True, Actual: False)
+Mismatch: checkoutservice → paymentservice:50051 (Expected: True, Actual: False)```
+
+LLM Command: ```kubectl get networkpolicy checkout -o yaml```
+Output: ```Error from server (NotFound): networkpolicies.networking.k8s.io "checkout" not found
+```
+Mismatch Summary: ```Mismatch: checkoutservice → emailservice:5000 (Expected: True, Actual: False)
+Mismatch: checkoutservice → paymentservice:50051 (Expected: True, Actual: False)```
+
+LLM Command: ```kubectl get networkpolicy checkout -o yaml```
+Output: ```Error from server (NotFound): networkpolicies.networking.k8s.io "checkout" not found
+```
+Mismatch Summary: ```Mismatch: checkoutservice → emailservice:5000 (Expected: True, Actual: False)
+Mismatch: checkoutservice → paymentservice:50051 (Expected: True, Actual: False)```
+
+LLM Command: ```kubectl get networkpolicy checkout -o yaml```
+Output: ```Error from server (NotFound): networkpolicies.networking.k8s.io "checkout" not found
+```
+Mismatch Summary: ```Mismatch: checkoutservice → emailservice:5000 (Expected: True, Actual: False)
+Mismatch: checkoutservice → paymentservice:50051 (Expected: True, Actual: False)```
+
+LLM Command: ```kubectl get networkpolicy checkout -o yaml```
+Output: ```Error from server (NotFound): networkpolicies.networking.k8s.io "checkout" not found
+```
+Mismatch Summary: ```Mismatch: checkoutservice → emailservice:5000 (Expected: True, Actual: False)
+Mismatch: checkoutservice → paymentservice:50051 (Expected: True, Actual: False)```
+
+LLM Command: ```kubectl get networkpolicy checkout -o yaml```
+Output: ```Error from server (NotFound): networkpolicies.networking.k8s.io "checkout" not found
+```
+Mismatch Summary: ```Mismatch: checkoutservice → emailservice:5000 (Expected: True, Actual: False)
+Mismatch: checkoutservice → paymentservice:50051 (Expected: True, Actual: False)```
+
+LLM Command: ```kubectl get networkpolicy checkout -o yaml```
+Output: ```Error from server (NotFound): networkpolicies.networking.k8s.io "checkout" not found
+```
+Mismatch Summary: ```Mismatch: checkoutservice → emailservice:5000 (Expected: True, Actual: False)
+Mismatch: checkoutservice → paymentservice:50051 (Expected: True, Actual: False)```
+
+LLM Command: ```kubectl get networkpolicy email -o yaml```
+Output: ```Error from server (NotFound): networkpolicies.networking.k8s.io "email" not found
+```
+Mismatch Summary: ```Mismatch: checkoutservice → emailservice:5000 (Expected: True, Actual: False)
+Mismatch: checkoutservice → paymentservice:50051 (Expected: True, Actual: False)```
+

@@ -1,0 +1,255 @@
+LLM Command: ```kubectl get networkpolicy frontend -o yaml```
+Output: ```apiVersion: networking.k8s.io/v1
+kind: NetworkPolicy
+metadata:
+  annotations:
+    kubectl.kubernetes.io/last-applied-configuration: |
+      {"apiVersion":"networking.k8s.io/v1","kind":"NetworkPolicy","metadata":{"annotations":{},"name":"frontend","namespace":"default"},"spec":{"egress":[{}],"ingress":[{}],"podSelector":{"matchLabels":{"app":"frontend"}},"policyTypes":["Ingress","Egress"]}}
+  creationTimestamp: "2026-05-13T20:40:21Z"
+  generation: 27
+  name: frontend
+  namespace: default
+  resourceVersion: "363836"
+  uid: 07174b3a-dd44-4738-bdc8-32c899640d56
+spec:
+  egress:
+  - {}
+  ingress:
+  - {}
+  podSelector:
+    matchLabels:
+      app: frontend
+  policyTypes:
+  - Ingress
+  - Egress
+```
+Mismatch Summary: ```Mismatch: frontend → currencyservice:7000 (Expected: True, Actual: False)
+Mismatch: frontend → recommendationservice:8080 (Expected: True, Actual: False)
+Mismatch: checkoutservice → currencyservice:7000 (Expected: True, Actual: False)```
+
+LLM Command: ```kubectl get networkpolicy currencyservice -o yaml```
+Output: ```apiVersion: networking.k8s.io/v1
+kind: NetworkPolicy
+metadata:
+  annotations:
+    kubectl.kubernetes.io/last-applied-configuration: |
+      {"apiVersion":"networking.k8s.io/v1","kind":"NetworkPolicy","metadata":{"annotations":{},"name":"currencyservice","namespace":"default"},"spec":{"egress":[{}],"ingress":[],"podSelector":{"matchLabels":{"app":"currencyservice"}},"policyTypes":["Ingress","Egress"]}}
+  creationTimestamp: "2026-05-13T20:40:21Z"
+  generation: 26
+  name: currencyservice
+  namespace: default
+  resourceVersion: "364170"
+  uid: a6aff07d-86ee-4726-a345-f80befaedf4b
+spec:
+  egress:
+  - {}
+  podSelector:
+    matchLabels:
+      app: currencyservice
+  policyTypes:
+  - Ingress
+  - Egress
+```
+Mismatch Summary: ```Mismatch: frontend → currencyservice:7000 (Expected: True, Actual: False)
+Mismatch: frontend → recommendationservice:8080 (Expected: True, Actual: False)
+Mismatch: checkoutservice → currencyservice:7000 (Expected: True, Actual: False)```
+
+LLM Command: ```kubectl get networkpolicy recommendationservice -o yaml```
+Output: ```apiVersion: networking.k8s.io/v1
+kind: NetworkPolicy
+metadata:
+  annotations:
+    kubectl.kubernetes.io/last-applied-configuration: |
+      {"apiVersion":"networking.k8s.io/v1","kind":"NetworkPolicy","metadata":{"annotations":{},"name":"recommendationservice","namespace":"default"},"spec":{"egress":[{}],"ingress":[{"from":[{"podSelector":{"matchLabels":{"app":"frontend"}}}],"ports":[{"port":8080,"protocol":"UDP"}]}],"podSelector":{"matchLabels":{"app":"recommendationservice"}},"policyTypes":["Ingress","Egress"]}}
+  creationTimestamp: "2026-05-13T20:40:21Z"
+  generation: 24
+  name: recommendationservice
+  namespace: default
+  resourceVersion: "364172"
+  uid: a4a9796b-f1a2-4e8b-9731-3dac61631f62
+spec:
+  egress:
+  - {}
+  ingress:
+  - from:
+    - podSelector:
+        matchLabels:
+          app: frontend
+    ports:
+    - port: 8080
+      protocol: UDP
+  podSelector:
+    matchLabels:
+      app: recommendationservice
+  policyTypes:
+  - Ingress
+  - Egress
+```
+Mismatch Summary: ```Mismatch: frontend → currencyservice:7000 (Expected: True, Actual: False)
+Mismatch: frontend → recommendationservice:8080 (Expected: True, Actual: False)
+Mismatch: checkoutservice → currencyservice:7000 (Expected: True, Actual: False)```
+
+LLM Command: ```kubectl get networkpolicy checkoutservice -o yaml```
+Output: ```apiVersion: networking.k8s.io/v1
+kind: NetworkPolicy
+metadata:
+  annotations:
+    kubectl.kubernetes.io/last-applied-configuration: |
+      {"apiVersion":"networking.k8s.io/v1","kind":"NetworkPolicy","metadata":{"annotations":{},"name":"checkoutservice","namespace":"default"},"spec":{"egress":[{}],"ingress":[{"from":[{"podSelector":{"matchLabels":{"app":"frontend"}}}],"ports":[{"port":5050,"protocol":"TCP"}]}],"podSelector":{"matchLabels":{"app":"checkoutservice"}},"policyTypes":["Ingress","Egress"]}}
+  creationTimestamp: "2026-05-13T20:40:21Z"
+  generation: 40
+  name: checkoutservice
+  namespace: default
+  resourceVersion: "363504"
+  uid: 0e0204d6-8e7f-4d4d-9371-e81d245c1f4c
+spec:
+  egress:
+  - {}
+  ingress:
+  - from:
+    - podSelector:
+        matchLabels:
+          app: frontend
+    ports:
+    - port: 5050
+      protocol: TCP
+  podSelector:
+    matchLabels:
+      app: checkoutservice
+  policyTypes:
+  - Ingress
+  - Egress
+```
+Mismatch Summary: ```Mismatch: frontend → currencyservice:7000 (Expected: True, Actual: False)
+Mismatch: frontend → recommendationservice:8080 (Expected: True, Actual: False)
+Mismatch: checkoutservice → currencyservice:7000 (Expected: True, Actual: False)```
+
+LLM Command: ```kubectl get networkpolicy frontend -o yaml```
+Output: ```apiVersion: networking.k8s.io/v1
+kind: NetworkPolicy
+metadata:
+  annotations:
+    kubectl.kubernetes.io/last-applied-configuration: |
+      {"apiVersion":"networking.k8s.io/v1","kind":"NetworkPolicy","metadata":{"annotations":{},"name":"frontend","namespace":"default"},"spec":{"egress":[{}],"ingress":[{}],"podSelector":{"matchLabels":{"app":"frontend"}},"policyTypes":["Ingress","Egress"]}}
+  creationTimestamp: "2026-05-13T20:40:21Z"
+  generation: 27
+  name: frontend
+  namespace: default
+  resourceVersion: "363836"
+  uid: 07174b3a-dd44-4738-bdc8-32c899640d56
+spec:
+  egress:
+  - {}
+  ingress:
+  - {}
+  podSelector:
+    matchLabels:
+      app: frontend
+  policyTypes:
+  - Ingress
+  - Egress
+```
+Mismatch Summary: ```Mismatch: frontend → currencyservice:7000 (Expected: True, Actual: False)
+Mismatch: frontend → recommendationservice:8080 (Expected: True, Actual: False)
+Mismatch: checkoutservice → currencyservice:7000 (Expected: True, Actual: False)```
+
+LLM Command: ```kubectl get networkpolicy currencyservice -o yaml```
+Output: ```apiVersion: networking.k8s.io/v1
+kind: NetworkPolicy
+metadata:
+  annotations:
+    kubectl.kubernetes.io/last-applied-configuration: |
+      {"apiVersion":"networking.k8s.io/v1","kind":"NetworkPolicy","metadata":{"annotations":{},"name":"currencyservice","namespace":"default"},"spec":{"egress":[{}],"ingress":[],"podSelector":{"matchLabels":{"app":"currencyservice"}},"policyTypes":["Ingress","Egress"]}}
+  creationTimestamp: "2026-05-13T20:40:21Z"
+  generation: 26
+  name: currencyservice
+  namespace: default
+  resourceVersion: "364170"
+  uid: a6aff07d-86ee-4726-a345-f80befaedf4b
+spec:
+  egress:
+  - {}
+  podSelector:
+    matchLabels:
+      app: currencyservice
+  policyTypes:
+  - Ingress
+  - Egress
+```
+Mismatch Summary: ```Mismatch: frontend → currencyservice:7000 (Expected: True, Actual: False)
+Mismatch: frontend → recommendationservice:8080 (Expected: True, Actual: False)
+Mismatch: checkoutservice → currencyservice:7000 (Expected: True, Actual: False)```
+
+LLM Command: ```kubectl get networkpolicy currencyservice -o yaml```
+Output: ```apiVersion: networking.k8s.io/v1
+kind: NetworkPolicy
+metadata:
+  annotations:
+    kubectl.kubernetes.io/last-applied-configuration: |
+      {"apiVersion":"networking.k8s.io/v1","kind":"NetworkPolicy","metadata":{"annotations":{},"name":"currencyservice","namespace":"default"},"spec":{"egress":[{}],"ingress":[],"podSelector":{"matchLabels":{"app":"currencyservice"}},"policyTypes":["Ingress","Egress"]}}
+  creationTimestamp: "2026-05-13T20:40:21Z"
+  generation: 26
+  name: currencyservice
+  namespace: default
+  resourceVersion: "364170"
+  uid: a6aff07d-86ee-4726-a345-f80befaedf4b
+spec:
+  egress:
+  - {}
+  podSelector:
+    matchLabels:
+      app: currencyservice
+  policyTypes:
+  - Ingress
+  - Egress
+```
+Mismatch Summary: ```Mismatch: frontend → currencyservice:7000 (Expected: True, Actual: False)
+Mismatch: frontend → recommendationservice:8080 (Expected: True, Actual: False)
+Mismatch: checkoutservice → currencyservice:7000 (Expected: True, Actual: False)```
+
+LLM Command: ```kubectl patch networkpolicy currencyservice --type=json -p='[{"op":"add","path":"/spec/ingress","value":[{"from":[{"podSelector":{"matchLabels":{"app":"frontend"}}}],"ports":[{"port":7000,"protocol":"TCP"}]}]}]'```
+Output: ```networkpolicy.networking.k8s.io/currencyservice patched
+```
+Mismatch Summary: ```Mismatch: frontend → recommendationservice:8080 (Expected: True, Actual: False)
+Mismatch: checkoutservice → currencyservice:7000 (Expected: True, Actual: False)```
+
+LLM Command: ```kubectl get networkpolicy recommendationservice -o yaml```
+Output: ```apiVersion: networking.k8s.io/v1
+kind: NetworkPolicy
+metadata:
+  annotations:
+    kubectl.kubernetes.io/last-applied-configuration: |
+      {"apiVersion":"networking.k8s.io/v1","kind":"NetworkPolicy","metadata":{"annotations":{},"name":"recommendationservice","namespace":"default"},"spec":{"egress":[{}],"ingress":[{"from":[{"podSelector":{"matchLabels":{"app":"frontend"}}}],"ports":[{"port":8080,"protocol":"UDP"}]}],"podSelector":{"matchLabels":{"app":"recommendationservice"}},"policyTypes":["Ingress","Egress"]}}
+  creationTimestamp: "2026-05-13T20:40:21Z"
+  generation: 24
+  name: recommendationservice
+  namespace: default
+  resourceVersion: "364172"
+  uid: a4a9796b-f1a2-4e8b-9731-3dac61631f62
+spec:
+  egress:
+  - {}
+  ingress:
+  - from:
+    - podSelector:
+        matchLabels:
+          app: frontend
+    ports:
+    - port: 8080
+      protocol: UDP
+  podSelector:
+    matchLabels:
+      app: recommendationservice
+  policyTypes:
+  - Ingress
+  - Egress
+```
+Mismatch Summary: ```Mismatch: frontend → recommendationservice:8080 (Expected: True, Actual: False)
+Mismatch: checkoutservice → currencyservice:7000 (Expected: True, Actual: False)```
+
+LLM Command: ```kubectl patch networkpolicy recommendationservice --type=json -p='[{"op":"replace","path":"/spec/ingress/0/ports/0/port","value":8080}]'```
+Output: ```networkpolicy.networking.k8s.io/recommendationservice patched (no change)
+```
+Mismatch Summary: ```Mismatch: frontend → recommendationservice:8080 (Expected: True, Actual: False)
+Mismatch: checkoutservice → currencyservice:7000 (Expected: True, Actual: False)```
+

@@ -1,0 +1,41 @@
+Pingall result:
+p1_h1 -> X p1_r0 
+p1_h2 -> X p1_r0 
+p1_r0 -> p1_h1 p1_h2 
+*** Results: 33% dropped (4/6 received)
+
+Machine: p1_r0
+Command: sysctl net.ipv4.ip_forward
+Packet Loss: 33%
+Elapsed Time: 0.6556176809972385 seconds
+
+Command Output:
+net.ipv4.ip_forward = 0
+
+
+Pingall result:
+p1_h1 -> X p1_r0 
+p1_h2 -> X p1_r0 
+p1_r0 -> p1_h1 p1_h2 
+*** Results: 33% dropped (4/6 received)
+
+Machine: p1_r0
+Command: sysctl -w net.ipv4.ip_forward=1
+Packet Loss: 33%
+Elapsed Time: 0.006355427001835778 seconds
+
+Command Output:
+net.ipv4.ip_forward = 1
+
+
+Pingall result:
+p1_h1 -> p1_h2 p1_r0 
+p1_h2 -> p1_h1 p1_r0 
+p1_r0 -> p1_h1 p1_h2 
+*** Results: 0% dropped (6/6 received)
+
+Machine: p1_r0
+Command: ip route show
+Packet Loss: 0%
+Elapsed Time: 0.6108418020012323 seconds
+

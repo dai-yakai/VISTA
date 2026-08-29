@@ -1,0 +1,8 @@
+{
+  "method": "fewshot_semantic",
+  "n": 1000,
+  "correctness": 0.996,
+  "safety": 0.585,
+  "avg_latency_s": 0.26670068760216237,
+  "out_path": "/home/ubuntu/vista/outputs/baseline_fewshot_semantic.jsonl"
+}

@@ -1,0 +1,2658 @@
+{
+    "queries": [
+        {
+            "num_switches": 2,
+            "num_hosts_per_subnet": 1,
+            "errornumber": 1,
+            "errortype": "disable_routing",
+            "errordetail": {
+                "action": "Disable IP forwarding",
+                "method": 3
+            }
+        },
+        {
+            "num_switches": 2,
+            "num_hosts_per_subnet": 1,
+            "errornumber": 1,
+            "errortype": "disable_routing",
+            "errordetail": {
+                "action": "Disable IP forwarding",
+                "method": 2
+            }
+        },
+        {
+            "num_switches": 2,
+            "num_hosts_per_subnet": 1,
+            "errornumber": 1,
+            "errortype": "disable_routing",
+            "errordetail": {
+                "action": "Disable IP forwarding",
+                "method": 3
+            }
+        },
+        {
+            "num_switches": 2,
+            "num_hosts_per_subnet": 1,
+            "errornumber": 1,
+            "errortype": "disable_routing",
+            "errordetail": {
+                "action": "Disable IP forwarding",
+                "method": 4,
+                "subnet": "192.168.1.0/24"
+            }
+        },
+        {
+            "num_switches": 2,
+            "num_hosts_per_subnet": 1,
+            "errornumber": 1,
+            "errortype": "disable_routing",
+            "errordetail": {
+                "action": "Disable IP forwarding",
+                "method": 4,
+                "subnet": "192.168.1.0/24"
+            }
+        },
+        {
+            "num_switches": 2,
+            "num_hosts_per_subnet": 1,
+            "errornumber": 1,
+            "errortype": "disable_routing",
+            "errordetail": {
+                "action": "Disable IP forwarding",
+                "method": 4,
+                "subnet": "192.168.1.0/24"
+            }
+        },
+        {
+            "num_switches": 2,
+            "num_hosts_per_subnet": 1,
+            "errornumber": 1,
+            "errortype": "disable_routing",
+            "errordetail": {
+                "action": "Disable IP forwarding",
+                "method": 4,
+                "subnet": "192.168.2.0/24"
+            }
+        },
+        {
+            "num_switches": 2,
+            "num_hosts_per_subnet": 1,
+            "errornumber": 1,
+            "errortype": "disable_routing",
+            "errordetail": {
+                "action": "Disable IP forwarding",
+                "method": 4,
+                "subnet": "192.168.2.0/24"
+            }
+        },
+        {
+            "num_switches": 2,
+            "num_hosts_per_subnet": 1,
+            "errornumber": 1,
+            "errortype": "disable_routing",
+            "errordetail": {
+                "action": "Disable IP forwarding",
+                "method": 1
+            }
+        },
+        {
+            "num_switches": 2,
+            "num_hosts_per_subnet": 1,
+            "errornumber": 1,
+            "errortype": "disable_routing",
+            "errordetail": {
+                "action": "Disable IP forwarding",
+                "method": 3
+            }
+        },
+        {
+            "num_switches": 2,
+            "num_hosts_per_subnet": 1,
+            "errornumber": 1,
+            "errortype": "disable_interface",
+            "errordetail": {
+                "interface": "r0-eth2",
+                "method": 2
+            }
+        },
+        {
+            "num_switches": 2,
+            "num_hosts_per_subnet": 1,
+            "errornumber": 1,
+            "errortype": "disable_interface",
+            "errordetail": {
+                "interface": "r0-eth1",
+                "method": 1
+            }
+        },
+        {
+            "num_switches": 2,
+            "num_hosts_per_subnet": 1,
+            "errornumber": 1,
+            "errortype": "disable_interface",
+            "errordetail": {
+                "interface": "r0-eth1",
+                "method": 3
+            }
+        },
+        {
+            "num_switches": 2,
+            "num_hosts_per_subnet": 1,
+            "errornumber": 1,
+            "errortype": "disable_interface",
+            "errordetail": {
+                "interface": "r0-eth2",
+                "method": 1
+            }
+        },
+        {
+            "num_switches": 2,
+            "num_hosts_per_subnet": 1,
+            "errornumber": 1,
+            "errortype": "disable_interface",
+            "errordetail": {
+                "interface": "r0-eth2",
+                "method": 1
+            }
+        },
+        {
+            "num_switches": 2,
+            "num_hosts_per_subnet": 1,
+            "errornumber": 1,
+            "errortype": "disable_interface",
+            "errordetail": {
+                "interface": "r0-eth2",
+                "method": 3
+            }
+        },
+        {
+            "num_switches": 2,
+            "num_hosts_per_subnet": 1,
+            "errornumber": 1,
+            "errortype": "disable_interface",
+            "errordetail": {
+                "interface": "r0-eth2",
+                "method": 1
+            }
+        },
+        {
+            "num_switches": 2,
+            "num_hosts_per_subnet": 1,
+            "errornumber": 1,
+            "errortype": "disable_interface",
+            "errordetail": {
+                "interface": "r0-eth2",
+                "method": 1
+            }
+        },
+        {
+            "num_switches": 2,
+            "num_hosts_per_subnet": 1,
+            "errornumber": 1,
+            "errortype": "disable_interface",
+            "errordetail": {
+                "interface": "r0-eth1",
+                "method": 3
+            }
+        },
+        {
+            "num_switches": 2,
+            "num_hosts_per_subnet": 1,
+            "errornumber": 1,
+            "errortype": "disable_interface",
+            "errordetail": {
+                "interface": "r0-eth1",
+                "method": 1
+            }
+        },
+        {
+            "num_switches": 2,
+            "num_hosts_per_subnet": 1,
+            "errornumber": 1,
+            "errortype": "remove_ip",
+            "errordetail": {
+                "interface": "r0-eth1",
+                "method": 3,
+                "wrong_mask": 31
+            }
+        },
+        {
+            "num_switches": 2,
+            "num_hosts_per_subnet": 1,
+            "errornumber": 1,
+            "errortype": "remove_ip",
+            "errordetail": {
+                "interface": "r0-eth1",
+                "method": 1
+            }
+        },
+        {
+            "num_switches": 2,
+            "num_hosts_per_subnet": 1,
+            "errornumber": 1,
+            "errortype": "remove_ip",
+            "errordetail": {
+                "interface": "r0-eth1",
+                "method": 4
+            }
+        },
+        {
+            "num_switches": 2,
+            "num_hosts_per_subnet": 1,
+            "errornumber": 1,
+            "errortype": "remove_ip",
+            "errordetail": {
+                "interface": "r0-eth1",
+                "method": 1
+            }
+        },
+        {
+            "num_switches": 2,
+            "num_hosts_per_subnet": 1,
+            "errornumber": 1,
+            "errortype": "remove_ip",
+            "errordetail": {
+                "interface": "r0-eth1",
+                "method": 4
+            }
+        },
+        {
+            "num_switches": 2,
+            "num_hosts_per_subnet": 1,
+            "errornumber": 1,
+            "errortype": "remove_ip",
+            "errordetail": {
+                "interface": "r0-eth2",
+                "method": 2
+            }
+        },
+        {
+            "num_switches": 2,
+            "num_hosts_per_subnet": 1,
+            "errornumber": 1,
+            "errortype": "remove_ip",
+            "errordetail": {
+                "interface": "r0-eth1",
+                "method": 3,
+                "wrong_mask": 8
+            }
+        },
+        {
+            "num_switches": 2,
+            "num_hosts_per_subnet": 1,
+            "errornumber": 1,
+            "errortype": "remove_ip",
+            "errordetail": {
+                "interface": "r0-eth2",
+                "method": 1
+            }
+        },
+        {
+            "num_switches": 2,
+            "num_hosts_per_subnet": 1,
+            "errornumber": 1,
+            "errortype": "remove_ip",
+            "errordetail": {
+                "interface": "r0-eth1",
+                "method": 1
+            }
+        },
+        {
+            "num_switches": 2,
+            "num_hosts_per_subnet": 1,
+            "errornumber": 1,
+            "errortype": "remove_ip",
+            "errordetail": {
+                "interface": "r0-eth2",
+                "method": 2
+            }
+        },
+        {
+            "num_switches": 2,
+            "num_hosts_per_subnet": 1,
+            "errornumber": 1,
+            "errortype": "drop_traffic_to_from_subnet",
+            "errordetail": {
+                "subnet": "192.168.2.0/24",
+                "method": 1
+            }
+        },
+        {
+            "num_switches": 2,
+            "num_hosts_per_subnet": 1,
+            "errornumber": 1,
+            "errortype": "drop_traffic_to_from_subnet",
+            "errordetail": {
+                "subnet": "192.168.1.0/24",
+                "method": 3
+            }
+        },
+        {
+            "num_switches": 2,
+            "num_hosts_per_subnet": 1,
+            "errornumber": 1,
+            "errortype": "drop_traffic_to_from_subnet",
+            "errordetail": {
+                "subnet": "192.168.1.0/24",
+                "method": 3
+            }
+        },
+        {
+            "num_switches": 2,
+            "num_hosts_per_subnet": 1,
+            "errornumber": 1,
+            "errortype": "drop_traffic_to_from_subnet",
+            "errordetail": {
+                "subnet": "192.168.1.0/24",
+                "method": 2
+            }
+        },
+        {
+            "num_switches": 2,
+            "num_hosts_per_subnet": 1,
+            "errornumber": 1,
+            "errortype": "drop_traffic_to_from_subnet",
+            "errordetail": {
+                "subnet": "192.168.2.0/24",
+                "method": 3
+            }
+        },
+        {
+            "num_switches": 2,
+            "num_hosts_per_subnet": 1,
+            "errornumber": 1,
+            "errortype": "drop_traffic_to_from_subnet",
+            "errordetail": {
+                "subnet": "192.168.2.0/24",
+                "method": 1
+            }
+        },
+        {
+            "num_switches": 2,
+            "num_hosts_per_subnet": 1,
+            "errornumber": 1,
+            "errortype": "drop_traffic_to_from_subnet",
+            "errordetail": {
+                "subnet": "192.168.1.0/24",
+                "method": 1
+            }
+        },
+        {
+            "num_switches": 2,
+            "num_hosts_per_subnet": 1,
+            "errornumber": 1,
+            "errortype": "drop_traffic_to_from_subnet",
+            "errordetail": {
+                "subnet": "192.168.2.0/24",
+                "method": 2
+            }
+        },
+        {
+            "num_switches": 2,
+            "num_hosts_per_subnet": 1,
+            "errornumber": 1,
+            "errortype": "drop_traffic_to_from_subnet",
+            "errordetail": {
+                "subnet": "192.168.2.0/24",
+                "method": 3
+            }
+        },
+        {
+            "num_switches": 2,
+            "num_hosts_per_subnet": 1,
+            "errornumber": 1,
+            "errortype": "drop_traffic_to_from_subnet",
+            "errordetail": {
+                "subnet": "192.168.2.0/24",
+                "method": 1
+            }
+        },
+        {
+            "num_switches": 2,
+            "num_hosts_per_subnet": 1,
+            "errornumber": 1,
+            "errortype": "wrong_routing_table",
+            "errordetail": {
+                "from": "192.168.1.0/24",
+                "to": "192.168.2.0/24",
+                "del_interface": "r0-eth1",
+                "add_interface": "r0-eth2",
+                "method": 1,
+                "to_ip": "192.168.2.1"
+            }
+        },
+        {
+            "num_switches": 2,
+            "num_hosts_per_subnet": 1,
+            "errornumber": 1,
+            "errortype": "wrong_routing_table",
+            "errordetail": {
+                "from": "192.168.2.0/24",
+                "to": "192.168.1.0/24",
+                "del_interface": "r0-eth2",
+                "add_interface": "r0-eth1",
+                "method": 2,
+                "to_ip": "192.168.1.1"
+            }
+        },
+        {
+            "num_switches": 2,
+            "num_hosts_per_subnet": 1,
+            "errornumber": 1,
+            "errortype": "wrong_routing_table",
+            "errordetail": {
+                "from": "192.168.1.0/24",
+                "to": "192.168.2.0/24",
+                "del_interface": "r0-eth1",
+                "add_interface": "r0-eth2",
+                "method": 2,
+                "to_ip": "192.168.2.1"
+            }
+        },
+        {
+            "num_switches": 2,
+            "num_hosts_per_subnet": 1,
+            "errornumber": 1,
+            "errortype": "wrong_routing_table",
+            "errordetail": {
+                "from": "192.168.1.0/24",
+                "to": "192.168.2.0/24",
+                "del_interface": "r0-eth1",
+                "add_interface": "r0-eth2",
+                "method": 2,
+                "to_ip": "192.168.2.1"
+            }
+        },
+        {
+            "num_switches": 2,
+            "num_hosts_per_subnet": 1,
+            "errornumber": 1,
+            "errortype": "wrong_routing_table",
+            "errordetail": {
+                "from": "192.168.2.0/24",
+                "to": "192.168.1.0/24",
+                "del_interface": "r0-eth2",
+                "add_interface": "r0-eth1",
+                "method": 2,
+                "to_ip": "192.168.1.1"
+            }
+        },
+        {
+            "num_switches": 2,
+            "num_hosts_per_subnet": 1,
+            "errornumber": 1,
+            "errortype": "wrong_routing_table",
+            "errordetail": {
+                "from": "192.168.2.0/24",
+                "to": "192.168.1.0/24",
+                "del_interface": "r0-eth2",
+                "add_interface": "r0-eth1",
+                "method": 3,
+                "to_ip": "192.168.1.1"
+            }
+        },
+        {
+            "num_switches": 2,
+            "num_hosts_per_subnet": 1,
+            "errornumber": 1,
+            "errortype": "wrong_routing_table",
+            "errordetail": {
+                "from": "192.168.2.0/24",
+                "to": "192.168.1.0/24",
+                "del_interface": "r0-eth2",
+                "add_interface": "r0-eth1",
+                "method": 3,
+                "to_ip": "192.168.1.1"
+            }
+        },
+        {
+            "num_switches": 2,
+            "num_hosts_per_subnet": 1,
+            "errornumber": 1,
+            "errortype": "wrong_routing_table",
+            "errordetail": {
+                "from": "192.168.2.0/24",
+                "to": "192.168.1.0/24",
+                "del_interface": "r0-eth2",
+                "add_interface": "r0-eth1",
+                "method": 3,
+                "to_ip": "192.168.1.1"
+            }
+        },
+        {
+            "num_switches": 2,
+            "num_hosts_per_subnet": 1,
+            "errornumber": 1,
+            "errortype": "wrong_routing_table",
+            "errordetail": {
+                "from": "192.168.2.0/24",
+                "to": "192.168.1.0/24",
+                "del_interface": "r0-eth2",
+                "add_interface": "r0-eth1",
+                "method": 3,
+                "to_ip": "192.168.1.1"
+            }
+        },
+        {
+            "num_switches": 2,
+            "num_hosts_per_subnet": 1,
+            "errornumber": 1,
+            "errortype": "wrong_routing_table",
+            "errordetail": {
+                "from": "192.168.2.0/24",
+                "to": "192.168.1.0/24",
+                "del_interface": "r0-eth2",
+                "add_interface": "r0-eth1",
+                "method": 4,
+                "to_ip": "192.168.1.1",
+                "metric": 6178
+            }
+        },
+        {
+            "num_switches": 2,
+            "num_hosts_per_subnet": 1,
+            "errornumber": 2,
+            "errortype": [
+                "disable_routing",
+                "disable_interface"
+            ],
+            "errordetail": [
+                {
+                    "action": "Disable IP forwarding",
+                    "method": 2
+                },
+                {
+                    "interface": "r0-eth2",
+                    "method": 2
+                }
+            ]
+        },
+        {
+            "num_switches": 2,
+            "num_hosts_per_subnet": 1,
+            "errornumber": 2,
+            "errortype": [
+                "disable_routing",
+                "disable_interface"
+            ],
+            "errordetail": [
+                {
+                    "action": "Disable IP forwarding",
+                    "method": 3
+                },
+                {
+                    "interface": "r0-eth1",
+                    "method": 3
+                }
+            ]
+        },
+        {
+            "num_switches": 2,
+            "num_hosts_per_subnet": 1,
+            "errornumber": 2,
+            "errortype": [
+                "disable_routing",
+                "disable_interface"
+            ],
+            "errordetail": [
+                {
+                    "action": "Disable IP forwarding",
+                    "method": 1
+                },
+                {
+                    "interface": "r0-eth2",
+                    "method": 3
+                }
+            ]
+        },
+        {
+            "num_switches": 2,
+            "num_hosts_per_subnet": 1,
+            "errornumber": 2,
+            "errortype": [
+                "disable_routing",
+                "disable_interface"
+            ],
+            "errordetail": [
+                {
+                    "action": "Disable IP forwarding",
+                    "method": 4,
+                    "subnet": "192.168.2.0/24"
+                },
+                {
+                    "interface": "r0-eth1",
+                    "method": 2
+                }
+            ]
+        },
+        {
+            "num_switches": 2,
+            "num_hosts_per_subnet": 1,
+            "errornumber": 2,
+            "errortype": [
+                "disable_routing",
+                "disable_interface"
+            ],
+            "errordetail": [
+                {
+                    "action": "Disable IP forwarding",
+                    "method": 2
+                },
+                {
+                    "interface": "r0-eth2",
+                    "method": 3
+                }
+            ]
+        },
+        {
+            "num_switches": 2,
+            "num_hosts_per_subnet": 1,
+            "errornumber": 2,
+            "errortype": [
+                "disable_routing",
+                "disable_interface"
+            ],
+            "errordetail": [
+                {
+                    "action": "Disable IP forwarding",
+                    "method": 3
+                },
+                {
+                    "interface": "r0-eth1",
+                    "method": 1
+                }
+            ]
+        },
+        {
+            "num_switches": 2,
+            "num_hosts_per_subnet": 1,
+            "errornumber": 2,
+            "errortype": [
+                "disable_routing",
+                "disable_interface"
+            ],
+            "errordetail": [
+                {
+                    "action": "Disable IP forwarding",
+                    "method": 3
+                },
+                {
+                    "interface": "r0-eth1",
+                    "method": 2
+                }
+            ]
+        },
+        {
+            "num_switches": 2,
+            "num_hosts_per_subnet": 1,
+            "errornumber": 2,
+            "errortype": [
+                "disable_routing",
+                "disable_interface"
+            ],
+            "errordetail": [
+                {
+                    "action": "Disable IP forwarding",
+                    "method": 3
+                },
+                {
+                    "interface": "r0-eth1",
+                    "method": 3
+                }
+            ]
+        },
+        {
+            "num_switches": 2,
+            "num_hosts_per_subnet": 1,
+            "errornumber": 2,
+            "errortype": [
+                "disable_routing",
+                "disable_interface"
+            ],
+            "errordetail": [
+                {
+                    "action": "Disable IP forwarding",
+                    "method": 2
+                },
+                {
+                    "interface": "r0-eth2",
+                    "method": 1
+                }
+            ]
+        },
+        {
+            "num_switches": 2,
+            "num_hosts_per_subnet": 1,
+            "errornumber": 2,
+            "errortype": [
+                "disable_routing",
+                "disable_interface"
+            ],
+            "errordetail": [
+                {
+                    "action": "Disable IP forwarding",
+                    "method": 4,
+                    "subnet": "192.168.2.0/24"
+                },
+                {
+                    "interface": "r0-eth1",
+                    "method": 2
+                }
+            ]
+        },
+        {
+            "num_switches": 2,
+            "num_hosts_per_subnet": 1,
+            "errornumber": 2,
+            "errortype": [
+                "disable_routing",
+                "remove_ip"
+            ],
+            "errordetail": [
+                {
+                    "action": "Disable IP forwarding",
+                    "method": 2
+                },
+                {
+                    "interface": "r0-eth1",
+                    "method": 2
+                }
+            ]
+        },
+        {
+            "num_switches": 2,
+            "num_hosts_per_subnet": 1,
+            "errornumber": 2,
+            "errortype": [
+                "disable_routing",
+                "remove_ip"
+            ],
+            "errordetail": [
+                {
+                    "action": "Disable IP forwarding",
+                    "method": 2
+                },
+                {
+                    "interface": "r0-eth2",
+                    "method": 2
+                }
+            ]
+        },
+        {
+            "num_switches": 2,
+            "num_hosts_per_subnet": 1,
+            "errornumber": 2,
+            "errortype": [
+                "disable_routing",
+                "remove_ip"
+            ],
+            "errordetail": [
+                {
+                    "action": "Disable IP forwarding",
+                    "method": 4,
+                    "subnet": "192.168.1.0/24"
+                },
+                {
+                    "interface": "r0-eth2",
+                    "method": 1
+                }
+            ]
+        },
+        {
+            "num_switches": 2,
+            "num_hosts_per_subnet": 1,
+            "errornumber": 2,
+            "errortype": [
+                "disable_routing",
+                "remove_ip"
+            ],
+            "errordetail": [
+                {
+                    "action": "Disable IP forwarding",
+                    "method": 4,
+                    "subnet": "192.168.2.0/24"
+                },
+                {
+                    "interface": "r0-eth2",
+                    "method": 2
+                }
+            ]
+        },
+        {
+            "num_switches": 2,
+            "num_hosts_per_subnet": 1,
+            "errornumber": 2,
+            "errortype": [
+                "disable_routing",
+                "remove_ip"
+            ],
+            "errordetail": [
+                {
+                    "action": "Disable IP forwarding",
+                    "method": 3
+                },
+                {
+                    "interface": "r0-eth2",
+                    "method": 4
+                }
+            ]
+        },
+        {
+            "num_switches": 2,
+            "num_hosts_per_subnet": 1,
+            "errornumber": 2,
+            "errortype": [
+                "disable_routing",
+                "remove_ip"
+            ],
+            "errordetail": [
+                {
+                    "action": "Disable IP forwarding",
+                    "method": 2
+                },
+                {
+                    "interface": "r0-eth2",
+                    "method": 4
+                }
+            ]
+        },
+        {
+            "num_switches": 2,
+            "num_hosts_per_subnet": 1,
+            "errornumber": 2,
+            "errortype": [
+                "disable_routing",
+                "remove_ip"
+            ],
+            "errordetail": [
+                {
+                    "action": "Disable IP forwarding",
+                    "method": 2
+                },
+                {
+                    "interface": "r0-eth2",
+                    "method": 1
+                }
+            ]
+        },
+        {
+            "num_switches": 2,
+            "num_hosts_per_subnet": 1,
+            "errornumber": 2,
+            "errortype": [
+                "disable_routing",
+                "remove_ip"
+            ],
+            "errordetail": [
+                {
+                    "action": "Disable IP forwarding",
+                    "method": 2
+                },
+                {
+                    "interface": "r0-eth1",
+                    "method": 1
+                }
+            ]
+        },
+        {
+            "num_switches": 2,
+            "num_hosts_per_subnet": 1,
+            "errornumber": 2,
+            "errortype": [
+                "disable_routing",
+                "remove_ip"
+            ],
+            "errordetail": [
+                {
+                    "action": "Disable IP forwarding",
+                    "method": 3
+                },
+                {
+                    "interface": "r0-eth1",
+                    "method": 3,
+                    "wrong_mask": 30
+                }
+            ]
+        },
+        {
+            "num_switches": 2,
+            "num_hosts_per_subnet": 1,
+            "errornumber": 2,
+            "errortype": [
+                "disable_routing",
+                "remove_ip"
+            ],
+            "errordetail": [
+                {
+                    "action": "Disable IP forwarding",
+                    "method": 4,
+                    "subnet": "192.168.1.0/24"
+                },
+                {
+                    "interface": "r0-eth1",
+                    "method": 1
+                }
+            ]
+        },
+        {
+            "num_switches": 2,
+            "num_hosts_per_subnet": 1,
+            "errornumber": 2,
+            "errortype": [
+                "disable_routing",
+                "drop_traffic_to_from_subnet"
+            ],
+            "errordetail": [
+                {
+                    "action": "Disable IP forwarding",
+                    "method": 1
+                },
+                {
+                    "subnet": "192.168.1.0/24",
+                    "method": 4,
+                    "delay_ms": 3175
+                }
+            ]
+        },
+        {
+            "num_switches": 2,
+            "num_hosts_per_subnet": 1,
+            "errornumber": 2,
+            "errortype": [
+                "disable_routing",
+                "drop_traffic_to_from_subnet"
+            ],
+            "errordetail": [
+                {
+                    "action": "Disable IP forwarding",
+                    "method": 1
+                },
+                {
+                    "subnet": "192.168.1.0/24",
+                    "method": 1
+                }
+            ]
+        },
+        {
+            "num_switches": 2,
+            "num_hosts_per_subnet": 1,
+            "errornumber": 2,
+            "errortype": [
+                "disable_routing",
+                "drop_traffic_to_from_subnet"
+            ],
+            "errordetail": [
+                {
+                    "action": "Disable IP forwarding",
+                    "method": 1
+                },
+                {
+                    "subnet": "192.168.1.0/24",
+                    "method": 3
+                }
+            ]
+        },
+        {
+            "num_switches": 2,
+            "num_hosts_per_subnet": 1,
+            "errornumber": 2,
+            "errortype": [
+                "disable_routing",
+                "drop_traffic_to_from_subnet"
+            ],
+            "errordetail": [
+                {
+                    "action": "Disable IP forwarding",
+                    "method": 4,
+                    "subnet": "192.168.1.0/24"
+                },
+                {
+                    "subnet": "192.168.2.0/24",
+                    "method": 3
+                }
+            ]
+        },
+        {
+            "num_switches": 2,
+            "num_hosts_per_subnet": 1,
+            "errornumber": 2,
+            "errortype": [
+                "disable_routing",
+                "drop_traffic_to_from_subnet"
+            ],
+            "errordetail": [
+                {
+                    "action": "Disable IP forwarding",
+                    "method": 2
+                },
+                {
+                    "subnet": "192.168.1.0/24",
+                    "method": 4,
+                    "delay_ms": 3036
+                }
+            ]
+        },
+        {
+            "num_switches": 2,
+            "num_hosts_per_subnet": 1,
+            "errornumber": 2,
+            "errortype": [
+                "disable_routing",
+                "drop_traffic_to_from_subnet"
+            ],
+            "errordetail": [
+                {
+                    "action": "Disable IP forwarding",
+                    "method": 3
+                },
+                {
+                    "subnet": "192.168.2.0/24",
+                    "method": 4,
+                    "delay_ms": 1175
+                }
+            ]
+        },
+        {
+            "num_switches": 2,
+            "num_hosts_per_subnet": 1,
+            "errornumber": 2,
+            "errortype": [
+                "disable_routing",
+                "drop_traffic_to_from_subnet"
+            ],
+            "errordetail": [
+                {
+                    "action": "Disable IP forwarding",
+                    "method": 4,
+                    "subnet": "192.168.2.0/24"
+                },
+                {
+                    "subnet": "192.168.2.0/24",
+                    "method": 4,
+                    "delay_ms": 1876
+                }
+            ]
+        },
+        {
+            "num_switches": 2,
+            "num_hosts_per_subnet": 1,
+            "errornumber": 2,
+            "errortype": [
+                "disable_routing",
+                "drop_traffic_to_from_subnet"
+            ],
+            "errordetail": [
+                {
+                    "action": "Disable IP forwarding",
+                    "method": 4,
+                    "subnet": "192.168.2.0/24"
+                },
+                {
+                    "subnet": "192.168.2.0/24",
+                    "method": 2
+                }
+            ]
+        },
+        {
+            "num_switches": 2,
+            "num_hosts_per_subnet": 1,
+            "errornumber": 2,
+            "errortype": [
+                "disable_routing",
+                "drop_traffic_to_from_subnet"
+            ],
+            "errordetail": [
+                {
+                    "action": "Disable IP forwarding",
+                    "method": 4,
+                    "subnet": "192.168.1.0/24"
+                },
+                {
+                    "subnet": "192.168.1.0/24",
+                    "method": 2
+                }
+            ]
+        },
+        {
+            "num_switches": 2,
+            "num_hosts_per_subnet": 1,
+            "errornumber": 2,
+            "errortype": [
+                "disable_routing",
+                "drop_traffic_to_from_subnet"
+            ],
+            "errordetail": [
+                {
+                    "action": "Disable IP forwarding",
+                    "method": 2
+                },
+                {
+                    "subnet": "192.168.1.0/24",
+                    "method": 1
+                }
+            ]
+        },
+        {
+            "num_switches": 2,
+            "num_hosts_per_subnet": 1,
+            "errornumber": 2,
+            "errortype": [
+                "disable_routing",
+                "wrong_routing_table"
+            ],
+            "errordetail": [
+                {
+                    "action": "Disable IP forwarding",
+                    "method": 2
+                },
+                {
+                    "from": "192.168.1.0/24",
+                    "to": "192.168.2.0/24",
+                    "del_interface": "r0-eth1",
+                    "add_interface": "r0-eth2",
+                    "method": 4,
+                    "to_ip": "192.168.2.1",
+                    "metric": 8245
+                }
+            ]
+        },
+        {
+            "num_switches": 2,
+            "num_hosts_per_subnet": 1,
+            "errornumber": 2,
+            "errortype": [
+                "disable_routing",
+                "wrong_routing_table"
+            ],
+            "errordetail": [
+                {
+                    "action": "Disable IP forwarding",
+                    "method": 2
+                },
+                {
+                    "from": "192.168.1.0/24",
+                    "to": "192.168.2.0/24",
+                    "del_interface": "r0-eth1",
+                    "add_interface": "r0-eth2",
+                    "method": 2,
+                    "to_ip": "192.168.2.1"
+                }
+            ]
+        },
+        {
+            "num_switches": 2,
+            "num_hosts_per_subnet": 1,
+            "errornumber": 2,
+            "errortype": [
+                "disable_routing",
+                "wrong_routing_table"
+            ],
+            "errordetail": [
+                {
+                    "action": "Disable IP forwarding",
+                    "method": 3
+                },
+                {
+                    "from": "192.168.2.0/24",
+                    "to": "192.168.1.0/24",
+                    "del_interface": "r0-eth2",
+                    "add_interface": "r0-eth1",
+                    "method": 1,
+                    "to_ip": "192.168.1.1"
+                }
+            ]
+        },
+        {
+            "num_switches": 2,
+            "num_hosts_per_subnet": 1,
+            "errornumber": 2,
+            "errortype": [
+                "disable_routing",
+                "wrong_routing_table"
+            ],
+            "errordetail": [
+                {
+                    "action": "Disable IP forwarding",
+                    "method": 4,
+                    "subnet": "192.168.2.0/24"
+                },
+                {
+                    "from": "192.168.2.0/24",
+                    "to": "192.168.1.0/24",
+                    "del_interface": "r0-eth2",
+                    "add_interface": "r0-eth1",
+                    "method": 4,
+                    "to_ip": "192.168.1.1",
+                    "metric": 9718
+                }
+            ]
+        },
+        {
+            "num_switches": 2,
+            "num_hosts_per_subnet": 1,
+            "errornumber": 2,
+            "errortype": [
+                "disable_routing",
+                "wrong_routing_table"
+            ],
+            "errordetail": [
+                {
+                    "action": "Disable IP forwarding",
+                    "method": 4,
+                    "subnet": "192.168.1.0/24"
+                },
+                {
+                    "from": "192.168.2.0/24",
+                    "to": "192.168.1.0/24",
+                    "del_interface": "r0-eth2",
+                    "add_interface": "r0-eth1",
+                    "method": 2,
+                    "to_ip": "192.168.1.1"
+                }
+            ]
+        },
+        {
+            "num_switches": 2,
+            "num_hosts_per_subnet": 1,
+            "errornumber": 2,
+            "errortype": [
+                "disable_routing",
+                "wrong_routing_table"
+            ],
+            "errordetail": [
+                {
+                    "action": "Disable IP forwarding",
+                    "method": 1
+                },
+                {
+                    "from": "192.168.1.0/24",
+                    "to": "192.168.2.0/24",
+                    "del_interface": "r0-eth1",
+                    "add_interface": "r0-eth2",
+                    "method": 2,
+                    "to_ip": "192.168.2.1"
+                }
+            ]
+        },
+        {
+            "num_switches": 2,
+            "num_hosts_per_subnet": 1,
+            "errornumber": 2,
+            "errortype": [
+                "disable_routing",
+                "wrong_routing_table"
+            ],
+            "errordetail": [
+                {
+                    "action": "Disable IP forwarding",
+                    "method": 4,
+                    "subnet": "192.168.1.0/24"
+                },
+                {
+                    "from": "192.168.2.0/24",
+                    "to": "192.168.1.0/24",
+                    "del_interface": "r0-eth2",
+                    "add_interface": "r0-eth1",
+                    "method": 3,
+                    "to_ip": "192.168.1.1"
+                }
+            ]
+        },
+        {
+            "num_switches": 2,
+            "num_hosts_per_subnet": 1,
+            "errornumber": 2,
+            "errortype": [
+                "disable_routing",
+                "wrong_routing_table"
+            ],
+            "errordetail": [
+                {
+                    "action": "Disable IP forwarding",
+                    "method": 3
+                },
+                {
+                    "from": "192.168.2.0/24",
+                    "to": "192.168.1.0/24",
+                    "del_interface": "r0-eth2",
+                    "add_interface": "r0-eth1",
+                    "method": 4,
+                    "to_ip": "192.168.1.1",
+                    "metric": 6562
+                }
+            ]
+        },
+        {
+            "num_switches": 2,
+            "num_hosts_per_subnet": 1,
+            "errornumber": 2,
+            "errortype": [
+                "disable_routing",
+                "wrong_routing_table"
+            ],
+            "errordetail": [
+                {
+                    "action": "Disable IP forwarding",
+                    "method": 1
+                },
+                {
+                    "from": "192.168.2.0/24",
+                    "to": "192.168.1.0/24",
+                    "del_interface": "r0-eth2",
+                    "add_interface": "r0-eth1",
+                    "method": 1,
+                    "to_ip": "192.168.1.1"
+                }
+            ]
+        },
+        {
+            "num_switches": 2,
+            "num_hosts_per_subnet": 1,
+            "errornumber": 2,
+            "errortype": [
+                "disable_routing",
+                "wrong_routing_table"
+            ],
+            "errordetail": [
+                {
+                    "action": "Disable IP forwarding",
+                    "method": 1
+                },
+                {
+                    "from": "192.168.2.0/24",
+                    "to": "192.168.1.0/24",
+                    "del_interface": "r0-eth2",
+                    "add_interface": "r0-eth1",
+                    "method": 3,
+                    "to_ip": "192.168.1.1"
+                }
+            ]
+        },
+        {
+            "num_switches": 2,
+            "num_hosts_per_subnet": 1,
+            "errornumber": 2,
+            "errortype": [
+                "disable_interface",
+                "remove_ip"
+            ],
+            "errordetail": [
+                {
+                    "interface": "r0-eth2",
+                    "method": 3
+                },
+                {
+                    "interface": "r0-eth2",
+                    "method": 4
+                }
+            ]
+        },
+        {
+            "num_switches": 2,
+            "num_hosts_per_subnet": 1,
+            "errornumber": 2,
+            "errortype": [
+                "disable_interface",
+                "remove_ip"
+            ],
+            "errordetail": [
+                {
+                    "interface": "r0-eth1",
+                    "method": 2
+                },
+                {
+                    "interface": "r0-eth2",
+                    "method": 4
+                }
+            ]
+        },
+        {
+            "num_switches": 2,
+            "num_hosts_per_subnet": 1,
+            "errornumber": 2,
+            "errortype": [
+                "disable_interface",
+                "remove_ip"
+            ],
+            "errordetail": [
+                {
+                    "interface": "r0-eth2",
+                    "method": 2
+                },
+                {
+                    "interface": "r0-eth1",
+                    "method": 2
+                }
+            ]
+        },
+        {
+            "num_switches": 2,
+            "num_hosts_per_subnet": 1,
+            "errornumber": 2,
+            "errortype": [
+                "disable_interface",
+                "remove_ip"
+            ],
+            "errordetail": [
+                {
+                    "interface": "r0-eth2",
+                    "method": 1
+                },
+                {
+                    "interface": "r0-eth2",
+                    "method": 1
+                }
+            ]
+        },
+        {
+            "num_switches": 2,
+            "num_hosts_per_subnet": 1,
+            "errornumber": 2,
+            "errortype": [
+                "disable_interface",
+                "remove_ip"
+            ],
+            "errordetail": [
+                {
+                    "interface": "r0-eth1",
+                    "method": 3
+                },
+                {
+                    "interface": "r0-eth2",
+                    "method": 4
+                }
+            ]
+        },
+        {
+            "num_switches": 2,
+            "num_hosts_per_subnet": 1,
+            "errornumber": 2,
+            "errortype": [
+                "disable_interface",
+                "remove_ip"
+            ],
+            "errordetail": [
+                {
+                    "interface": "r0-eth1",
+                    "method": 2
+                },
+                {
+                    "interface": "r0-eth2",
+                    "method": 3,
+                    "wrong_mask": 16
+                }
+            ]
+        },
+        {
+            "num_switches": 2,
+            "num_hosts_per_subnet": 1,
+            "errornumber": 2,
+            "errortype": [
+                "disable_interface",
+                "remove_ip"
+            ],
+            "errordetail": [
+                {
+                    "interface": "r0-eth2",
+                    "method": 2
+                },
+                {
+                    "interface": "r0-eth1",
+                    "method": 1
+                }
+            ]
+        },
+        {
+            "num_switches": 2,
+            "num_hosts_per_subnet": 1,
+            "errornumber": 2,
+            "errortype": [
+                "disable_interface",
+                "remove_ip"
+            ],
+            "errordetail": [
+                {
+                    "interface": "r0-eth2",
+                    "method": 1
+                },
+                {
+                    "interface": "r0-eth2",
+                    "method": 1
+                }
+            ]
+        },
+        {
+            "num_switches": 2,
+            "num_hosts_per_subnet": 1,
+            "errornumber": 2,
+            "errortype": [
+                "disable_interface",
+                "remove_ip"
+            ],
+            "errordetail": [
+                {
+                    "interface": "r0-eth2",
+                    "method": 2
+                },
+                {
+                    "interface": "r0-eth2",
+                    "method": 2
+                }
+            ]
+        },
+        {
+            "num_switches": 2,
+            "num_hosts_per_subnet": 1,
+            "errornumber": 2,
+            "errortype": [
+                "disable_interface",
+                "remove_ip"
+            ],
+            "errordetail": [
+                {
+                    "interface": "r0-eth1",
+                    "method": 2
+                },
+                {
+                    "interface": "r0-eth1",
+                    "method": 3,
+                    "wrong_mask": 30
+                }
+            ]
+        },
+        {
+            "num_switches": 2,
+            "num_hosts_per_subnet": 1,
+            "errornumber": 2,
+            "errortype": [
+                "disable_interface",
+                "drop_traffic_to_from_subnet"
+            ],
+            "errordetail": [
+                {
+                    "interface": "r0-eth1",
+                    "method": 1
+                },
+                {
+                    "subnet": "192.168.2.0/24",
+                    "method": 4,
+                    "delay_ms": 1516
+                }
+            ]
+        },
+        {
+            "num_switches": 2,
+            "num_hosts_per_subnet": 1,
+            "errornumber": 2,
+            "errortype": [
+                "disable_interface",
+                "drop_traffic_to_from_subnet"
+            ],
+            "errordetail": [
+                {
+                    "interface": "r0-eth1",
+                    "method": 3
+                },
+                {
+                    "subnet": "192.168.2.0/24",
+                    "method": 2
+                }
+            ]
+        },
+        {
+            "num_switches": 2,
+            "num_hosts_per_subnet": 1,
+            "errornumber": 2,
+            "errortype": [
+                "disable_interface",
+                "drop_traffic_to_from_subnet"
+            ],
+            "errordetail": [
+                {
+                    "interface": "r0-eth1",
+                    "method": 3
+                },
+                {
+                    "subnet": "192.168.2.0/24",
+                    "method": 3
+                }
+            ]
+        },
+        {
+            "num_switches": 2,
+            "num_hosts_per_subnet": 1,
+            "errornumber": 2,
+            "errortype": [
+                "disable_interface",
+                "drop_traffic_to_from_subnet"
+            ],
+            "errordetail": [
+                {
+                    "interface": "r0-eth1",
+                    "method": 2
+                },
+                {
+                    "subnet": "192.168.2.0/24",
+                    "method": 4,
+                    "delay_ms": 3527
+                }
+            ]
+        },
+        {
+            "num_switches": 2,
+            "num_hosts_per_subnet": 1,
+            "errornumber": 2,
+            "errortype": [
+                "disable_interface",
+                "drop_traffic_to_from_subnet"
+            ],
+            "errordetail": [
+                {
+                    "interface": "r0-eth1",
+                    "method": 3
+                },
+                {
+                    "subnet": "192.168.1.0/24",
+                    "method": 3
+                }
+            ]
+        },
+        {
+            "num_switches": 2,
+            "num_hosts_per_subnet": 1,
+            "errornumber": 2,
+            "errortype": [
+                "disable_interface",
+                "drop_traffic_to_from_subnet"
+            ],
+            "errordetail": [
+                {
+                    "interface": "r0-eth1",
+                    "method": 1
+                },
+                {
+                    "subnet": "192.168.1.0/24",
+                    "method": 1
+                }
+            ]
+        },
+        {
+            "num_switches": 2,
+            "num_hosts_per_subnet": 1,
+            "errornumber": 2,
+            "errortype": [
+                "disable_interface",
+                "drop_traffic_to_from_subnet"
+            ],
+            "errordetail": [
+                {
+                    "interface": "r0-eth2",
+                    "method": 1
+                },
+                {
+                    "subnet": "192.168.1.0/24",
+                    "method": 3
+                }
+            ]
+        },
+        {
+            "num_switches": 2,
+            "num_hosts_per_subnet": 1,
+            "errornumber": 2,
+            "errortype": [
+                "disable_interface",
+                "drop_traffic_to_from_subnet"
+            ],
+            "errordetail": [
+                {
+                    "interface": "r0-eth1",
+                    "method": 1
+                },
+                {
+                    "subnet": "192.168.1.0/24",
+                    "method": 2
+                }
+            ]
+        },
+        {
+            "num_switches": 2,
+            "num_hosts_per_subnet": 1,
+            "errornumber": 2,
+            "errortype": [
+                "disable_interface",
+                "drop_traffic_to_from_subnet"
+            ],
+            "errordetail": [
+                {
+                    "interface": "r0-eth1",
+                    "method": 1
+                },
+                {
+                    "subnet": "192.168.1.0/24",
+                    "method": 1
+                }
+            ]
+        },
+        {
+            "num_switches": 2,
+            "num_hosts_per_subnet": 1,
+            "errornumber": 2,
+            "errortype": [
+                "disable_interface",
+                "drop_traffic_to_from_subnet"
+            ],
+            "errordetail": [
+                {
+                    "interface": "r0-eth1",
+                    "method": 2
+                },
+                {
+                    "subnet": "192.168.2.0/24",
+                    "method": 4,
+                    "delay_ms": 1615
+                }
+            ]
+        },
+        {
+            "num_switches": 2,
+            "num_hosts_per_subnet": 1,
+            "errornumber": 2,
+            "errortype": [
+                "disable_interface",
+                "wrong_routing_table"
+            ],
+            "errordetail": [
+                {
+                    "interface": "r0-eth2",
+                    "method": 1
+                },
+                {
+                    "from": "192.168.1.0/24",
+                    "to": "192.168.2.0/24",
+                    "del_interface": "r0-eth1",
+                    "add_interface": "r0-eth2",
+                    "method": 4,
+                    "to_ip": "192.168.2.1",
+                    "metric": 13971
+                }
+            ]
+        },
+        {
+            "num_switches": 2,
+            "num_hosts_per_subnet": 1,
+            "errornumber": 2,
+            "errortype": [
+                "disable_interface",
+                "wrong_routing_table"
+            ],
+            "errordetail": [
+                {
+                    "interface": "r0-eth1",
+                    "method": 3
+                },
+                {
+                    "from": "192.168.2.0/24",
+                    "to": "192.168.1.0/24",
+                    "del_interface": "r0-eth2",
+                    "add_interface": "r0-eth1",
+                    "method": 4,
+                    "to_ip": "192.168.1.1",
+                    "metric": 15804
+                }
+            ]
+        },
+        {
+            "num_switches": 2,
+            "num_hosts_per_subnet": 1,
+            "errornumber": 2,
+            "errortype": [
+                "disable_interface",
+                "wrong_routing_table"
+            ],
+            "errordetail": [
+                {
+                    "interface": "r0-eth1",
+                    "method": 1
+                },
+                {
+                    "from": "192.168.1.0/24",
+                    "to": "192.168.2.0/24",
+                    "del_interface": "r0-eth1",
+                    "add_interface": "r0-eth2",
+                    "method": 3,
+                    "to_ip": "192.168.2.1"
+                }
+            ]
+        },
+        {
+            "num_switches": 2,
+            "num_hosts_per_subnet": 1,
+            "errornumber": 2,
+            "errortype": [
+                "disable_interface",
+                "wrong_routing_table"
+            ],
+            "errordetail": [
+                {
+                    "interface": "r0-eth2",
+                    "method": 2
+                },
+                {
+                    "from": "192.168.1.0/24",
+                    "to": "192.168.2.0/24",
+                    "del_interface": "r0-eth1",
+                    "add_interface": "r0-eth2",
+                    "method": 2,
+                    "to_ip": "192.168.2.1"
+                }
+            ]
+        },
+        {
+            "num_switches": 2,
+            "num_hosts_per_subnet": 1,
+            "errornumber": 2,
+            "errortype": [
+                "disable_interface",
+                "wrong_routing_table"
+            ],
+            "errordetail": [
+                {
+                    "interface": "r0-eth1",
+                    "method": 1
+                },
+                {
+                    "from": "192.168.1.0/24",
+                    "to": "192.168.2.0/24",
+                    "del_interface": "r0-eth1",
+                    "add_interface": "r0-eth2",
+                    "method": 1,
+                    "to_ip": "192.168.2.1"
+                }
+            ]
+        },
+        {
+            "num_switches": 2,
+            "num_hosts_per_subnet": 1,
+            "errornumber": 2,
+            "errortype": [
+                "disable_interface",
+                "wrong_routing_table"
+            ],
+            "errordetail": [
+                {
+                    "interface": "r0-eth1",
+                    "method": 2
+                },
+                {
+                    "from": "192.168.2.0/24",
+                    "to": "192.168.1.0/24",
+                    "del_interface": "r0-eth2",
+                    "add_interface": "r0-eth1",
+                    "method": 4,
+                    "to_ip": "192.168.1.1",
+                    "metric": 5716
+                }
+            ]
+        },
+        {
+            "num_switches": 2,
+            "num_hosts_per_subnet": 1,
+            "errornumber": 2,
+            "errortype": [
+                "disable_interface",
+                "wrong_routing_table"
+            ],
+            "errordetail": [
+                {
+                    "interface": "r0-eth1",
+                    "method": 2
+                },
+                {
+                    "from": "192.168.1.0/24",
+                    "to": "192.168.2.0/24",
+                    "del_interface": "r0-eth1",
+                    "add_interface": "r0-eth2",
+                    "method": 2,
+                    "to_ip": "192.168.2.1"
+                }
+            ]
+        },
+        {
+            "num_switches": 2,
+            "num_hosts_per_subnet": 1,
+            "errornumber": 2,
+            "errortype": [
+                "disable_interface",
+                "wrong_routing_table"
+            ],
+            "errordetail": [
+                {
+                    "interface": "r0-eth1",
+                    "method": 1
+                },
+                {
+                    "from": "192.168.1.0/24",
+                    "to": "192.168.2.0/24",
+                    "del_interface": "r0-eth1",
+                    "add_interface": "r0-eth2",
+                    "method": 2,
+                    "to_ip": "192.168.2.1"
+                }
+            ]
+        },
+        {
+            "num_switches": 2,
+            "num_hosts_per_subnet": 1,
+            "errornumber": 2,
+            "errortype": [
+                "disable_interface",
+                "wrong_routing_table"
+            ],
+            "errordetail": [
+                {
+                    "interface": "r0-eth1",
+                    "method": 3
+                },
+                {
+                    "from": "192.168.1.0/24",
+                    "to": "192.168.2.0/24",
+                    "del_interface": "r0-eth1",
+                    "add_interface": "r0-eth2",
+                    "method": 4,
+                    "to_ip": "192.168.2.1",
+                    "metric": 10374
+                }
+            ]
+        },
+        {
+            "num_switches": 2,
+            "num_hosts_per_subnet": 1,
+            "errornumber": 2,
+            "errortype": [
+                "disable_interface",
+                "wrong_routing_table"
+            ],
+            "errordetail": [
+                {
+                    "interface": "r0-eth2",
+                    "method": 3
+                },
+                {
+                    "from": "192.168.1.0/24",
+                    "to": "192.168.2.0/24",
+                    "del_interface": "r0-eth1",
+                    "add_interface": "r0-eth2",
+                    "method": 1,
+                    "to_ip": "192.168.2.1"
+                }
+            ]
+        },
+        {
+            "num_switches": 2,
+            "num_hosts_per_subnet": 1,
+            "errornumber": 2,
+            "errortype": [
+                "remove_ip",
+                "drop_traffic_to_from_subnet"
+            ],
+            "errordetail": [
+                {
+                    "interface": "r0-eth2",
+                    "method": 3,
+                    "wrong_mask": 8
+                },
+                {
+                    "subnet": "192.168.1.0/24",
+                    "method": 3
+                }
+            ]
+        },
+        {
+            "num_switches": 2,
+            "num_hosts_per_subnet": 1,
+            "errornumber": 2,
+            "errortype": [
+                "remove_ip",
+                "drop_traffic_to_from_subnet"
+            ],
+            "errordetail": [
+                {
+                    "interface": "r0-eth1",
+                    "method": 3,
+                    "wrong_mask": 8
+                },
+                {
+                    "subnet": "192.168.1.0/24",
+                    "method": 3
+                }
+            ]
+        },
+        {
+            "num_switches": 2,
+            "num_hosts_per_subnet": 1,
+            "errornumber": 2,
+            "errortype": [
+                "remove_ip",
+                "drop_traffic_to_from_subnet"
+            ],
+            "errordetail": [
+                {
+                    "interface": "r0-eth1",
+                    "method": 3,
+                    "wrong_mask": 32
+                },
+                {
+                    "subnet": "192.168.1.0/24",
+                    "method": 3
+                }
+            ]
+        },
+        {
+            "num_switches": 2,
+            "num_hosts_per_subnet": 1,
+            "errornumber": 2,
+            "errortype": [
+                "remove_ip",
+                "drop_traffic_to_from_subnet"
+            ],
+            "errordetail": [
+                {
+                    "interface": "r0-eth1",
+                    "method": 4
+                },
+                {
+                    "subnet": "192.168.2.0/24",
+                    "method": 2
+                }
+            ]
+        },
+        {
+            "num_switches": 2,
+            "num_hosts_per_subnet": 1,
+            "errornumber": 2,
+            "errortype": [
+                "remove_ip",
+                "drop_traffic_to_from_subnet"
+            ],
+            "errordetail": [
+                {
+                    "interface": "r0-eth1",
+                    "method": 1
+                },
+                {
+                    "subnet": "192.168.1.0/24",
+                    "method": 2
+                }
+            ]
+        },
+        {
+            "num_switches": 2,
+            "num_hosts_per_subnet": 1,
+            "errornumber": 2,
+            "errortype": [
+                "remove_ip",
+                "drop_traffic_to_from_subnet"
+            ],
+            "errordetail": [
+                {
+                    "interface": "r0-eth1",
+                    "method": 4
+                },
+                {
+                    "subnet": "192.168.1.0/24",
+                    "method": 2
+                }
+            ]
+        },
+        {
+            "num_switches": 2,
+            "num_hosts_per_subnet": 1,
+            "errornumber": 2,
+            "errortype": [
+                "remove_ip",
+                "drop_traffic_to_from_subnet"
+            ],
+            "errordetail": [
+                {
+                    "interface": "r0-eth1",
+                    "method": 3,
+                    "wrong_mask": 16
+                },
+                {
+                    "subnet": "192.168.2.0/24",
+                    "method": 3
+                }
+            ]
+        },
+        {
+            "num_switches": 2,
+            "num_hosts_per_subnet": 1,
+            "errornumber": 2,
+            "errortype": [
+                "remove_ip",
+                "drop_traffic_to_from_subnet"
+            ],
+            "errordetail": [
+                {
+                    "interface": "r0-eth2",
+                    "method": 4
+                },
+                {
+                    "subnet": "192.168.2.0/24",
+                    "method": 2
+                }
+            ]
+        },
+        {
+            "num_switches": 2,
+            "num_hosts_per_subnet": 1,
+            "errornumber": 2,
+            "errortype": [
+                "remove_ip",
+                "drop_traffic_to_from_subnet"
+            ],
+            "errordetail": [
+                {
+                    "interface": "r0-eth1",
+                    "method": 3,
+                    "wrong_mask": 30
+                },
+                {
+                    "subnet": "192.168.1.0/24",
+                    "method": 1
+                }
+            ]
+        },
+        {
+            "num_switches": 2,
+            "num_hosts_per_subnet": 1,
+            "errornumber": 2,
+            "errortype": [
+                "remove_ip",
+                "drop_traffic_to_from_subnet"
+            ],
+            "errordetail": [
+                {
+                    "interface": "r0-eth2",
+                    "method": 1
+                },
+                {
+                    "subnet": "192.168.2.0/24",
+                    "method": 1
+                }
+            ]
+        },
+        {
+            "num_switches": 2,
+            "num_hosts_per_subnet": 1,
+            "errornumber": 2,
+            "errortype": [
+                "remove_ip",
+                "wrong_routing_table"
+            ],
+            "errordetail": [
+                {
+                    "interface": "r0-eth2",
+                    "method": 4
+                },
+                {
+                    "from": "192.168.1.0/24",
+                    "to": "192.168.2.0/24",
+                    "del_interface": "r0-eth1",
+                    "add_interface": "r0-eth2",
+                    "method": 4,
+                    "to_ip": "192.168.2.1",
+                    "metric": 13753
+                }
+            ]
+        },
+        {
+            "num_switches": 2,
+            "num_hosts_per_subnet": 1,
+            "errornumber": 2,
+            "errortype": [
+                "remove_ip",
+                "wrong_routing_table"
+            ],
+            "errordetail": [
+                {
+                    "interface": "r0-eth1",
+                    "method": 2
+                },
+                {
+                    "from": "192.168.2.0/24",
+                    "to": "192.168.1.0/24",
+                    "del_interface": "r0-eth2",
+                    "add_interface": "r0-eth1",
+                    "method": 1,
+                    "to_ip": "192.168.1.1"
+                }
+            ]
+        },
+        {
+            "num_switches": 2,
+            "num_hosts_per_subnet": 1,
+            "errornumber": 2,
+            "errortype": [
+                "remove_ip",
+                "wrong_routing_table"
+            ],
+            "errordetail": [
+                {
+                    "interface": "r0-eth1",
+                    "method": 2
+                },
+                {
+                    "from": "192.168.1.0/24",
+                    "to": "192.168.2.0/24",
+                    "del_interface": "r0-eth1",
+                    "add_interface": "r0-eth2",
+                    "method": 1,
+                    "to_ip": "192.168.2.1"
+                }
+            ]
+        },
+        {
+            "num_switches": 2,
+            "num_hosts_per_subnet": 1,
+            "errornumber": 2,
+            "errortype": [
+                "remove_ip",
+                "wrong_routing_table"
+            ],
+            "errordetail": [
+                {
+                    "interface": "r0-eth2",
+                    "method": 3,
+                    "wrong_mask": 31
+                },
+                {
+                    "from": "192.168.1.0/24",
+                    "to": "192.168.2.0/24",
+                    "del_interface": "r0-eth1",
+                    "add_interface": "r0-eth2",
+                    "method": 3,
+                    "to_ip": "192.168.2.1"
+                }
+            ]
+        },
+        {
+            "num_switches": 2,
+            "num_hosts_per_subnet": 1,
+            "errornumber": 2,
+            "errortype": [
+                "remove_ip",
+                "wrong_routing_table"
+            ],
+            "errordetail": [
+                {
+                    "interface": "r0-eth2",
+                    "method": 3,
+                    "wrong_mask": 30
+                },
+                {
+                    "from": "192.168.2.0/24",
+                    "to": "192.168.1.0/24",
+                    "del_interface": "r0-eth2",
+                    "add_interface": "r0-eth1",
+                    "method": 2,
+                    "to_ip": "192.168.1.1"
+                }
+            ]
+        },
+        {
+            "num_switches": 2,
+            "num_hosts_per_subnet": 1,
+            "errornumber": 2,
+            "errortype": [
+                "remove_ip",
+                "wrong_routing_table"
+            ],
+            "errordetail": [
+                {
+                    "interface": "r0-eth1",
+                    "method": 3,
+                    "wrong_mask": 30
+                },
+                {
+                    "from": "192.168.1.0/24",
+                    "to": "192.168.2.0/24",
+                    "del_interface": "r0-eth1",
+                    "add_interface": "r0-eth2",
+                    "method": 1,
+                    "to_ip": "192.168.2.1"
+                }
+            ]
+        },
+        {
+            "num_switches": 2,
+            "num_hosts_per_subnet": 1,
+            "errornumber": 2,
+            "errortype": [
+                "remove_ip",
+                "wrong_routing_table"
+            ],
+            "errordetail": [
+                {
+                    "interface": "r0-eth1",
+                    "method": 2
+                },
+                {
+                    "from": "192.168.2.0/24",
+                    "to": "192.168.1.0/24",
+                    "del_interface": "r0-eth2",
+                    "add_interface": "r0-eth1",
+                    "method": 3,
+                    "to_ip": "192.168.1.1"
+                }
+            ]
+        },
+        {
+            "num_switches": 2,
+            "num_hosts_per_subnet": 1,
+            "errornumber": 2,
+            "errortype": [
+                "remove_ip",
+                "wrong_routing_table"
+            ],
+            "errordetail": [
+                {
+                    "interface": "r0-eth1",
+                    "method": 3,
+                    "wrong_mask": 31
+                },
+                {
+                    "from": "192.168.2.0/24",
+                    "to": "192.168.1.0/24",
+                    "del_interface": "r0-eth2",
+                    "add_interface": "r0-eth1",
+                    "method": 2,
+                    "to_ip": "192.168.1.1"
+                }
+            ]
+        },
+        {
+            "num_switches": 2,
+            "num_hosts_per_subnet": 1,
+            "errornumber": 2,
+            "errortype": [
+                "remove_ip",
+                "wrong_routing_table"
+            ],
+            "errordetail": [
+                {
+                    "interface": "r0-eth1",
+                    "method": 1
+                },
+                {
+                    "from": "192.168.2.0/24",
+                    "to": "192.168.1.0/24",
+                    "del_interface": "r0-eth2",
+                    "add_interface": "r0-eth1",
+                    "method": 3,
+                    "to_ip": "192.168.1.1"
+                }
+            ]
+        },
+        {
+            "num_switches": 2,
+            "num_hosts_per_subnet": 1,
+            "errornumber": 2,
+            "errortype": [
+                "remove_ip",
+                "wrong_routing_table"
+            ],
+            "errordetail": [
+                {
+                    "interface": "r0-eth1",
+                    "method": 4
+                },
+                {
+                    "from": "192.168.2.0/24",
+                    "to": "192.168.1.0/24",
+                    "del_interface": "r0-eth2",
+                    "add_interface": "r0-eth1",
+                    "method": 1,
+                    "to_ip": "192.168.1.1"
+                }
+            ]
+        },
+        {
+            "num_switches": 2,
+            "num_hosts_per_subnet": 1,
+            "errornumber": 2,
+            "errortype": [
+                "drop_traffic_to_from_subnet",
+                "wrong_routing_table"
+            ],
+            "errordetail": [
+                {
+                    "subnet": "192.168.1.0/24",
+                    "method": 4,
+                    "delay_ms": 1503
+                },
+                {
+                    "from": "192.168.2.0/24",
+                    "to": "192.168.1.0/24",
+                    "del_interface": "r0-eth2",
+                    "add_interface": "r0-eth1",
+                    "method": 4,
+                    "to_ip": "192.168.1.1",
+                    "metric": 8109
+                }
+            ]
+        },
+        {
+            "num_switches": 2,
+            "num_hosts_per_subnet": 1,
+            "errornumber": 2,
+            "errortype": [
+                "drop_traffic_to_from_subnet",
+                "wrong_routing_table"
+            ],
+            "errordetail": [
+                {
+                    "subnet": "192.168.1.0/24",
+                    "method": 3
+                },
+                {
+                    "from": "192.168.1.0/24",
+                    "to": "192.168.2.0/24",
+                    "del_interface": "r0-eth1",
+                    "add_interface": "r0-eth2",
+                    "method": 3,
+                    "to_ip": "192.168.2.1"
+                }
+            ]
+        },
+        {
+            "num_switches": 2,
+            "num_hosts_per_subnet": 1,
+            "errornumber": 2,
+            "errortype": [
+                "drop_traffic_to_from_subnet",
+                "wrong_routing_table"
+            ],
+            "errordetail": [
+                {
+                    "subnet": "192.168.2.0/24",
+                    "method": 4,
+                    "delay_ms": 3081
+                },
+                {
+                    "from": "192.168.2.0/24",
+                    "to": "192.168.1.0/24",
+                    "del_interface": "r0-eth2",
+                    "add_interface": "r0-eth1",
+                    "method": 2,
+                    "to_ip": "192.168.1.1"
+                }
+            ]
+        },
+        {
+            "num_switches": 2,
+            "num_hosts_per_subnet": 1,
+            "errornumber": 2,
+            "errortype": [
+                "drop_traffic_to_from_subnet",
+                "wrong_routing_table"
+            ],
+            "errordetail": [
+                {
+                    "subnet": "192.168.2.0/24",
+                    "method": 3
+                },
+                {
+                    "from": "192.168.1.0/24",
+                    "to": "192.168.2.0/24",
+                    "del_interface": "r0-eth1",
+                    "add_interface": "r0-eth2",
+                    "method": 1,
+                    "to_ip": "192.168.2.1"
+                }
+            ]
+        },
+        {
+            "num_switches": 2,
+            "num_hosts_per_subnet": 1,
+            "errornumber": 2,
+            "errortype": [
+                "drop_traffic_to_from_subnet",
+                "wrong_routing_table"
+            ],
+            "errordetail": [
+                {
+                    "subnet": "192.168.2.0/24",
+                    "method": 2
+                },
+                {
+                    "from": "192.168.2.0/24",
+                    "to": "192.168.1.0/24",
+                    "del_interface": "r0-eth2",
+                    "add_interface": "r0-eth1",
+                    "method": 4,
+                    "to_ip": "192.168.1.1",
+                    "metric": 9618
+                }
+            ]
+        },
+        {
+            "num_switches": 2,
+            "num_hosts_per_subnet": 1,
+            "errornumber": 2,
+            "errortype": [
+                "drop_traffic_to_from_subnet",
+                "wrong_routing_table"
+            ],
+            "errordetail": [
+                {
+                    "subnet": "192.168.2.0/24",
+                    "method": 1
+                },
+                {
+                    "from": "192.168.1.0/24",
+                    "to": "192.168.2.0/24",
+                    "del_interface": "r0-eth1",
+                    "add_interface": "r0-eth2",
+                    "method": 1,
+                    "to_ip": "192.168.2.1"
+                }
+            ]
+        },
+        {
+            "num_switches": 2,
+            "num_hosts_per_subnet": 1,
+            "errornumber": 2,
+            "errortype": [
+                "drop_traffic_to_from_subnet",
+                "wrong_routing_table"
+            ],
+            "errordetail": [
+                {
+                    "subnet": "192.168.1.0/24",
+                    "method": 2
+                },
+                {
+                    "from": "192.168.1.0/24",
+                    "to": "192.168.2.0/24",
+                    "del_interface": "r0-eth1",
+                    "add_interface": "r0-eth2",
+                    "method": 4,
+                    "to_ip": "192.168.2.1",
+                    "metric": 6900
+                }
+            ]
+        },
+        {
+            "num_switches": 2,
+            "num_hosts_per_subnet": 1,
+            "errornumber": 2,
+            "errortype": [
+                "drop_traffic_to_from_subnet",
+                "wrong_routing_table"
+            ],
+            "errordetail": [
+                {
+                    "subnet": "192.168.1.0/24",
+                    "method": 4,
+                    "delay_ms": 1076
+                },
+                {
+                    "from": "192.168.2.0/24",
+                    "to": "192.168.1.0/24",
+                    "del_interface": "r0-eth2",
+                    "add_interface": "r0-eth1",
+                    "method": 1,
+                    "to_ip": "192.168.1.1"
+                }
+            ]
+        },
+        {
+            "num_switches": 2,
+            "num_hosts_per_subnet": 1,
+            "errornumber": 2,
+            "errortype": [
+                "drop_traffic_to_from_subnet",
+                "wrong_routing_table"
+            ],
+            "errordetail": [
+                {
+                    "subnet": "192.168.1.0/24",
+                    "method": 2
+                },
+                {
+                    "from": "192.168.1.0/24",
+                    "to": "192.168.2.0/24",
+                    "del_interface": "r0-eth1",
+                    "add_interface": "r0-eth2",
+                    "method": 4,
+                    "to_ip": "192.168.2.1",
+                    "metric": 15235
+                }
+            ]
+        },
+        {
+            "num_switches": 2,
+            "num_hosts_per_subnet": 1,
+            "errornumber": 2,
+            "errortype": [
+                "drop_traffic_to_from_subnet",
+                "wrong_routing_table"
+            ],
+            "errordetail": [
+                {
+                    "subnet": "192.168.1.0/24",
+                    "method": 2
+                },
+                {
+                    "from": "192.168.1.0/24",
+                    "to": "192.168.2.0/24",
+                    "del_interface": "r0-eth1",
+                    "add_interface": "r0-eth2",
+                    "method": 3,
+                    "to_ip": "192.168.2.1"
+                }
+            ]
+        }
+    ]
+}

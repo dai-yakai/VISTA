@@ -1,0 +1,75 @@
+LLM Command: ```kubectl get networkpolicy frontend -o yaml```
+Output: ```apiVersion: networking.k8s.io/v1
+kind: NetworkPolicy
+metadata:
+  annotations:
+    kubectl.kubernetes.io/last-applied-configuration: |
+      {"apiVersion":"networking.k8s.io/v1","kind":"NetworkPolicy","metadata":{"annotations":{},"name":"frontend","namespace":"default"},"spec":{"egress":[{}],"ingress":[{}],"podSelector":{"matchLabels":{"app":"frontend"}},"policyTypes":["Ingress","Egress"]}}
+  creationTimestamp: "2026-05-13T20:40:21Z"
+  generation: 7
+  name: frontend
+  namespace: default
+  resourceVersion: "359784"
+  uid: 07174b3a-dd44-4738-bdc8-32c899640d56
+spec:
+  egress:
+  - {}
+  ingress:
+  - {}
+  podSelector:
+    matchLabels:
+      app: frontend
+  policyTypes:
+  - Ingress
+  - Egress
+```
+Mismatch Summary: ```Mismatch: adservice → recommendationservice:8080 (Expected: False, Actual: True)
+Mismatch: checkoutservice → recommendationservice:8080 (Expected: False, Actual: True)```
+
+LLM Command: ```kubectl get networkpolicy recommendationservice -o yaml```
+Output: ```apiVersion: networking.k8s.io/v1
+kind: NetworkPolicy
+metadata:
+  annotations:
+    kubectl.kubernetes.io/last-applied-configuration: |
+      {"apiVersion":"networking.k8s.io/v1","kind":"NetworkPolicy","metadata":{"annotations":{},"name":"recommendationservice","namespace":"default"},"spec":{"egress":[{}],"ingress":[{"from":[{"podSelector":{"matchLabels":{"app":"frontend"}}}],"ports":[{"port":8080,"protocol":"TCP"}]},{"from":[{"podSelector":{"matchLabels":{"app":"checkoutservice"}}}]},{"from":[{"podSelector":{"matchLabels":{"app":"adservice"}}}]}],"podSelector":{"matchLabels":{"app":"recommendationservice"}},"policyTypes":["Ingress","Egress"]}}
+  creationTimestamp: "2026-05-13T20:40:21Z"
+  generation: 4
+  name: recommendationservice
+  namespace: default
+  resourceVersion: "360500"
+  uid: a4a9796b-f1a2-4e8b-9731-3dac61631f62
+spec:
+  egress:
+  - {}
+  ingress:
+  - from:
+    - podSelector:
+        matchLabels:
+          app: frontend
+    ports:
+    - port: 8080
+      protocol: TCP
+  - from:
+    - podSelector:
+        matchLabels:
+          app: checkoutservice
+  - from:
+    - podSelector:
+        matchLabels:
+          app: adservice
+  podSelector:
+    matchLabels:
+      app: recommendationservice
+  policyTypes:
+  - Ingress
+  - Egress
+```
+Mismatch Summary: ```Mismatch: adservice → recommendationservice:8080 (Expected: False, Actual: True)
+Mismatch: checkoutservice → recommendationservice:8080 (Expected: False, Actual: True)```
+
+LLM Command: ```kubectl patch networkpolicy recommendationservice --type=json -p='[{"op":"remove","path":"/spec/ingress/2"},{"op":"remove","path":"/spec/ingress/1"}]'```
+Output: ```networkpolicy.networking.k8s.io/recommendationservice patched
+```
+Mismatch Summary: ```No mismatches found.```
+

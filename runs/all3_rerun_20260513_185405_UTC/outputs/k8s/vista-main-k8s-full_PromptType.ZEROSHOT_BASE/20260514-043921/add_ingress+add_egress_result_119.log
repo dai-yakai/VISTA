@@ -1,0 +1,271 @@
+LLM Command: ```kubectl get networkpolicy frontend -o yaml```
+Output: ```apiVersion: networking.k8s.io/v1
+kind: NetworkPolicy
+metadata:
+  annotations:
+    kubectl.kubernetes.io/last-applied-configuration: |
+      {"apiVersion":"networking.k8s.io/v1","kind":"NetworkPolicy","metadata":{"annotations":{},"name":"frontend","namespace":"default"},"spec":{"egress":[{}],"ingress":[{}],"podSelector":{"matchLabels":{"app":"frontend"}},"policyTypes":["Ingress","Egress"]}}
+  creationTimestamp: "2026-05-13T20:40:21Z"
+  generation: 44
+  name: frontend
+  namespace: default
+  resourceVersion: "367720"
+  uid: 07174b3a-dd44-4738-bdc8-32c899640d56
+spec:
+  egress:
+  - {}
+  ingress:
+  - {}
+  podSelector:
+    matchLabels:
+      app: frontend
+  policyTypes:
+  - Ingress
+  - Egress
+```
+Mismatch Summary: ```Mismatch: adservice → paymentservice:50051 (Expected: False, Actual: True)
+Mismatch: productcatalogservice → paymentservice:50051 (Expected: False, Actual: True)
+Mismatch: recommendationservice → productcatalogservice:3550 (Expected: True, Actual: False)```
+
+LLM Command: ```kubectl get networkpolicy paymentservice -o yaml```
+Output: ```apiVersion: networking.k8s.io/v1
+kind: NetworkPolicy
+metadata:
+  annotations:
+    kubectl.kubernetes.io/last-applied-configuration: |
+      {"apiVersion":"networking.k8s.io/v1","kind":"NetworkPolicy","metadata":{"annotations":{},"name":"paymentservice","namespace":"default"},"spec":{"egress":[{}],"ingress":[{"from":[{"podSelector":{"matchLabels":{"app":"checkoutservice"}}}],"ports":[{"port":50051,"protocol":"TCP"}]},{"from":[{"podSelector":{"matchLabels":{"app":"adservice"}}}]},{"from":[{"podSelector":{"matchLabels":{"app":"productcatalogservice"}}}]}],"podSelector":{"matchLabels":{"app":"paymentservice"}},"policyTypes":["Ingress","Egress"]}}
+  creationTimestamp: "2026-05-13T20:40:21Z"
+  generation: 32
+  name: paymentservice
+  namespace: default
+  resourceVersion: "367915"
+  uid: 13259353-d5cf-4f28-b417-ce3e7723437b
+spec:
+  egress:
+  - {}
+  ingress:
+  - from:
+    - podSelector:
+        matchLabels:
+          app: checkoutservice
+    ports:
+    - port: 50051
+      protocol: TCP
+  - from:
+    - podSelector:
+        matchLabels:
+          app: adservice
+  - from:
+    - podSelector:
+        matchLabels:
+          app: productcatalogservice
+  podSelector:
+    matchLabels:
+      app: paymentservice
+  policyTypes:
+  - Ingress
+  - Egress
+```
+Mismatch Summary: ```Mismatch: adservice → paymentservice:50051 (Expected: False, Actual: True)
+Mismatch: productcatalogservice → paymentservice:50051 (Expected: False, Actual: True)
+Mismatch: recommendationservice → productcatalogservice:3550 (Expected: True, Actual: False)```
+
+LLM Command: ```kubectl get networkpolicy recommendationservice -o yaml```
+Output: ```apiVersion: networking.k8s.io/v1
+kind: NetworkPolicy
+metadata:
+  annotations:
+    kubectl.kubernetes.io/last-applied-configuration: |
+      {"apiVersion":"networking.k8s.io/v1","kind":"NetworkPolicy","metadata":{"annotations":{},"name":"recommendationservice","namespace":"default"},"spec":{"egress":[{"to":[{"podSelector":{"matchLabels":{"app":"redis-cart"}}}]},{"to":[{"podSelector":{"matchLabels":{"app":"paymentservice"}}}]}],"ingress":[{"from":[{"podSelector":{"matchLabels":{"app":"frontend"}}}],"ports":[{"port":8080,"protocol":"TCP"}]}],"podSelector":{"matchLabels":{"app":"recommendationservice"}},"policyTypes":["Ingress","Egress"]}}
+  creationTimestamp: "2026-05-13T20:40:21Z"
+  generation: 57
+  name: recommendationservice
+  namespace: default
+  resourceVersion: "367917"
+  uid: a4a9796b-f1a2-4e8b-9731-3dac61631f62
+spec:
+  egress:
+  - to:
+    - podSelector:
+        matchLabels:
+          app: redis-cart
+  - to:
+    - podSelector:
+        matchLabels:
+          app: paymentservice
+  ingress:
+  - from:
+    - podSelector:
+        matchLabels:
+          app: frontend
+    ports:
+    - port: 8080
+      protocol: TCP
+  podSelector:
+    matchLabels:
+      app: recommendationservice
+  policyTypes:
+  - Ingress
+  - Egress
+```
+Mismatch Summary: ```Mismatch: adservice → paymentservice:50051 (Expected: False, Actual: True)
+Mismatch: productcatalogservice → paymentservice:50051 (Expected: False, Actual: True)
+Mismatch: recommendationservice → productcatalogservice:3550 (Expected: True, Actual: False)```
+
+LLM Command: ```kubectl patch networkpolicy paymentservice --type=json -p='[{"op":"remove","path":"/spec/ingress/1"},{"op":"remove","path":"/spec/ingress/2"}]'```
+Output: ```The request is invalid: the server rejected our request due to an error in our request
+```
+Mismatch Summary: ```Mismatch: adservice → paymentservice:50051 (Expected: False, Actual: True)
+Mismatch: productcatalogservice → paymentservice:50051 (Expected: False, Actual: True)
+Mismatch: recommendationservice → productcatalogservice:3550 (Expected: True, Actual: False)```
+
+LLM Command: ```kubectl get networkpolicy paymentservice -o yaml```
+Output: ```apiVersion: networking.k8s.io/v1
+kind: NetworkPolicy
+metadata:
+  annotations:
+    kubectl.kubernetes.io/last-applied-configuration: |
+      {"apiVersion":"networking.k8s.io/v1","kind":"NetworkPolicy","metadata":{"annotations":{},"name":"paymentservice","namespace":"default"},"spec":{"egress":[{}],"ingress":[{"from":[{"podSelector":{"matchLabels":{"app":"checkoutservice"}}}],"ports":[{"port":50051,"protocol":"TCP"}]},{"from":[{"podSelector":{"matchLabels":{"app":"adservice"}}}]},{"from":[{"podSelector":{"matchLabels":{"app":"productcatalogservice"}}}]}],"podSelector":{"matchLabels":{"app":"paymentservice"}},"policyTypes":["Ingress","Egress"]}}
+  creationTimestamp: "2026-05-13T20:40:21Z"
+  generation: 32
+  name: paymentservice
+  namespace: default
+  resourceVersion: "367915"
+  uid: 13259353-d5cf-4f28-b417-ce3e7723437b
+spec:
+  egress:
+  - {}
+  ingress:
+  - from:
+    - podSelector:
+        matchLabels:
+          app: checkoutservice
+    ports:
+    - port: 50051
+      protocol: TCP
+  - from:
+    - podSelector:
+        matchLabels:
+          app: adservice
+  - from:
+    - podSelector:
+        matchLabels:
+          app: productcatalogservice
+  podSelector:
+    matchLabels:
+      app: paymentservice
+  policyTypes:
+  - Ingress
+  - Egress
+```
+Mismatch Summary: ```Mismatch: adservice → paymentservice:50051 (Expected: False, Actual: True)
+Mismatch: productcatalogservice → paymentservice:50051 (Expected: False, Actual: True)
+Mismatch: recommendationservice → productcatalogservice:3550 (Expected: True, Actual: False)```
+
+LLM Command: ```kubectl patch networkpolicy paymentservice --type=json -p='[{"op":"remove","path":"/spec/ingress/1"},{"op":"remove","path":"/spec/ingress/2"}]'```
+Output: ```The request is invalid: the server rejected our request due to an error in our request
+```
+Mismatch Summary: ```Mismatch: adservice → paymentservice:50051 (Expected: False, Actual: True)
+Mismatch: productcatalogservice → paymentservice:50051 (Expected: False, Actual: True)
+Mismatch: recommendationservice → productcatalogservice:3550 (Expected: True, Actual: False)```
+
+LLM Command: ```kubectl get networkpolicy paymentservice -o yaml```
+Output: ```apiVersion: networking.k8s.io/v1
+kind: NetworkPolicy
+metadata:
+  annotations:
+    kubectl.kubernetes.io/last-applied-configuration: |
+      {"apiVersion":"networking.k8s.io/v1","kind":"NetworkPolicy","metadata":{"annotations":{},"name":"paymentservice","namespace":"default"},"spec":{"egress":[{}],"ingress":[{"from":[{"podSelector":{"matchLabels":{"app":"checkoutservice"}}}],"ports":[{"port":50051,"protocol":"TCP"}]},{"from":[{"podSelector":{"matchLabels":{"app":"adservice"}}}]},{"from":[{"podSelector":{"matchLabels":{"app":"productcatalogservice"}}}]}],"podSelector":{"matchLabels":{"app":"paymentservice"}},"policyTypes":["Ingress","Egress"]}}
+  creationTimestamp: "2026-05-13T20:40:21Z"
+  generation: 32
+  name: paymentservice
+  namespace: default
+  resourceVersion: "367915"
+  uid: 13259353-d5cf-4f28-b417-ce3e7723437b
+spec:
+  egress:
+  - {}
+  ingress:
+  - from:
+    - podSelector:
+        matchLabels:
+          app: checkoutservice
+    ports:
+    - port: 50051
+      protocol: TCP
+  - from:
+    - podSelector:
+        matchLabels:
+          app: adservice
+  - from:
+    - podSelector:
+        matchLabels:
+          app: productcatalogservice
+  podSelector:
+    matchLabels:
+      app: paymentservice
+  policyTypes:
+  - Ingress
+  - Egress
+```
+Mismatch Summary: ```Mismatch: adservice → paymentservice:50051 (Expected: False, Actual: True)
+Mismatch: productcatalogservice → paymentservice:50051 (Expected: False, Actual: True)
+Mismatch: recommendationservice → productcatalogservice:3550 (Expected: True, Actual: False)```
+
+LLM Command: ```kubectl patch networkpolicy paymentservice --type=json -p='[{"op":"remove","path":"/spec/ingress/1"},{"op":"remove","path":"/spec/ingress/2"}]'```
+Output: ```The request is invalid: the server rejected our request due to an error in our request
+```
+Mismatch Summary: ```Mismatch: adservice → paymentservice:50051 (Expected: False, Actual: True)
+Mismatch: productcatalogservice → paymentservice:50051 (Expected: False, Actual: True)
+Mismatch: recommendationservice → productcatalogservice:3550 (Expected: True, Actual: False)```
+
+LLM Command: ```kubectl get networkpolicy paymentservice -o yaml```
+Output: ```apiVersion: networking.k8s.io/v1
+kind: NetworkPolicy
+metadata:
+  annotations:
+    kubectl.kubernetes.io/last-applied-configuration: |
+      {"apiVersion":"networking.k8s.io/v1","kind":"NetworkPolicy","metadata":{"annotations":{},"name":"paymentservice","namespace":"default"},"spec":{"egress":[{}],"ingress":[{"from":[{"podSelector":{"matchLabels":{"app":"checkoutservice"}}}],"ports":[{"port":50051,"protocol":"TCP"}]},{"from":[{"podSelector":{"matchLabels":{"app":"adservice"}}}]},{"from":[{"podSelector":{"matchLabels":{"app":"productcatalogservice"}}}]}],"podSelector":{"matchLabels":{"app":"paymentservice"}},"policyTypes":["Ingress","Egress"]}}
+  creationTimestamp: "2026-05-13T20:40:21Z"
+  generation: 32
+  name: paymentservice
+  namespace: default
+  resourceVersion: "367915"
+  uid: 13259353-d5cf-4f28-b417-ce3e7723437b
+spec:
+  egress:
+  - {}
+  ingress:
+  - from:
+    - podSelector:
+        matchLabels:
+          app: checkoutservice
+    ports:
+    - port: 50051
+      protocol: TCP
+  - from:
+    - podSelector:
+        matchLabels:
+          app: adservice
+  - from:
+    - podSelector:
+        matchLabels:
+          app: productcatalogservice
+  podSelector:
+    matchLabels:
+      app: paymentservice
+  policyTypes:
+  - Ingress
+  - Egress
+```
+Mismatch Summary: ```Mismatch: adservice → paymentservice:50051 (Expected: False, Actual: True)
+Mismatch: productcatalogservice → paymentservice:50051 (Expected: False, Actual: True)
+Mismatch: recommendationservice → productcatalogservice:3550 (Expected: True, Actual: False)```
+
+LLM Command: ```kubectl patch networkpolicy paymentservice --type=json -p='[{"op":"remove","path":"/spec/ingress/1"},{"op":"remove","path":"/spec/ingress/2"}]'```
+Output: ```The request is invalid: the server rejected our request due to an error in our request
+```
+Mismatch Summary: ```Mismatch: adservice → paymentservice:50051 (Expected: False, Actual: True)
+Mismatch: productcatalogservice → paymentservice:50051 (Expected: False, Actual: True)
+Mismatch: recommendationservice → productcatalogservice:3550 (Expected: True, Actual: False)```
+

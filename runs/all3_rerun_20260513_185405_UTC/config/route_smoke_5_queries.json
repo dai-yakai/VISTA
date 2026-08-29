@@ -1,0 +1,56 @@
+{
+  "queries": [
+    {
+      "num_switches": 2,
+      "num_hosts_per_subnet": 1,
+      "errornumber": 1,
+      "errortype": "disable_routing",
+      "errordetail": {
+        "action": "Disable IP forwarding",
+        "method": 3
+      }
+    },
+    {
+      "num_switches": 2,
+      "num_hosts_per_subnet": 1,
+      "errornumber": 1,
+      "errortype": "disable_routing",
+      "errordetail": {
+        "action": "Disable IP forwarding",
+        "method": 2
+      }
+    },
+    {
+      "num_switches": 2,
+      "num_hosts_per_subnet": 1,
+      "errornumber": 1,
+      "errortype": "disable_routing",
+      "errordetail": {
+        "action": "Disable IP forwarding",
+        "method": 3
+      }
+    },
+    {
+      "num_switches": 2,
+      "num_hosts_per_subnet": 1,
+      "errornumber": 1,
+      "errortype": "disable_routing",
+      "errordetail": {
+        "action": "Disable IP forwarding",
+        "method": 4,
+        "subnet": "192.168.1.0/24"
+      }
+    },
+    {
+      "num_switches": 2,
+      "num_hosts_per_subnet": 1,
+      "errornumber": 1,
+      "errortype": "disable_routing",
+      "errordetail": {
+        "action": "Disable IP forwarding",
+        "method": 4,
+        "subnet": "192.168.1.0/24"
+      }
+    }
+  ]
+}

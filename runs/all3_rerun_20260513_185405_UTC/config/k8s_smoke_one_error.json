@@ -1,0 +1,14 @@
+{
+  "details": [
+    {
+      "policies_to_inject": ["network-policy-adservice"],
+      "inject_error_num": [1],
+      "error_detail": [
+        {
+          "type": "remove_ingress",
+          "app": "frontend"
+        }
+      ]
+    }
+  ]
+}

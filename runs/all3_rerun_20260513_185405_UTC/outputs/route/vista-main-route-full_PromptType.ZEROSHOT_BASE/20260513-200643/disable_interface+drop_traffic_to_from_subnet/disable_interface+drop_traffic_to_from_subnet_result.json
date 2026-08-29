@@ -1,0 +1,7 @@
+{
+    "success_rate": 0.4,
+    "overall_average_time": 0.79,
+    "average_iterations": 9.6,
+    "safety_rate": 1.0,
+    "average_packet_loss_reduction": 56.7
+}

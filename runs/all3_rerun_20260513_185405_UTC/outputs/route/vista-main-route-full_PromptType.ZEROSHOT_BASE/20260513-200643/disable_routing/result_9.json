@@ -1,0 +1,14 @@
+[
+    {
+        "packet_loss": 33,
+        "elapsed_time": 0.6556176809972385
+    },
+    {
+        "packet_loss": 33,
+        "elapsed_time": 0.006355427001835778
+    },
+    {
+        "packet_loss": 0,
+        "elapsed_time": 0.6108418020012323
+    }
+]

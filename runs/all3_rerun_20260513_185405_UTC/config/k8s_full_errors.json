@@ -1,0 +1,2904 @@
+{
+  "details": [
+    {
+      "policies_to_inject": [
+        "network-policy-adservice"
+      ],
+      "inject_error_num": [
+        1
+      ],
+      "error_detail": [
+        {
+          "type": "remove_ingress",
+          "app": "frontend"
+        }
+      ]
+    },
+    {
+      "policies_to_inject": [
+        "network-policy-recommendationservice"
+      ],
+      "inject_error_num": [
+        1
+      ],
+      "error_detail": [
+        {
+          "type": "remove_ingress",
+          "app": "frontend"
+        }
+      ]
+    },
+    {
+      "policies_to_inject": [
+        "network-policy-productcatalogservice"
+      ],
+      "inject_error_num": [
+        1
+      ],
+      "error_detail": [
+        {
+          "type": "remove_ingress",
+          "app": "frontend"
+        }
+      ]
+    },
+    {
+      "policies_to_inject": [
+        "network-policy-productcatalogservice"
+      ],
+      "inject_error_num": [
+        1
+      ],
+      "error_detail": [
+        {
+          "type": "remove_ingress",
+          "app": "recommendationservice"
+        }
+      ]
+    },
+    {
+      "policies_to_inject": [
+        "network-policy-productcatalogservice"
+      ],
+      "inject_error_num": [
+        1
+      ],
+      "error_detail": [
+        {
+          "type": "remove_ingress",
+          "app": "checkoutservice"
+        }
+      ]
+    },
+    {
+      "policies_to_inject": [
+        "network-policy-cartservice"
+      ],
+      "inject_error_num": [
+        1
+      ],
+      "error_detail": [
+        {
+          "type": "remove_ingress",
+          "app": "frontend"
+        }
+      ]
+    },
+    {
+      "policies_to_inject": [
+        "network-policy-cartservice"
+      ],
+      "inject_error_num": [
+        1
+      ],
+      "error_detail": [
+        {
+          "type": "remove_ingress",
+          "app": "checkoutservice"
+        }
+      ]
+    },
+    {
+      "policies_to_inject": [
+        "network-policy-checkoutservice"
+      ],
+      "inject_error_num": [
+        1
+      ],
+      "error_detail": [
+        {
+          "type": "remove_ingress",
+          "app": "frontend"
+        }
+      ]
+    },
+    {
+      "policies_to_inject": [
+        "network-policy-shippingservice"
+      ],
+      "inject_error_num": [
+        1
+      ],
+      "error_detail": [
+        {
+          "type": "remove_ingress",
+          "app": "frontend"
+        }
+      ]
+    },
+    {
+      "policies_to_inject": [
+        "network-policy-shippingservice"
+      ],
+      "inject_error_num": [
+        1
+      ],
+      "error_detail": [
+        {
+          "type": "remove_ingress",
+          "app": "checkoutservice"
+        }
+      ]
+    },
+    {
+      "policies_to_inject": [
+        "network-policy-adservice"
+      ],
+      "inject_error_num": [
+        1
+      ],
+      "error_detail": [
+        {
+          "type": "change_protocol",
+          "new_protocol": "UDP"
+        }
+      ]
+    },
+    {
+      "policies_to_inject": [
+        "network-policy-adservice"
+      ],
+      "inject_error_num": [
+        1
+      ],
+      "error_detail": [
+        {
+          "type": "change_protocol",
+          "new_protocol": "SCTP"
+        }
+      ]
+    },
+    {
+      "policies_to_inject": [
+        "network-policy-cartservice"
+      ],
+      "inject_error_num": [
+        1
+      ],
+      "error_detail": [
+        {
+          "type": "change_protocol",
+          "new_protocol": "UDP"
+        }
+      ]
+    },
+    {
+      "policies_to_inject": [
+        "network-policy-cartservice"
+      ],
+      "inject_error_num": [
+        1
+      ],
+      "error_detail": [
+        {
+          "type": "change_protocol",
+          "new_protocol": "SCTP"
+        }
+      ]
+    },
+    {
+      "policies_to_inject": [
+        "network-policy-checkoutservice"
+      ],
+      "inject_error_num": [
+        1
+      ],
+      "error_detail": [
+        {
+          "type": "change_protocol",
+          "new_protocol": "UDP"
+        }
+      ]
+    },
+    {
+      "policies_to_inject": [
+        "network-policy-checkoutservice"
+      ],
+      "inject_error_num": [
+        1
+      ],
+      "error_detail": [
+        {
+          "type": "change_protocol",
+          "new_protocol": "SCTP"
+        }
+      ]
+    },
+    {
+      "policies_to_inject": [
+        "network-policy-currencyservice"
+      ],
+      "inject_error_num": [
+        1
+      ],
+      "error_detail": [
+        {
+          "type": "change_protocol",
+          "new_protocol": "UDP"
+        }
+      ]
+    },
+    {
+      "policies_to_inject": [
+        "network-policy-currencyservice"
+      ],
+      "inject_error_num": [
+        1
+      ],
+      "error_detail": [
+        {
+          "type": "change_protocol",
+          "new_protocol": "SCTP"
+        }
+      ]
+    },
+    {
+      "policies_to_inject": [
+        "network-policy-emailservice"
+      ],
+      "inject_error_num": [
+        1
+      ],
+      "error_detail": [
+        {
+          "type": "change_protocol",
+          "new_protocol": "UDP"
+        }
+      ]
+    },
+    {
+      "policies_to_inject": [
+        "network-policy-emailservice"
+      ],
+      "inject_error_num": [
+        1
+      ],
+      "error_detail": [
+        {
+          "type": "change_protocol",
+          "new_protocol": "SCTP"
+        }
+      ]
+    },
+    {
+      "policies_to_inject": [
+        "network-policy-shippingservice"
+      ],
+      "inject_error_num": [
+        1
+      ],
+      "error_detail": [
+        {
+          "type": "add_ingress",
+          "app": [
+            "emailservice",
+            "recommendationservice"
+          ]
+        }
+      ]
+    },
+    {
+      "policies_to_inject": [
+        "network-policy-checkoutservice"
+      ],
+      "inject_error_num": [
+        1
+      ],
+      "error_detail": [
+        {
+          "type": "add_ingress",
+          "app": [
+            "adservice",
+            "shippingservice"
+          ]
+        }
+      ]
+    },
+    {
+      "policies_to_inject": [
+        "network-policy-adservice"
+      ],
+      "inject_error_num": [
+        1
+      ],
+      "error_detail": [
+        {
+          "type": "add_ingress",
+          "app": [
+            "shippingservice",
+            "productcatalogservice"
+          ]
+        }
+      ]
+    },
+    {
+      "policies_to_inject": [
+        "network-policy-emailservice"
+      ],
+      "inject_error_num": [
+        1
+      ],
+      "error_detail": [
+        {
+          "type": "add_ingress",
+          "app": [
+            "cartservice",
+            "productcatalogservice"
+          ]
+        }
+      ]
+    },
+    {
+      "policies_to_inject": [
+        "network-policy-productcatalogservice"
+      ],
+      "inject_error_num": [
+        1
+      ],
+      "error_detail": [
+        {
+          "type": "add_ingress",
+          "app": [
+            "cartservice",
+            "emailservice"
+          ]
+        }
+      ]
+    },
+    {
+      "policies_to_inject": [
+        "network-policy-emailservice"
+      ],
+      "inject_error_num": [
+        1
+      ],
+      "error_detail": [
+        {
+          "type": "add_ingress",
+          "app": [
+            "shippingservice",
+            "cartservice"
+          ]
+        }
+      ]
+    },
+    {
+      "policies_to_inject": [
+        "network-policy-recommendationservice"
+      ],
+      "inject_error_num": [
+        1
+      ],
+      "error_detail": [
+        {
+          "type": "add_ingress",
+          "app": [
+            "checkoutservice",
+            "adservice"
+          ]
+        }
+      ]
+    },
+    {
+      "policies_to_inject": [
+        "network-policy-currencyservice"
+      ],
+      "inject_error_num": [
+        1
+      ],
+      "error_detail": [
+        {
+          "type": "add_ingress",
+          "app": [
+            "shippingservice",
+            "recommendationservice"
+          ]
+        }
+      ]
+    },
+    {
+      "policies_to_inject": [
+        "network-policy-currencyservice"
+      ],
+      "inject_error_num": [
+        1
+      ],
+      "error_detail": [
+        {
+          "type": "add_ingress",
+          "app": [
+            "recommendationservice",
+            "productcatalogservice"
+          ]
+        }
+      ]
+    },
+    {
+      "policies_to_inject": [
+        "network-policy-shippingservice"
+      ],
+      "inject_error_num": [
+        1
+      ],
+      "error_detail": [
+        {
+          "type": "add_ingress",
+          "app": [
+            "recommendationservice",
+            "emailservice"
+          ]
+        }
+      ]
+    },
+    {
+      "policies_to_inject": [
+        "network-policy-currencyservice"
+      ],
+      "inject_error_num": [
+        1
+      ],
+      "error_detail": [
+        {
+          "type": "change_port",
+          "new_port": 34917
+        }
+      ]
+    },
+    {
+      "policies_to_inject": [
+        "network-policy-shippingservice"
+      ],
+      "inject_error_num": [
+        1
+      ],
+      "error_detail": [
+        {
+          "type": "change_port",
+          "new_port": 51621
+        }
+      ]
+    },
+    {
+      "policies_to_inject": [
+        "network-policy-emailservice"
+      ],
+      "inject_error_num": [
+        1
+      ],
+      "error_detail": [
+        {
+          "type": "change_port",
+          "new_port": 29674
+        }
+      ]
+    },
+    {
+      "policies_to_inject": [
+        "network-policy-currencyservice"
+      ],
+      "inject_error_num": [
+        1
+      ],
+      "error_detail": [
+        {
+          "type": "change_port",
+          "new_port": 63782
+        }
+      ]
+    },
+    {
+      "policies_to_inject": [
+        "network-policy-adservice"
+      ],
+      "inject_error_num": [
+        1
+      ],
+      "error_detail": [
+        {
+          "type": "change_port",
+          "new_port": 26225
+        }
+      ]
+    },
+    {
+      "policies_to_inject": [
+        "network-policy-currencyservice"
+      ],
+      "inject_error_num": [
+        1
+      ],
+      "error_detail": [
+        {
+          "type": "change_port",
+          "new_port": 52881
+        }
+      ]
+    },
+    {
+      "policies_to_inject": [
+        "network-policy-emailservice"
+      ],
+      "inject_error_num": [
+        1
+      ],
+      "error_detail": [
+        {
+          "type": "change_port",
+          "new_port": 52362
+        }
+      ]
+    },
+    {
+      "policies_to_inject": [
+        "network-policy-checkoutservice"
+      ],
+      "inject_error_num": [
+        1
+      ],
+      "error_detail": [
+        {
+          "type": "change_port",
+          "new_port": 52492
+        }
+      ]
+    },
+    {
+      "policies_to_inject": [
+        "network-policy-paymentservice"
+      ],
+      "inject_error_num": [
+        1
+      ],
+      "error_detail": [
+        {
+          "type": "change_port",
+          "new_port": 15288
+        }
+      ]
+    },
+    {
+      "policies_to_inject": [
+        "network-policy-checkoutservice"
+      ],
+      "inject_error_num": [
+        1
+      ],
+      "error_detail": [
+        {
+          "type": "change_port",
+          "new_port": 27959
+        }
+      ]
+    },
+    {
+      "policies_to_inject": [
+        "network-policy-frontend"
+      ],
+      "inject_error_num": [
+        1
+      ],
+      "error_detail": [
+        {
+          "type": "add_egress",
+          "app": [
+            "cartservice",
+            "resid-cart"
+          ]
+        }
+      ]
+    },
+    {
+      "policies_to_inject": [
+        "network-policy-frontend"
+      ],
+      "inject_error_num": [
+        1
+      ],
+      "error_detail": [
+        {
+          "type": "add_egress",
+          "app": [
+            "cartservice",
+            "currencyservice"
+          ]
+        }
+      ]
+    },
+    {
+      "policies_to_inject": [
+        "network-policy-checkoutservice"
+      ],
+      "inject_error_num": [
+        1
+      ],
+      "error_detail": [
+        {
+          "type": "add_egress",
+          "app": [
+            "cartservice",
+            "paymentservice"
+          ]
+        }
+      ]
+    },
+    {
+      "policies_to_inject": [
+        "network-policy-recommendationservice"
+      ],
+      "inject_error_num": [
+        1
+      ],
+      "error_detail": [
+        {
+          "type": "add_egress",
+          "app": [
+            "checkoutservice",
+            "cartservice"
+          ]
+        }
+      ]
+    },
+    {
+      "policies_to_inject": [
+        "network-policy-checkoutservice"
+      ],
+      "inject_error_num": [
+        1
+      ],
+      "error_detail": [
+        {
+          "type": "add_egress",
+          "app": [
+            "currencyservice",
+            "recommendationservice"
+          ]
+        }
+      ]
+    },
+    {
+      "policies_to_inject": [
+        "network-policy-recommendationservice"
+      ],
+      "inject_error_num": [
+        1
+      ],
+      "error_detail": [
+        {
+          "type": "add_egress",
+          "app": [
+            "shippingservice",
+            "emailservice"
+          ]
+        }
+      ]
+    },
+    {
+      "policies_to_inject": [
+        "network-policy-frontend"
+      ],
+      "inject_error_num": [
+        1
+      ],
+      "error_detail": [
+        {
+          "type": "add_egress",
+          "app": [
+            "currencyservice",
+            "cartservice"
+          ]
+        }
+      ]
+    },
+    {
+      "policies_to_inject": [
+        "network-policy-checkoutservice"
+      ],
+      "inject_error_num": [
+        1
+      ],
+      "error_detail": [
+        {
+          "type": "add_egress",
+          "app": [
+            "productcatalogservice",
+            "paymentservice"
+          ]
+        }
+      ]
+    },
+    {
+      "policies_to_inject": [
+        "network-policy-checkoutservice"
+      ],
+      "inject_error_num": [
+        1
+      ],
+      "error_detail": [
+        {
+          "type": "add_egress",
+          "app": [
+            "currencyservice",
+            "paymentservice"
+          ]
+        }
+      ]
+    },
+    {
+      "policies_to_inject": [
+        "network-policy-recommendationservice"
+      ],
+      "inject_error_num": [
+        1
+      ],
+      "error_detail": [
+        {
+          "type": "add_egress",
+          "app": [
+            "currencyservice",
+            "adservice"
+          ]
+        }
+      ]
+    },
+    {
+      "policies_to_inject": [
+        "network-policy-adservice",
+        "network-policy-currencyservice"
+      ],
+      "inject_error_num": [
+        2
+      ],
+      "error_detail": [
+        {
+          "type": "remove_ingress",
+          "app": "frontend"
+        },
+        {
+          "type": "add_ingress",
+          "app": [
+            "adservice",
+            "productcatalogservice"
+          ]
+        }
+      ]
+    },
+    {
+      "policies_to_inject": [
+        "network-policy-cartservice",
+        "network-policy-redis"
+      ],
+      "inject_error_num": [
+        2
+      ],
+      "error_detail": [
+        {
+          "type": "remove_ingress",
+          "app": "frontend"
+        },
+        {
+          "type": "add_ingress",
+          "app": [
+            "cartservice",
+            "shippingservice"
+          ]
+        }
+      ]
+    },
+    {
+      "policies_to_inject": [
+        "network-policy-shippingservice",
+        "network-policy-frontend"
+      ],
+      "inject_error_num": [
+        2
+      ],
+      "error_detail": [
+        {
+          "type": "remove_ingress",
+          "app": "frontend"
+        },
+        {
+          "type": "add_ingress",
+          "app": [
+            "productcatalogservice",
+            "cartservice"
+          ]
+        }
+      ]
+    },
+    {
+      "policies_to_inject": [
+        "network-policy-cartservice",
+        "network-policy-checkoutservice"
+      ],
+      "inject_error_num": [
+        2
+      ],
+      "error_detail": [
+        {
+          "type": "remove_ingress",
+          "app": "frontend"
+        },
+        {
+          "type": "add_ingress",
+          "app": [
+            "productcatalogservice",
+            "shippingservice"
+          ]
+        }
+      ]
+    },
+    {
+      "policies_to_inject": [
+        "network-policy-adservice",
+        "network-policy-cartservice"
+      ],
+      "inject_error_num": [
+        2
+      ],
+      "error_detail": [
+        {
+          "type": "remove_ingress",
+          "app": "frontend"
+        },
+        {
+          "type": "add_ingress",
+          "app": [
+            "emailservice",
+            "productcatalogservice"
+          ]
+        }
+      ]
+    },
+    {
+      "policies_to_inject": [
+        "network-policy-emailservice",
+        "network-policy-shippingservice"
+      ],
+      "inject_error_num": [
+        2
+      ],
+      "error_detail": [
+        {
+          "type": "remove_ingress",
+          "app": "checkoutservice"
+        },
+        {
+          "type": "add_ingress",
+          "app": [
+            "adservice",
+            "recommendationservice"
+          ]
+        }
+      ]
+    },
+    {
+      "policies_to_inject": [
+        "network-policy-productcatalogservice",
+        "network-policy-emailservice"
+      ],
+      "inject_error_num": [
+        2
+      ],
+      "error_detail": [
+        {
+          "type": "remove_ingress",
+          "app": "checkoutservice"
+        },
+        {
+          "type": "add_ingress",
+          "app": [
+            "productcatalogservice",
+            "adservice"
+          ]
+        }
+      ]
+    },
+    {
+      "policies_to_inject": [
+        "network-policy-productcatalogservice",
+        "network-policy-shippingservice"
+      ],
+      "inject_error_num": [
+        2
+      ],
+      "error_detail": [
+        {
+          "type": "remove_ingress",
+          "app": "recommendationservice"
+        },
+        {
+          "type": "add_ingress",
+          "app": [
+            "cartservice",
+            "recommendationservice"
+          ]
+        }
+      ]
+    },
+    {
+      "policies_to_inject": [
+        "network-policy-shippingservice",
+        "network-policy-adservice"
+      ],
+      "inject_error_num": [
+        2
+      ],
+      "error_detail": [
+        {
+          "type": "remove_ingress",
+          "app": "frontend"
+        },
+        {
+          "type": "add_ingress",
+          "app": [
+            "cartservice",
+            "shippingservice"
+          ]
+        }
+      ]
+    },
+    {
+      "policies_to_inject": [
+        "network-policy-emailservice",
+        "network-policy-productcatalogservice"
+      ],
+      "inject_error_num": [
+        2
+      ],
+      "error_detail": [
+        {
+          "type": "remove_ingress",
+          "app": "checkoutservice"
+        },
+        {
+          "type": "add_ingress",
+          "app": [
+            "recommendationservice",
+            "cartservice"
+          ]
+        }
+      ]
+    },
+    {
+      "policies_to_inject": [
+        "network-policy-paymentservice",
+        "network-policy-cartservice"
+      ],
+      "inject_error_num": [
+        2
+      ],
+      "error_detail": [
+        {
+          "type": "remove_ingress",
+          "app": "checkoutservice"
+        },
+        {
+          "type": "change_port",
+          "new_port": 28550
+        }
+      ]
+    },
+    {
+      "policies_to_inject": [
+        "network-policy-cartservice",
+        "network-policy-redis"
+      ],
+      "inject_error_num": [
+        2
+      ],
+      "error_detail": [
+        {
+          "type": "remove_ingress",
+          "app": "checkoutservice"
+        },
+        {
+          "type": "change_port",
+          "new_port": 25325
+        }
+      ]
+    },
+    {
+      "policies_to_inject": [
+        "network-policy-paymentservice",
+        "network-policy-shippingservice"
+      ],
+      "inject_error_num": [
+        2
+      ],
+      "error_detail": [
+        {
+          "type": "remove_ingress",
+          "app": "checkoutservice"
+        },
+        {
+          "type": "change_port",
+          "new_port": 43023
+        }
+      ]
+    },
+    {
+      "policies_to_inject": [
+        "network-policy-adservice",
+        "network-policy-emailservice"
+      ],
+      "inject_error_num": [
+        2
+      ],
+      "error_detail": [
+        {
+          "type": "remove_ingress",
+          "app": "frontend"
+        },
+        {
+          "type": "change_port",
+          "new_port": 59795
+        }
+      ]
+    },
+    {
+      "policies_to_inject": [
+        "network-policy-shippingservice",
+        "network-policy-shippingservice"
+      ],
+      "inject_error_num": [
+        2
+      ],
+      "error_detail": [
+        {
+          "type": "remove_ingress",
+          "app": "checkoutservice"
+        },
+        {
+          "type": "change_port",
+          "new_port": 54251
+        }
+      ]
+    },
+    {
+      "policies_to_inject": [
+        "network-policy-paymentservice",
+        "network-policy-productcatalogservice"
+      ],
+      "inject_error_num": [
+        2
+      ],
+      "error_detail": [
+        {
+          "type": "remove_ingress",
+          "app": "checkoutservice"
+        },
+        {
+          "type": "change_port",
+          "new_port": 42029
+        }
+      ]
+    },
+    {
+      "policies_to_inject": [
+        "network-policy-paymentservice",
+        "network-policy-shippingservice"
+      ],
+      "inject_error_num": [
+        2
+      ],
+      "error_detail": [
+        {
+          "type": "remove_ingress",
+          "app": "checkoutservice"
+        },
+        {
+          "type": "change_port",
+          "new_port": 51075
+        }
+      ]
+    },
+    {
+      "policies_to_inject": [
+        "network-policy-currencyservice",
+        "network-policy-productcatalogservice"
+      ],
+      "inject_error_num": [
+        2
+      ],
+      "error_detail": [
+        {
+          "type": "remove_ingress",
+          "app": "frontend"
+        },
+        {
+          "type": "change_port",
+          "new_port": 62198
+        }
+      ]
+    },
+    {
+      "policies_to_inject": [
+        "network-policy-checkoutservice",
+        "network-policy-recommendationservice"
+      ],
+      "inject_error_num": [
+        2
+      ],
+      "error_detail": [
+        {
+          "type": "remove_ingress",
+          "app": "frontend"
+        },
+        {
+          "type": "change_port",
+          "new_port": 57100
+        }
+      ]
+    },
+    {
+      "policies_to_inject": [
+        "network-policy-shippingservice",
+        "network-policy-checkoutservice"
+      ],
+      "inject_error_num": [
+        2
+      ],
+      "error_detail": [
+        {
+          "type": "remove_ingress",
+          "app": "checkoutservice"
+        },
+        {
+          "type": "change_port",
+          "new_port": 47299
+        }
+      ]
+    },
+    {
+      "policies_to_inject": [
+        "network-policy-cartservice",
+        "network-policy-redis"
+      ],
+      "inject_error_num": [
+        2
+      ],
+      "error_detail": [
+        {
+          "type": "remove_ingress",
+          "app": "checkoutservice"
+        },
+        {
+          "type": "change_protocol",
+          "new_protocol": "UDP"
+        }
+      ]
+    },
+    {
+      "policies_to_inject": [
+        "network-policy-adservice",
+        "network-policy-currencyservice"
+      ],
+      "inject_error_num": [
+        2
+      ],
+      "error_detail": [
+        {
+          "type": "remove_ingress",
+          "app": "frontend"
+        },
+        {
+          "type": "change_protocol",
+          "new_protocol": "UDP"
+        }
+      ]
+    },
+    {
+      "policies_to_inject": [
+        "network-policy-recommendationservice",
+        "network-policy-paymentservice"
+      ],
+      "inject_error_num": [
+        2
+      ],
+      "error_detail": [
+        {
+          "type": "remove_ingress",
+          "app": "frontend"
+        },
+        {
+          "type": "change_protocol",
+          "new_protocol": "SCTP"
+        }
+      ]
+    },
+    {
+      "policies_to_inject": [
+        "network-policy-adservice",
+        "network-policy-recommendationservice"
+      ],
+      "inject_error_num": [
+        2
+      ],
+      "error_detail": [
+        {
+          "type": "remove_ingress",
+          "app": "frontend"
+        },
+        {
+          "type": "change_protocol",
+          "new_protocol": "UDP"
+        }
+      ]
+    },
+    {
+      "policies_to_inject": [
+        "network-policy-paymentservice",
+        "network-policy-recommendationservice"
+      ],
+      "inject_error_num": [
+        2
+      ],
+      "error_detail": [
+        {
+          "type": "remove_ingress",
+          "app": "checkoutservice"
+        },
+        {
+          "type": "change_protocol",
+          "new_protocol": "SCTP"
+        }
+      ]
+    },
+    {
+      "policies_to_inject": [
+        "network-policy-recommendationservice",
+        "network-policy-cartservice"
+      ],
+      "inject_error_num": [
+        2
+      ],
+      "error_detail": [
+        {
+          "type": "remove_ingress",
+          "app": "frontend"
+        },
+        {
+          "type": "change_protocol",
+          "new_protocol": "SCTP"
+        }
+      ]
+    },
+    {
+      "policies_to_inject": [
+        "network-policy-emailservice",
+        "network-policy-recommendationservice"
+      ],
+      "inject_error_num": [
+        2
+      ],
+      "error_detail": [
+        {
+          "type": "remove_ingress",
+          "app": "checkoutservice"
+        },
+        {
+          "type": "change_protocol",
+          "new_protocol": "SCTP"
+        }
+      ]
+    },
+    {
+      "policies_to_inject": [
+        "network-policy-emailservice",
+        "network-policy-cartservice"
+      ],
+      "inject_error_num": [
+        2
+      ],
+      "error_detail": [
+        {
+          "type": "remove_ingress",
+          "app": "checkoutservice"
+        },
+        {
+          "type": "change_protocol",
+          "new_protocol": "SCTP"
+        }
+      ]
+    },
+    {
+      "policies_to_inject": [
+        "network-policy-currencyservice",
+        "network-policy-recommendationservice"
+      ],
+      "inject_error_num": [
+        2
+      ],
+      "error_detail": [
+        {
+          "type": "remove_ingress",
+          "app": "frontend"
+        },
+        {
+          "type": "change_protocol",
+          "new_protocol": "UDP"
+        }
+      ]
+    },
+    {
+      "policies_to_inject": [
+        "network-policy-paymentservice",
+        "network-policy-currencyservice"
+      ],
+      "inject_error_num": [
+        2
+      ],
+      "error_detail": [
+        {
+          "type": "remove_ingress",
+          "app": "checkoutservice"
+        },
+        {
+          "type": "change_protocol",
+          "new_protocol": "UDP"
+        }
+      ]
+    },
+    {
+      "policies_to_inject": [
+        "network-policy-productcatalogservice",
+        "network-policy-checkoutservice"
+      ],
+      "inject_error_num": [
+        2
+      ],
+      "error_detail": [
+        {
+          "type": "remove_ingress",
+          "app": "frontend"
+        },
+        {
+          "type": "add_egress",
+          "app": [
+            "productcatalogservice",
+            "shippingservice"
+          ]
+        }
+      ]
+    },
+    {
+      "policies_to_inject": [
+        "network-policy-recommendationservice",
+        "network-policy-cartservice"
+      ],
+      "inject_error_num": [
+        2
+      ],
+      "error_detail": [
+        {
+          "type": "remove_ingress",
+          "app": "frontend"
+        },
+        {
+          "type": "add_egress",
+          "app": [
+            "paymentservice",
+            "productcatalogservice"
+          ]
+        }
+      ]
+    },
+    {
+      "policies_to_inject": [
+        "network-policy-adservice",
+        "network-policy-recommendationservice"
+      ],
+      "inject_error_num": [
+        2
+      ],
+      "error_detail": [
+        {
+          "type": "remove_ingress",
+          "app": "frontend"
+        },
+        {
+          "type": "add_egress",
+          "app": [
+            "redis-cart",
+            "emailservice"
+          ]
+        }
+      ]
+    },
+    {
+      "policies_to_inject": [
+        "network-policy-checkoutservice",
+        "network-policy-checkoutservice"
+      ],
+      "inject_error_num": [
+        2
+      ],
+      "error_detail": [
+        {
+          "type": "remove_ingress",
+          "app": "frontend"
+        },
+        {
+          "type": "add_egress",
+          "app": [
+            "productcatalogservice",
+            "paymentservice"
+          ]
+        }
+      ]
+    },
+    {
+      "policies_to_inject": [
+        "network-policy-paymentservice",
+        "network-policy-frontend"
+      ],
+      "inject_error_num": [
+        2
+      ],
+      "error_detail": [
+        {
+          "type": "remove_ingress",
+          "app": "checkoutservice"
+        },
+        {
+          "type": "add_egress",
+          "app": [
+            "adservice",
+            "productcatalogservice"
+          ]
+        }
+      ]
+    },
+    {
+      "policies_to_inject": [
+        "network-policy-currencyservice",
+        "network-policy-frontend"
+      ],
+      "inject_error_num": [
+        2
+      ],
+      "error_detail": [
+        {
+          "type": "remove_ingress",
+          "app": "checkoutservice"
+        },
+        {
+          "type": "add_egress",
+          "app": [
+            "productcatalogservice",
+            "paymentservice"
+          ]
+        }
+      ]
+    },
+    {
+      "policies_to_inject": [
+        "network-policy-adservice",
+        "network-policy-recommendationservice"
+      ],
+      "inject_error_num": [
+        2
+      ],
+      "error_detail": [
+        {
+          "type": "remove_ingress",
+          "app": "frontend"
+        },
+        {
+          "type": "add_egress",
+          "app": [
+            "emailservice",
+            "shippingservice"
+          ]
+        }
+      ]
+    },
+    {
+      "policies_to_inject": [
+        "network-policy-cartservice",
+        "network-policy-frontend"
+      ],
+      "inject_error_num": [
+        2
+      ],
+      "error_detail": [
+        {
+          "type": "remove_ingress",
+          "app": "checkoutservice"
+        },
+        {
+          "type": "add_egress",
+          "app": [
+            "currencyservice",
+            "cartservice"
+          ]
+        }
+      ]
+    },
+    {
+      "policies_to_inject": [
+        "network-policy-paymentservice",
+        "network-policy-cartservice"
+      ],
+      "inject_error_num": [
+        2
+      ],
+      "error_detail": [
+        {
+          "type": "remove_ingress",
+          "app": "checkoutservice"
+        },
+        {
+          "type": "add_egress",
+          "app": [
+            "paymentservice",
+            "currencyservice"
+          ]
+        }
+      ]
+    },
+    {
+      "policies_to_inject": [
+        "network-policy-adservice",
+        "network-policy-frontend"
+      ],
+      "inject_error_num": [
+        2
+      ],
+      "error_detail": [
+        {
+          "type": "remove_ingress",
+          "app": "frontend"
+        },
+        {
+          "type": "add_egress",
+          "app": [
+            "adservice",
+            "currencyservice"
+          ]
+        }
+      ]
+    },
+    {
+      "policies_to_inject": [
+        "network-policy-adservice",
+        "network-policy-emailservice"
+      ],
+      "inject_error_num": [
+        2
+      ],
+      "error_detail": [
+        {
+          "type": "add_ingress",
+          "app": [
+            "cartservice",
+            "shippingservice"
+          ]
+        },
+        {
+          "type": "change_port",
+          "new_port": 52004
+        }
+      ]
+    },
+    {
+      "policies_to_inject": [
+        "network-policy-redis",
+        "network-policy-cartservice"
+      ],
+      "inject_error_num": [
+        2
+      ],
+      "error_detail": [
+        {
+          "type": "add_ingress",
+          "app": [
+            "shippingservice",
+            "cartservice"
+          ]
+        },
+        {
+          "type": "change_port",
+          "new_port": 23596
+        }
+      ]
+    },
+    {
+      "policies_to_inject": [
+        "network-policy-redis",
+        "network-policy-paymentservice"
+      ],
+      "inject_error_num": [
+        2
+      ],
+      "error_detail": [
+        {
+          "type": "add_ingress",
+          "app": [
+            "productcatalogservice",
+            "emailservice"
+          ]
+        },
+        {
+          "type": "change_port",
+          "new_port": 64213
+        }
+      ]
+    },
+    {
+      "policies_to_inject": [
+        "network-policy-emailservice",
+        "network-policy-checkoutservice"
+      ],
+      "inject_error_num": [
+        2
+      ],
+      "error_detail": [
+        {
+          "type": "add_ingress",
+          "app": [
+            "loadgenerator",
+            "recommendationservice"
+          ]
+        },
+        {
+          "type": "change_port",
+          "new_port": 56473
+        }
+      ]
+    },
+    {
+      "policies_to_inject": [
+        "network-policy-frontend",
+        "network-policy-checkoutservice"
+      ],
+      "inject_error_num": [
+        2
+      ],
+      "error_detail": [
+        {
+          "type": "add_ingress",
+          "app": [
+            "adservice",
+            "cartservice"
+          ]
+        },
+        {
+          "type": "change_port",
+          "new_port": 45881
+        }
+      ]
+    },
+    {
+      "policies_to_inject": [
+        "network-policy-redis",
+        "network-policy-paymentservice"
+      ],
+      "inject_error_num": [
+        2
+      ],
+      "error_detail": [
+        {
+          "type": "add_ingress",
+          "app": [
+            "cartservice",
+            "emailservice"
+          ]
+        },
+        {
+          "type": "change_port",
+          "new_port": 18511
+        }
+      ]
+    },
+    {
+      "policies_to_inject": [
+        "network-policy-shippingservice",
+        "network-policy-paymentservice"
+      ],
+      "inject_error_num": [
+        2
+      ],
+      "error_detail": [
+        {
+          "type": "add_ingress",
+          "app": [
+            "recommendationservice",
+            "adservice"
+          ]
+        },
+        {
+          "type": "change_port",
+          "new_port": 38033
+        }
+      ]
+    },
+    {
+      "policies_to_inject": [
+        "network-policy-frontend",
+        "network-policy-recommendationservice"
+      ],
+      "inject_error_num": [
+        2
+      ],
+      "error_detail": [
+        {
+          "type": "add_ingress",
+          "app": [
+            "shippingservice",
+            "recommendationservice"
+          ]
+        },
+        {
+          "type": "change_port",
+          "new_port": 57626
+        }
+      ]
+    },
+    {
+      "policies_to_inject": [
+        "network-policy-currencyservice",
+        "network-policy-paymentservice"
+      ],
+      "inject_error_num": [
+        2
+      ],
+      "error_detail": [
+        {
+          "type": "add_ingress",
+          "app": [
+            "adservice",
+            "emailservice"
+          ]
+        },
+        {
+          "type": "change_port",
+          "new_port": 41188
+        }
+      ]
+    },
+    {
+      "policies_to_inject": [
+        "network-policy-paymentservice",
+        "network-policy-shippingservice"
+      ],
+      "inject_error_num": [
+        2
+      ],
+      "error_detail": [
+        {
+          "type": "add_ingress",
+          "app": [
+            "frontend",
+            "shippingservice"
+          ]
+        },
+        {
+          "type": "change_port",
+          "new_port": 17563
+        }
+      ]
+    },
+    {
+      "policies_to_inject": [
+        "network-policy-recommendationservice",
+        "network-policy-shippingservice"
+      ],
+      "inject_error_num": [
+        2
+      ],
+      "error_detail": [
+        {
+          "type": "add_ingress",
+          "app": [
+            "checkoutservice",
+            "shippingservice"
+          ]
+        },
+        {
+          "type": "change_protocol",
+          "new_protocol": "UDP"
+        }
+      ]
+    },
+    {
+      "policies_to_inject": [
+        "network-policy-recommendationservice",
+        "network-policy-cartservice"
+      ],
+      "inject_error_num": [
+        2
+      ],
+      "error_detail": [
+        {
+          "type": "add_ingress",
+          "app": [
+            "checkoutservice",
+            "adservice"
+          ]
+        },
+        {
+          "type": "change_protocol",
+          "new_protocol": "SCTP"
+        }
+      ]
+    },
+    {
+      "policies_to_inject": [
+        "network-policy-checkoutservice",
+        "network-policy-emailservice"
+      ],
+      "inject_error_num": [
+        2
+      ],
+      "error_detail": [
+        {
+          "type": "add_ingress",
+          "app": [
+            "emailservice",
+            "cartservice"
+          ]
+        },
+        {
+          "type": "change_protocol",
+          "new_protocol": "SCTP"
+        }
+      ]
+    },
+    {
+      "policies_to_inject": [
+        "network-policy-cartservice",
+        "network-policy-productcatalogservice"
+      ],
+      "inject_error_num": [
+        2
+      ],
+      "error_detail": [
+        {
+          "type": "add_ingress",
+          "app": [
+            "productcatalogservice",
+            "shippingservice"
+          ]
+        },
+        {
+          "type": "change_protocol",
+          "new_protocol": "SCTP"
+        }
+      ]
+    },
+    {
+      "policies_to_inject": [
+        "network-policy-shippingservice",
+        "network-policy-recommendationservice"
+      ],
+      "inject_error_num": [
+        2
+      ],
+      "error_detail": [
+        {
+          "type": "add_ingress",
+          "app": [
+            "adservice",
+            "cartservice"
+          ]
+        },
+        {
+          "type": "change_protocol",
+          "new_protocol": "UDP"
+        }
+      ]
+    },
+    {
+      "policies_to_inject": [
+        "network-policy-redis",
+        "network-policy-checkoutservice"
+      ],
+      "inject_error_num": [
+        2
+      ],
+      "error_detail": [
+        {
+          "type": "add_ingress",
+          "app": [
+            "cartservice",
+            "productcatalogservice"
+          ]
+        },
+        {
+          "type": "change_protocol",
+          "new_protocol": "UDP"
+        }
+      ]
+    },
+    {
+      "policies_to_inject": [
+        "network-policy-checkoutservice",
+        "network-policy-adservice"
+      ],
+      "inject_error_num": [
+        2
+      ],
+      "error_detail": [
+        {
+          "type": "add_ingress",
+          "app": [
+            "cartservice",
+            "recommendationservice"
+          ]
+        },
+        {
+          "type": "change_protocol",
+          "new_protocol": "UDP"
+        }
+      ]
+    },
+    {
+      "policies_to_inject": [
+        "network-policy-recommendationservice",
+        "network-policy-shippingservice"
+      ],
+      "inject_error_num": [
+        2
+      ],
+      "error_detail": [
+        {
+          "type": "add_ingress",
+          "app": [
+            "productcatalogservice",
+            "cartservice"
+          ]
+        },
+        {
+          "type": "change_protocol",
+          "new_protocol": "SCTP"
+        }
+      ]
+    },
+    {
+      "policies_to_inject": [
+        "network-policy-cartservice",
+        "network-policy-shippingservice"
+      ],
+      "inject_error_num": [
+        2
+      ],
+      "error_detail": [
+        {
+          "type": "add_ingress",
+          "app": [
+            "emailservice",
+            "shippingservice"
+          ]
+        },
+        {
+          "type": "change_protocol",
+          "new_protocol": "UDP"
+        }
+      ]
+    },
+    {
+      "policies_to_inject": [
+        "network-policy-redis",
+        "network-policy-productcatalogservice"
+      ],
+      "inject_error_num": [
+        2
+      ],
+      "error_detail": [
+        {
+          "type": "add_ingress",
+          "app": [
+            "cartservice",
+            "emailservice"
+          ]
+        },
+        {
+          "type": "change_protocol",
+          "new_protocol": "UDP"
+        }
+      ]
+    },
+    {
+      "policies_to_inject": [
+        "network-policy-cartservice",
+        "network-policy-cartservice"
+      ],
+      "inject_error_num": [
+        2
+      ],
+      "error_detail": [
+        {
+          "type": "add_ingress",
+          "app": [
+            "productcatalogservice",
+            "shippingservice"
+          ]
+        },
+        {
+          "type": "add_egress",
+          "app": [
+            "shippingservice",
+            "adservice"
+          ]
+        }
+      ]
+    },
+    {
+      "policies_to_inject": [
+        "network-policy-recommendationservice",
+        "network-policy-checkoutservice"
+      ],
+      "inject_error_num": [
+        2
+      ],
+      "error_detail": [
+        {
+          "type": "add_ingress",
+          "app": [
+            "productcatalogservice",
+            "shippingservice"
+          ]
+        },
+        {
+          "type": "add_egress",
+          "app": [
+            "shippingservice",
+            "productcatalogservice"
+          ]
+        }
+      ]
+    },
+    {
+      "policies_to_inject": [
+        "network-policy-shippingservice",
+        "network-policy-recommendationservice"
+      ],
+      "inject_error_num": [
+        2
+      ],
+      "error_detail": [
+        {
+          "type": "add_ingress",
+          "app": [
+            "recommendationservice",
+            "cartservice"
+          ]
+        },
+        {
+          "type": "add_egress",
+          "app": [
+            "emailservice",
+            "checkoutservice"
+          ]
+        }
+      ]
+    },
+    {
+      "policies_to_inject": [
+        "network-policy-recommendationservice",
+        "network-policy-recommendationservice"
+      ],
+      "inject_error_num": [
+        2
+      ],
+      "error_detail": [
+        {
+          "type": "add_ingress",
+          "app": [
+            "productcatalogservice",
+            "shippingservice"
+          ]
+        },
+        {
+          "type": "add_egress",
+          "app": [
+            "paymentservice",
+            "cartservice"
+          ]
+        }
+      ]
+    },
+    {
+      "policies_to_inject": [
+        "network-policy-redis",
+        "network-policy-recommendationservice"
+      ],
+      "inject_error_num": [
+        2
+      ],
+      "error_detail": [
+        {
+          "type": "add_ingress",
+          "app": [
+            "adservice",
+            "emailservice"
+          ]
+        },
+        {
+          "type": "add_egress",
+          "app": [
+            "shippingservice",
+            "checkoutservice"
+          ]
+        }
+      ]
+    },
+    {
+      "policies_to_inject": [
+        "network-policy-adservice",
+        "network-policy-recommendationservice"
+      ],
+      "inject_error_num": [
+        2
+      ],
+      "error_detail": [
+        {
+          "type": "add_ingress",
+          "app": [
+            "shippingservice",
+            "cartservice"
+          ]
+        },
+        {
+          "type": "add_egress",
+          "app": [
+            "paymentservice",
+            "cartservice"
+          ]
+        }
+      ]
+    },
+    {
+      "policies_to_inject": [
+        "network-policy-frontend",
+        "network-policy-frontend"
+      ],
+      "inject_error_num": [
+        2
+      ],
+      "error_detail": [
+        {
+          "type": "add_ingress",
+          "app": [
+            "cartservice",
+            "emailservice"
+          ]
+        },
+        {
+          "type": "add_egress",
+          "app": [
+            "emailservice",
+            "recommendationservice"
+          ]
+        }
+      ]
+    },
+    {
+      "policies_to_inject": [
+        "network-policy-adservice",
+        "network-policy-checkoutservice"
+      ],
+      "inject_error_num": [
+        2
+      ],
+      "error_detail": [
+        {
+          "type": "add_ingress",
+          "app": [
+            "recommendationservice",
+            "productcatalogservice"
+          ]
+        },
+        {
+          "type": "add_egress",
+          "app": [
+            "currencyservice",
+            "adservice"
+          ]
+        }
+      ]
+    },
+    {
+      "policies_to_inject": [
+        "network-policy-cartservice",
+        "network-policy-cartservice"
+      ],
+      "inject_error_num": [
+        2
+      ],
+      "error_detail": [
+        {
+          "type": "add_ingress",
+          "app": [
+            "productcatalogservice",
+            "shippingservice"
+          ]
+        },
+        {
+          "type": "add_egress",
+          "app": [
+            "adservice",
+            "emailservice"
+          ]
+        }
+      ]
+    },
+    {
+      "policies_to_inject": [
+        "network-policy-paymentservice",
+        "network-policy-recommendationservice"
+      ],
+      "inject_error_num": [
+        2
+      ],
+      "error_detail": [
+        {
+          "type": "add_ingress",
+          "app": [
+            "adservice",
+            "productcatalogservice"
+          ]
+        },
+        {
+          "type": "add_egress",
+          "app": [
+            "redis-cart",
+            "paymentservice"
+          ]
+        }
+      ]
+    },
+    {
+      "policies_to_inject": [
+        "network-policy-redis",
+        "network-policy-cartservice"
+      ],
+      "inject_error_num": [
+        2
+      ],
+      "error_detail": [
+        {
+          "type": "change_port",
+          "new_port": 8981
+        },
+        {
+          "type": "change_protocol",
+          "new_protocol": "UDP"
+        }
+      ]
+    },
+    {
+      "policies_to_inject": [
+        "network-policy-checkoutservice",
+        "network-policy-emailservice"
+      ],
+      "inject_error_num": [
+        2
+      ],
+      "error_detail": [
+        {
+          "type": "change_port",
+          "new_port": 6976
+        },
+        {
+          "type": "change_protocol",
+          "new_protocol": "SCTP"
+        }
+      ]
+    },
+    {
+      "policies_to_inject": [
+        "network-policy-adservice",
+        "network-policy-cartservice"
+      ],
+      "inject_error_num": [
+        2
+      ],
+      "error_detail": [
+        {
+          "type": "change_port",
+          "new_port": 12269
+        },
+        {
+          "type": "change_protocol",
+          "new_protocol": "SCTP"
+        }
+      ]
+    },
+    {
+      "policies_to_inject": [
+        "network-policy-emailservice",
+        "network-policy-paymentservice"
+      ],
+      "inject_error_num": [
+        2
+      ],
+      "error_detail": [
+        {
+          "type": "change_port",
+          "new_port": 7127
+        },
+        {
+          "type": "change_protocol",
+          "new_protocol": "SCTP"
+        }
+      ]
+    },
+    {
+      "policies_to_inject": [
+        "network-policy-adservice",
+        "network-policy-checkoutservice"
+      ],
+      "inject_error_num": [
+        2
+      ],
+      "error_detail": [
+        {
+          "type": "change_port",
+          "new_port": 873
+        },
+        {
+          "type": "change_protocol",
+          "new_protocol": "SCTP"
+        }
+      ]
+    },
+    {
+      "policies_to_inject": [
+        "network-policy-currencyservice",
+        "network-policy-emailservice"
+      ],
+      "inject_error_num": [
+        2
+      ],
+      "error_detail": [
+        {
+          "type": "change_port",
+          "new_port": 10615
+        },
+        {
+          "type": "change_protocol",
+          "new_protocol": "SCTP"
+        }
+      ]
+    },
+    {
+      "policies_to_inject": [
+        "network-policy-recommendationservice",
+        "network-policy-recommendationservice"
+      ],
+      "inject_error_num": [
+        2
+      ],
+      "error_detail": [
+        {
+          "type": "change_port",
+          "new_port": 40556
+        },
+        {
+          "type": "change_protocol",
+          "new_protocol": "SCTP"
+        }
+      ]
+    },
+    {
+      "policies_to_inject": [
+        "network-policy-paymentservice",
+        "network-policy-productcatalogservice"
+      ],
+      "inject_error_num": [
+        2
+      ],
+      "error_detail": [
+        {
+          "type": "change_port",
+          "new_port": 4536
+        },
+        {
+          "type": "change_protocol",
+          "new_protocol": "UDP"
+        }
+      ]
+    },
+    {
+      "policies_to_inject": [
+        "network-policy-cartservice",
+        "network-policy-emailservice"
+      ],
+      "inject_error_num": [
+        2
+      ],
+      "error_detail": [
+        {
+          "type": "change_port",
+          "new_port": 8717
+        },
+        {
+          "type": "change_protocol",
+          "new_protocol": "SCTP"
+        }
+      ]
+    },
+    {
+      "policies_to_inject": [
+        "network-policy-currencyservice",
+        "network-policy-recommendationservice"
+      ],
+      "inject_error_num": [
+        2
+      ],
+      "error_detail": [
+        {
+          "type": "change_port",
+          "new_port": 14948
+        },
+        {
+          "type": "change_protocol",
+          "new_protocol": "UDP"
+        }
+      ]
+    },
+    {
+      "policies_to_inject": [
+        "network-policy-checkoutservice",
+        "network-policy-frontend"
+      ],
+      "inject_error_num": [
+        2
+      ],
+      "error_detail": [
+        {
+          "type": "change_port",
+          "new_port": 34553
+        },
+        {
+          "type": "add_egress",
+          "app": [
+            "adservice",
+            "checkoutservice"
+          ]
+        }
+      ]
+    },
+    {
+      "policies_to_inject": [
+        "network-policy-paymentservice",
+        "network-policy-frontend"
+      ],
+      "inject_error_num": [
+        2
+      ],
+      "error_detail": [
+        {
+          "type": "change_port",
+          "new_port": 37521
+        },
+        {
+          "type": "add_egress",
+          "app": [
+            "recommendationservice",
+            "emailservice"
+          ]
+        }
+      ]
+    },
+    {
+      "policies_to_inject": [
+        "network-policy-recommendationservice",
+        "network-policy-checkoutservice"
+      ],
+      "inject_error_num": [
+        2
+      ],
+      "error_detail": [
+        {
+          "type": "change_port",
+          "new_port": 32342
+        },
+        {
+          "type": "add_egress",
+          "app": [
+            "redis-cart",
+            "cartservice"
+          ]
+        }
+      ]
+    },
+    {
+      "policies_to_inject": [
+        "network-policy-shippingservice",
+        "network-policy-recommendationservice"
+      ],
+      "inject_error_num": [
+        2
+      ],
+      "error_detail": [
+        {
+          "type": "change_port",
+          "new_port": 8726
+        },
+        {
+          "type": "add_egress",
+          "app": [
+            "checkoutservice",
+            "redis-cart"
+          ]
+        }
+      ]
+    },
+    {
+      "policies_to_inject": [
+        "network-policy-checkoutservice",
+        "network-policy-cartservice"
+      ],
+      "inject_error_num": [
+        2
+      ],
+      "error_detail": [
+        {
+          "type": "change_port",
+          "new_port": 37441
+        },
+        {
+          "type": "add_egress",
+          "app": [
+            "productcatalogservice",
+            "emailservice"
+          ]
+        }
+      ]
+    },
+    {
+      "policies_to_inject": [
+        "network-policy-currencyservice",
+        "network-policy-checkoutservice"
+      ],
+      "inject_error_num": [
+        2
+      ],
+      "error_detail": [
+        {
+          "type": "change_port",
+          "new_port": 64404
+        },
+        {
+          "type": "add_egress",
+          "app": [
+            "paymentservice",
+            "productcatalogservice"
+          ]
+        }
+      ]
+    },
+    {
+      "policies_to_inject": [
+        "network-policy-productcatalogservice",
+        "network-policy-recommendationservice"
+      ],
+      "inject_error_num": [
+        2
+      ],
+      "error_detail": [
+        {
+          "type": "change_port",
+          "new_port": 37017
+        },
+        {
+          "type": "add_egress",
+          "app": [
+            "adservice",
+            "paymentservice"
+          ]
+        }
+      ]
+    },
+    {
+      "policies_to_inject": [
+        "network-policy-productcatalogservice",
+        "network-policy-checkoutservice"
+      ],
+      "inject_error_num": [
+        2
+      ],
+      "error_detail": [
+        {
+          "type": "change_port",
+          "new_port": 29896
+        },
+        {
+          "type": "add_egress",
+          "app": [
+            "productcatalogservice",
+            "cartservice"
+          ]
+        }
+      ]
+    },
+    {
+      "policies_to_inject": [
+        "network-policy-productcatalogservice",
+        "network-policy-cartservice"
+      ],
+      "inject_error_num": [
+        2
+      ],
+      "error_detail": [
+        {
+          "type": "change_port",
+          "new_port": 6992
+        },
+        {
+          "type": "add_egress",
+          "app": [
+            "adservice",
+            "paymentservice"
+          ]
+        }
+      ]
+    },
+    {
+      "policies_to_inject": [
+        "network-policy-productcatalogservice",
+        "network-policy-frontend"
+      ],
+      "inject_error_num": [
+        2
+      ],
+      "error_detail": [
+        {
+          "type": "change_port",
+          "new_port": 1020
+        },
+        {
+          "type": "add_egress",
+          "app": [
+            "cartservice",
+            "checkoutservice"
+          ]
+        }
+      ]
+    },
+    {
+      "policies_to_inject": [
+        "network-policy-currencyservice",
+        "network-policy-checkoutservice"
+      ],
+      "inject_error_num": [
+        2
+      ],
+      "error_detail": [
+        {
+          "type": "change_protocol",
+          "new_protocol": "UDP"
+        },
+        {
+          "type": "add_egress",
+          "app": [
+            "redis-cart",
+            "recommendationservice"
+          ]
+        }
+      ]
+    },
+    {
+      "policies_to_inject": [
+        "network-policy-recommendationservice",
+        "network-policy-frontend"
+      ],
+      "inject_error_num": [
+        2
+      ],
+      "error_detail": [
+        {
+          "type": "change_protocol",
+          "new_protocol": "SCTP"
+        },
+        {
+          "type": "add_egress",
+          "app": [
+            "paymentservice",
+            "currencyservice"
+          ]
+        }
+      ]
+    },
+    {
+      "policies_to_inject": [
+        "network-policy-cartservice",
+        "network-policy-frontend"
+      ],
+      "inject_error_num": [
+        2
+      ],
+      "error_detail": [
+        {
+          "type": "change_protocol",
+          "new_protocol": "SCTP"
+        },
+        {
+          "type": "add_egress",
+          "app": [
+            "cartservice",
+            "recommendationservice"
+          ]
+        }
+      ]
+    },
+    {
+      "policies_to_inject": [
+        "network-policy-adservice",
+        "network-policy-checkoutservice"
+      ],
+      "inject_error_num": [
+        2
+      ],
+      "error_detail": [
+        {
+          "type": "change_protocol",
+          "new_protocol": "SCTP"
+        },
+        {
+          "type": "add_egress",
+          "app": [
+            "cartservice",
+            "currencyservice"
+          ]
+        }
+      ]
+    },
+    {
+      "policies_to_inject": [
+        "network-policy-shippingservice",
+        "network-policy-checkoutservice"
+      ],
+      "inject_error_num": [
+        2
+      ],
+      "error_detail": [
+        {
+          "type": "change_protocol",
+          "new_protocol": "UDP"
+        },
+        {
+          "type": "add_egress",
+          "app": [
+            "adservice",
+            "emailservice"
+          ]
+        }
+      ]
+    },
+    {
+      "policies_to_inject": [
+        "network-policy-currencyservice",
+        "network-policy-cartservice"
+      ],
+      "inject_error_num": [
+        2
+      ],
+      "error_detail": [
+        {
+          "type": "change_protocol",
+          "new_protocol": "SCTP"
+        },
+        {
+          "type": "add_egress",
+          "app": [
+            "currencyservice",
+            "paymentservice"
+          ]
+        }
+      ]
+    },
+    {
+      "policies_to_inject": [
+        "network-policy-paymentservice",
+        "network-policy-checkoutservice"
+      ],
+      "inject_error_num": [
+        2
+      ],
+      "error_detail": [
+        {
+          "type": "change_protocol",
+          "new_protocol": "SCTP"
+        },
+        {
+          "type": "add_egress",
+          "app": [
+            "adservice",
+            "emailservice"
+          ]
+        }
+      ]
+    },
+    {
+      "policies_to_inject": [
+        "network-policy-recommendationservice",
+        "network-policy-cartservice"
+      ],
+      "inject_error_num": [
+        2
+      ],
+      "error_detail": [
+        {
+          "type": "change_protocol",
+          "new_protocol": "UDP"
+        },
+        {
+          "type": "add_egress",
+          "app": [
+            "emailservice",
+            "recommendationservice"
+          ]
+        }
+      ]
+    },
+    {
+      "policies_to_inject": [
+        "network-policy-recommendationservice",
+        "network-policy-frontend"
+      ],
+      "inject_error_num": [
+        2
+      ],
+      "error_detail": [
+        {
+          "type": "change_protocol",
+          "new_protocol": "SCTP"
+        },
+        {
+          "type": "add_egress",
+          "app": [
+            "currencyservice",
+            "emailservice"
+          ]
+        }
+      ]
+    },
+    {
+      "policies_to_inject": [
+        "network-policy-recommendationservice",
+        "network-policy-frontend"
+      ],
+      "inject_error_num": [
+        2
+      ],
+      "error_detail": [
+        {
+          "type": "change_protocol",
+          "new_protocol": "UDP"
+        },
+        {
+          "type": "add_egress",
+          "app": [
+            "productcatalogservice",
+            "recommendationservice"
+          ]
+        }
+      ]
+    }
+  ]
+}

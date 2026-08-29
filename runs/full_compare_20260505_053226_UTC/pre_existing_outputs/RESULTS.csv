@@ -1,0 +1,78 @@
+scope,method,n,correctness,safety,avg_latency_s
+overall,baseline_zeroshot_base,1000,0.200000,0.167000,0.277630
+overall,baseline_zeroshot_cot,1000,0.139000,0.234000,0.388690
+overall,baseline_fewshot_base,1000,0.500000,0.358000,0.275083
+overall,baseline_fewshot_semantic,1000,0.996000,0.585000,0.266701
+overall,baseline_sft_only,1000,1.000000,0.000000,0.234193
+overall,vista_base,1000,1.000000,0.709000,2.561706
+overall,vista_sft,1000,1.000000,0.709000,2.607846
+"capacity planning, level-1, add",baseline_zeroshot_base,100,1.000000,1.000000,0.197017
+"capacity planning, level-1, add",baseline_zeroshot_cot,100,0.390000,0.770000,0.382669
+"capacity planning, level-1, add",baseline_fewshot_base,100,1.000000,1.000000,0.274152
+"capacity planning, level-1, add",baseline_fewshot_semantic,100,1.000000,0.250000,0.237701
+"capacity planning, level-1, add",baseline_sft_only,100,1.000000,0.000000,0.218761
+"capacity planning, level-1, add",vista_base,100,1.000000,1.000000,2.263188
+"capacity planning, level-1, add",vista_sft,100,1.000000,1.000000,2.351261
+"capacity planning, level-1, list",baseline_zeroshot_base,100,0.000000,0.000000,0.186008
+"capacity planning, level-1, list",baseline_zeroshot_cot,100,0.000000,0.000000,0.261315
+"capacity planning, level-1, list",baseline_fewshot_base,100,0.000000,0.000000,0.241830
+"capacity planning, level-1, list",baseline_fewshot_semantic,100,1.000000,1.000000,0.207008
+"capacity planning, level-1, list",baseline_sft_only,100,1.000000,0.000000,0.190938
+"capacity planning, level-1, list",vista_base,100,1.000000,1.000000,2.189003
+"capacity planning, level-1, list",vista_sft,100,1.000000,1.000000,2.259384
+"capacity planning, level-1, rank",baseline_zeroshot_base,100,0.000000,0.200000,0.392153
+"capacity planning, level-1, rank",baseline_zeroshot_cot,100,0.000000,1.000000,0.453793
+"capacity planning, level-1, rank",baseline_fewshot_base,100,1.000000,1.000000,0.235489
+"capacity planning, level-1, rank",baseline_fewshot_semantic,100,1.000000,1.000000,0.204790
+"capacity planning, level-1, rank",baseline_sft_only,100,1.000000,0.000000,0.182580
+"capacity planning, level-1, rank",vista_base,100,1.000000,1.000000,2.234369
+"capacity planning, level-1, rank",vista_sft,100,1.000000,1.000000,2.284156
+"capacity planning, level-1, remove",baseline_zeroshot_base,100,1.000000,0.470000,0.181218
+"capacity planning, level-1, remove",baseline_zeroshot_cot,100,1.000000,0.470000,0.290834
+"capacity planning, level-1, remove",baseline_fewshot_base,100,1.000000,0.470000,0.245570
+"capacity planning, level-1, remove",baseline_fewshot_semantic,100,1.000000,0.020000,0.197596
+"capacity planning, level-1, remove",baseline_sft_only,100,1.000000,0.000000,0.184907
+"capacity planning, level-1, remove",vista_base,100,1.000000,0.470000,3.619535
+"capacity planning, level-1, remove",vista_sft,100,1.000000,0.470000,3.669700
+"capacity planning, level-2, remove-count",baseline_zeroshot_base,100,0.000000,0.000000,0.257970
+"capacity planning, level-2, remove-count",baseline_zeroshot_cot,100,0.000000,0.000000,0.395896
+"capacity planning, level-2, remove-count",baseline_fewshot_base,100,0.000000,0.000000,0.279385
+"capacity planning, level-2, remove-count",baseline_fewshot_semantic,100,1.000000,0.550000,0.308442
+"capacity planning, level-2, remove-count",baseline_sft_only,100,1.000000,0.000000,0.266370
+"capacity planning, level-2, remove-count",vista_base,100,1.000000,0.550000,2.580312
+"capacity planning, level-2, remove-count",vista_sft,100,1.000000,0.550000,2.579760
+"capacity planning, level-2, remove-list",baseline_zeroshot_base,100,0.000000,0.000000,0.258002
+"capacity planning, level-2, remove-list",baseline_zeroshot_cot,100,0.000000,0.100000,0.427993
+"capacity planning, level-2, remove-list",baseline_fewshot_base,100,0.000000,0.000000,0.273959
+"capacity planning, level-2, remove-list",baseline_fewshot_semantic,100,0.960000,0.430000,0.280789
+"capacity planning, level-2, remove-list",baseline_sft_only,100,1.000000,0.000000,0.245868
+"capacity planning, level-2, remove-list",vista_base,100,1.000000,0.470000,2.462470
+"capacity planning, level-2, remove-list",vista_sft,100,1.000000,0.470000,2.603403
+"capacity planning, level-2, remove-rank",baseline_zeroshot_base,100,0.000000,0.000000,0.321218
+"capacity planning, level-2, remove-rank",baseline_zeroshot_cot,100,0.000000,0.000000,0.491308
+"capacity planning, level-2, remove-rank",baseline_fewshot_base,100,1.000000,0.460000,0.285849
+"capacity planning, level-2, remove-rank",baseline_fewshot_semantic,100,1.000000,0.460000,0.281616
+"capacity planning, level-2, remove-rank",baseline_sft_only,100,1.000000,0.000000,0.242625
+"capacity planning, level-2, remove-rank",vista_base,100,1.000000,0.460000,2.501413
+"capacity planning, level-2, remove-rank",vista_sft,100,1.000000,0.460000,2.464631
+"capacity planning, level-3, add-count",baseline_zeroshot_base,100,0.000000,0.000000,0.296370
+"capacity planning, level-3, add-count",baseline_zeroshot_cot,100,0.000000,0.000000,0.343754
+"capacity planning, level-3, add-count",baseline_fewshot_base,100,0.000000,0.000000,0.306513
+"capacity planning, level-3, add-count",baseline_fewshot_semantic,100,1.000000,1.000000,0.345859
+"capacity planning, level-3, add-count",baseline_sft_only,100,1.000000,0.000000,0.294043
+"capacity planning, level-3, add-count",vista_base,100,1.000000,1.000000,2.623254
+"capacity planning, level-3, add-count",vista_sft,100,1.000000,1.000000,2.733994
+"capacity planning, level-3, add-list",baseline_zeroshot_base,100,0.000000,0.000000,0.262399
+"capacity planning, level-3, add-list",baseline_zeroshot_cot,100,0.000000,0.000000,0.369338
+"capacity planning, level-3, add-list",baseline_fewshot_base,100,0.000000,0.000000,0.294354
+"capacity planning, level-3, add-list",baseline_fewshot_semantic,100,1.000000,0.490000,0.305316
+"capacity planning, level-3, add-list",baseline_sft_only,100,1.000000,0.000000,0.262370
+"capacity planning, level-3, add-list",vista_base,100,1.000000,0.490000,2.521728
+"capacity planning, level-3, add-list",vista_sft,100,1.000000,0.490000,2.563758
+"capacity planning, level-3, add-rank",baseline_zeroshot_base,100,0.000000,0.000000,0.423946
+"capacity planning, level-3, add-rank",baseline_zeroshot_cot,100,0.000000,0.000000,0.469994
+"capacity planning, level-3, add-rank",baseline_fewshot_base,100,1.000000,0.650000,0.313727
+"capacity planning, level-3, add-rank",baseline_fewshot_semantic,100,1.000000,0.650000,0.297890
+"capacity planning, level-3, add-rank",baseline_sft_only,100,1.000000,0.000000,0.253464
+"capacity planning, level-3, add-rank",vista_base,100,1.000000,0.650000,2.621791
+"capacity planning, level-3, add-rank",vista_sft,100,1.000000,0.650000,2.568409

@@ -1,0 +1,82 @@
+LLM Command: ```kubectl get networkpolicy frontend -o yaml```
+Output: ```apiVersion: networking.k8s.io/v1
+kind: NetworkPolicy
+metadata:
+  annotations:
+    kubectl.kubernetes.io/last-applied-configuration: |
+      {"apiVersion":"networking.k8s.io/v1","kind":"NetworkPolicy","metadata":{"annotations":{},"name":"frontend","namespace":"default"},"spec":{"egress":[{}],"ingress":[{}],"podSelector":{"matchLabels":{"app":"frontend"}},"policyTypes":["Ingress","Egress"]}}
+  creationTimestamp: "2026-05-13T20:40:21Z"
+  generation: 16
+  name: frontend
+  namespace: default
+  resourceVersion: "362257"
+  uid: 07174b3a-dd44-4738-bdc8-32c899640d56
+spec:
+  egress:
+  - {}
+  ingress:
+  - {}
+  podSelector:
+    matchLabels:
+      app: frontend
+  policyTypes:
+  - Ingress
+  - Egress
+```
+Mismatch Summary: ```Mismatch: cartservice → productcatalogservice:3550 (Expected: False, Actual: True)
+Mismatch: checkoutservice → emailservice:5000 (Expected: True, Actual: False)```
+
+LLM Command: ```kubectl get networkpolicy productcatalog -o yaml```
+Output: ```Error from server (NotFound): networkpolicies.networking.k8s.io "productcatalog" not found
+```
+Mismatch Summary: ```Mismatch: cartservice → productcatalogservice:3550 (Expected: False, Actual: True)
+Mismatch: checkoutservice → emailservice:5000 (Expected: True, Actual: False)```
+
+LLM Command: ```kubectl get networkpolicy productcatalog -o yaml```
+Output: ```Error from server (NotFound): networkpolicies.networking.k8s.io "productcatalog" not found
+```
+Mismatch Summary: ```Mismatch: cartservice → productcatalogservice:3550 (Expected: False, Actual: True)
+Mismatch: checkoutservice → emailservice:5000 (Expected: True, Actual: False)```
+
+LLM Command: ```kubectl get networkpolicy productcatalog -o yaml```
+Output: ```Error from server (NotFound): networkpolicies.networking.k8s.io "productcatalog" not found
+```
+Mismatch Summary: ```Mismatch: cartservice → productcatalogservice:3550 (Expected: False, Actual: True)
+Mismatch: checkoutservice → emailservice:5000 (Expected: True, Actual: False)```
+
+LLM Command: ```kubectl get networkpolicy productcatalog -o yaml```
+Output: ```Error from server (NotFound): networkpolicies.networking.k8s.io "productcatalog" not found
+```
+Mismatch Summary: ```Mismatch: cartservice → productcatalogservice:3550 (Expected: False, Actual: True)
+Mismatch: checkoutservice → emailservice:5000 (Expected: True, Actual: False)```
+
+LLM Command: ```kubectl get networkpolicy productcatalog -o yaml```
+Output: ```Error from server (NotFound): networkpolicies.networking.k8s.io "productcatalog" not found
+```
+Mismatch Summary: ```Mismatch: cartservice → productcatalogservice:3550 (Expected: False, Actual: True)
+Mismatch: checkoutservice → emailservice:5000 (Expected: True, Actual: False)```
+
+LLM Command: ```kubectl get networkpolicy productcatalog -o yaml```
+Output: ```Error from server (NotFound): networkpolicies.networking.k8s.io "productcatalog" not found
+```
+Mismatch Summary: ```Mismatch: cartservice → productcatalogservice:3550 (Expected: False, Actual: True)
+Mismatch: checkoutservice → emailservice:5000 (Expected: True, Actual: False)```
+
+LLM Command: ```kubectl get networkpolicy productcatalog -o yaml```
+Output: ```Error from server (NotFound): networkpolicies.networking.k8s.io "productcatalog" not found
+```
+Mismatch Summary: ```Mismatch: cartservice → productcatalogservice:3550 (Expected: False, Actual: True)
+Mismatch: checkoutservice → emailservice:5000 (Expected: True, Actual: False)```
+
+LLM Command: ```kubectl get networkpolicy productcatalog -o yaml```
+Output: ```Error from server (NotFound): networkpolicies.networking.k8s.io "productcatalog" not found
+```
+Mismatch Summary: ```Mismatch: cartservice → productcatalogservice:3550 (Expected: False, Actual: True)
+Mismatch: checkoutservice → emailservice:5000 (Expected: True, Actual: False)```
+
+LLM Command: ```kubectl get networkpolicy productcatalog -o yaml```
+Output: ```Error from server (NotFound): networkpolicies.networking.k8s.io "productcatalog" not found
+```
+Mismatch Summary: ```Mismatch: cartservice → productcatalogservice:3550 (Expected: False, Actual: True)
+Mismatch: checkoutservice → emailservice:5000 (Expected: True, Actual: False)```
+

@@ -1,0 +1,42 @@
+[
+    {
+        "packet_loss": 66,
+        "elapsed_time": 0.5952556659976835
+    },
+    {
+        "packet_loss": 66,
+        "elapsed_time": 0.6155438690002484
+    },
+    {
+        "packet_loss": 66,
+        "elapsed_time": 1.2480485790001694
+    },
+    {
+        "packet_loss": 66,
+        "elapsed_time": 1.362827261997154
+    },
+    {
+        "packet_loss": 66,
+        "elapsed_time": 1.3893950800011226
+    },
+    {
+        "packet_loss": 66,
+        "elapsed_time": 1.475117642999976
+    },
+    {
+        "packet_loss": 66,
+        "elapsed_time": 1.4962904450003407
+    },
+    {
+        "packet_loss": 66,
+        "elapsed_time": 1.517690009000944
+    },
+    {
+        "packet_loss": 66,
+        "elapsed_time": 1.5248162130010314
+    },
+    {
+        "packet_loss": 66,
+        "elapsed_time": 1.5493551429972285
+    }
+]

@@ -1,0 +1,52 @@
+[
+    {
+        "llm_command": "kubectl get networkpolicy frontend -o yaml",
+        "output": "apiVersion: networking.k8s.io/v1\nkind: NetworkPolicy\nmetadata:\n  annotations:\n    kubectl.kubernetes.io/last-applied-configuration: |\n      {\"apiVersion\":\"networking.k8s.io/v1\",\"kind\":\"NetworkPolicy\",\"metadata\":{\"annotations\":{},\"name\":\"frontend\",\"namespace\":\"default\"},\"spec\":{\"egress\":[{}],\"ingress\":[{}],\"podSelector\":{\"matchLabels\":{\"app\":\"frontend\"}},\"policyTypes\":[\"Ingress\",\"Egress\"]}}\n  creationTimestamp: \"2026-05-13T20:40:21Z\"\n  generation: 7\n  name: frontend\n  namespace: default\n  resourceVersion: \"359784\"\n  uid: 07174b3a-dd44-4738-bdc8-32c899640d56\nspec:\n  egress:\n  - {}\n  ingress:\n  - {}\n  podSelector:\n    matchLabels:\n      app: frontend\n  policyTypes:\n  - Ingress\n  - Egress\n",
+        "mismatch_summary": "Mismatch: cartservice \u2192 emailservice:5000 (Expected: False, Actual: True)\nMismatch: shippingservice \u2192 emailservice:5000 (Expected: False, Actual: True)"
+    },
+    {
+        "llm_command": "kubectl get networkpolicy email -o yaml",
+        "output": "Error from server (NotFound): networkpolicies.networking.k8s.io \"email\" not found\n",
+        "mismatch_summary": "Mismatch: cartservice \u2192 emailservice:5000 (Expected: False, Actual: True)\nMismatch: shippingservice \u2192 emailservice:5000 (Expected: False, Actual: True)"
+    },
+    {
+        "llm_command": "kubectl get networkpolicy email -o yaml",
+        "output": "Error from server (NotFound): networkpolicies.networking.k8s.io \"email\" not found\n",
+        "mismatch_summary": "Mismatch: cartservice \u2192 emailservice:5000 (Expected: False, Actual: True)\nMismatch: shippingservice \u2192 emailservice:5000 (Expected: False, Actual: True)"
+    },
+    {
+        "llm_command": "kubectl get networkpolicy email -o yaml",
+        "output": "Error from server (NotFound): networkpolicies.networking.k8s.io \"email\" not found\n",
+        "mismatch_summary": "Mismatch: cartservice \u2192 emailservice:5000 (Expected: False, Actual: True)\nMismatch: shippingservice \u2192 emailservice:5000 (Expected: False, Actual: True)"
+    },
+    {
+        "llm_command": "kubectl get networkpolicy email -o yaml",
+        "output": "Error from server (NotFound): networkpolicies.networking.k8s.io \"email\" not found\n",
+        "mismatch_summary": "Mismatch: cartservice \u2192 emailservice:5000 (Expected: False, Actual: True)\nMismatch: shippingservice \u2192 emailservice:5000 (Expected: False, Actual: True)"
+    },
+    {
+        "llm_command": "kubectl get networkpolicy email -o yaml",
+        "output": "Error from server (NotFound): networkpolicies.networking.k8s.io \"email\" not found\n",
+        "mismatch_summary": "Mismatch: cartservice \u2192 emailservice:5000 (Expected: False, Actual: True)\nMismatch: shippingservice \u2192 emailservice:5000 (Expected: False, Actual: True)"
+    },
+    {
+        "llm_command": "kubectl get networkpolicy email -o yaml",
+        "output": "Error from server (NotFound): networkpolicies.networking.k8s.io \"email\" not found\n",
+        "mismatch_summary": "Mismatch: cartservice \u2192 emailservice:5000 (Expected: False, Actual: True)\nMismatch: shippingservice \u2192 emailservice:5000 (Expected: False, Actual: True)"
+    },
+    {
+        "llm_command": "kubectl get networkpolicy email -o yaml",
+        "output": "Error from server (NotFound): networkpolicies.networking.k8s.io \"email\" not found\n",
+        "mismatch_summary": "Mismatch: cartservice \u2192 emailservice:5000 (Expected: False, Actual: True)\nMismatch: shippingservice \u2192 emailservice:5000 (Expected: False, Actual: True)"
+    },
+    {
+        "llm_command": "kubectl get networkpolicy email -o yaml",
+        "output": "Error from server (NotFound): networkpolicies.networking.k8s.io \"email\" not found\n",
+        "mismatch_summary": "Mismatch: cartservice \u2192 emailservice:5000 (Expected: False, Actual: True)\nMismatch: shippingservice \u2192 emailservice:5000 (Expected: False, Actual: True)"
+    },
+    {
+        "llm_command": "kubectl get networkpolicy email -o yaml",
+        "output": "Error from server (NotFound): networkpolicies.networking.k8s.io \"email\" not found\n",
+        "mismatch_summary": "Mismatch: cartservice \u2192 emailservice:5000 (Expected: False, Actual: True)\nMismatch: shippingservice \u2192 emailservice:5000 (Expected: False, Actual: True)"
+    }
+]

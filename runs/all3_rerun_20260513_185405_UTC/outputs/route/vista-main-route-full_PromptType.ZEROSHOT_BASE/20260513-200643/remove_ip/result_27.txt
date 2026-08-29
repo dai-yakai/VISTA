@@ -1,0 +1,11 @@
+Pingall result:
+p1_h1 -> p1_h2 p1_r0 
+p1_h2 -> p1_h1 p1_r0 
+p1_r0 -> p1_h1 p1_h2 
+*** Results: 0% dropped (6/6 received)
+
+Machine: p1_r0
+Command: ip route show
+Packet Loss: 0%
+Elapsed Time: 0.584731513998122 seconds
+

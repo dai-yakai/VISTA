@@ -1,0 +1,177 @@
+2026-05-14 03:02:46.757 | INFO     | run_workflow:deploy_k8s_cluster:56 - Tearing down previous deployments...
+No resources found
+deployment.apps "currencyservice" deleted
+service "currencyservice" deleted
+serviceaccount "currencyservice" deleted
+deployment.apps "loadgenerator" deleted
+serviceaccount "loadgenerator" deleted
+deployment.apps "productcatalogservice" deleted
+service "productcatalogservice" deleted
+serviceaccount "productcatalogservice" deleted
+deployment.apps "checkoutservice" deleted
+service "checkoutservice" deleted
+serviceaccount "checkoutservice" deleted
+deployment.apps "shippingservice" deleted
+service "shippingservice" deleted
+serviceaccount "shippingservice" deleted
+deployment.apps "cartservice" deleted
+service "cartservice" deleted
+serviceaccount "cartservice" deleted
+deployment.apps "redis-cart" deleted
+service "redis-cart" deleted
+deployment.apps "emailservice" deleted
+service "emailservice" deleted
+serviceaccount "emailservice" deleted
+deployment.apps "paymentservice" deleted
+service "paymentservice" deleted
+serviceaccount "paymentservice" deleted
+deployment.apps "frontend" deleted
+service "frontend" deleted
+service "frontend-external" deleted
+serviceaccount "frontend" deleted
+deployment.apps "recommendationservice" deleted
+service "recommendationservice" deleted
+serviceaccount "recommendationservice" deleted
+deployment.apps "adservice" deleted
+service "adservice" deleted
+serviceaccount "adservice" deleted
+2026-05-14 03:02:52.078 | INFO     | run_workflow:deploy_k8s_cluster:62 - Deploying application...
+deployment.apps/currencyservice created
+service/currencyservice created
+serviceaccount/currencyservice created
+deployment.apps/loadgenerator created
+serviceaccount/loadgenerator created
+deployment.apps/productcatalogservice created
+service/productcatalogservice created
+serviceaccount/productcatalogservice created
+deployment.apps/checkoutservice created
+service/checkoutservice created
+serviceaccount/checkoutservice created
+deployment.apps/shippingservice created
+service/shippingservice created
+serviceaccount/shippingservice created
+deployment.apps/cartservice created
+service/cartservice created
+serviceaccount/cartservice created
+deployment.apps/redis-cart created
+service/redis-cart created
+deployment.apps/emailservice created
+service/emailservice created
+serviceaccount/emailservice created
+deployment.apps/paymentservice created
+service/paymentservice created
+serviceaccount/paymentservice created
+deployment.apps/frontend created
+service/frontend created
+service/frontend-external created
+serviceaccount/frontend created
+deployment.apps/recommendationservice created
+service/recommendationservice created
+serviceaccount/recommendationservice created
+deployment.apps/adservice created
+service/adservice created
+serviceaccount/adservice created
+deployment.apps/adservice condition met
+deployment.apps/cartservice condition met
+deployment.apps/checkoutservice condition met
+deployment.apps/currencyservice condition met
+deployment.apps/emailservice condition met
+deployment.apps/frontend condition met
+deployment.apps/loadgenerator condition met
+deployment.apps/paymentservice condition met
+deployment.apps/productcatalogservice condition met
+deployment.apps/recommendationservice condition met
+deployment.apps/redis-cart condition met
+deployment.apps/shippingservice condition met
+2026-05-14 03:03:29.392 | INFO     | run_workflow:deploy_k8s_cluster:66 - Deployment completed successfully.
+2026-05-14 03:03:29.393 | INFO     | deploy_policies:deploy_policies:21 - Deploying policies: ['network-policy-adservice', 'network-policy-cartservice', 'network-policy-checkoutservice', 'network-policy-currencyservice', 'network-policy-emailservice', 'network-policy-frontend', 'network-policy-loadgenerator', 'network-policy-paymentservice', 'network-policy-productcatalogservice', 'network-policy-recommendationservice', 'network-policy-redis', 'network-policy-shippingservice']
+2026-05-14 03:03:29.472 | INFO     | deploy_policies:deploy_policies:26 - Deployed /home/ubuntu/vista/runs/all3_rerun_20260513_185405_UTC/outputs/k8s/sanity_policies/policies/network-policy-adservice.yaml:
+networkpolicy.networking.k8s.io/adservice created
+
+2026-05-14 03:03:29.547 | INFO     | deploy_policies:deploy_policies:26 - Deployed /home/ubuntu/vista/runs/all3_rerun_20260513_185405_UTC/outputs/k8s/sanity_policies/policies/network-policy-cartservice.yaml:
+networkpolicy.networking.k8s.io/cartservice created
+
+2026-05-14 03:03:29.622 | INFO     | deploy_policies:deploy_policies:26 - Deployed /home/ubuntu/vista/runs/all3_rerun_20260513_185405_UTC/outputs/k8s/sanity_policies/policies/network-policy-checkoutservice.yaml:
+networkpolicy.networking.k8s.io/checkoutservice created
+
+2026-05-14 03:03:29.698 | INFO     | deploy_policies:deploy_policies:26 - Deployed /home/ubuntu/vista/runs/all3_rerun_20260513_185405_UTC/outputs/k8s/sanity_policies/policies/network-policy-currencyservice.yaml:
+networkpolicy.networking.k8s.io/currencyservice created
+
+2026-05-14 03:03:29.771 | INFO     | deploy_policies:deploy_policies:26 - Deployed /home/ubuntu/vista/runs/all3_rerun_20260513_185405_UTC/outputs/k8s/sanity_policies/policies/network-policy-emailservice.yaml:
+networkpolicy.networking.k8s.io/emailservice created
+
+2026-05-14 03:03:29.845 | INFO     | deploy_policies:deploy_policies:26 - Deployed /home/ubuntu/vista/runs/all3_rerun_20260513_185405_UTC/outputs/k8s/sanity_policies/policies/network-policy-frontend.yaml:
+networkpolicy.networking.k8s.io/frontend created
+
+2026-05-14 03:03:29.918 | INFO     | deploy_policies:deploy_policies:26 - Deployed /home/ubuntu/vista/runs/all3_rerun_20260513_185405_UTC/outputs/k8s/sanity_policies/policies/network-policy-loadgenerator.yaml:
+networkpolicy.networking.k8s.io/loadgenerator created
+
+2026-05-14 03:03:29.992 | INFO     | deploy_policies:deploy_policies:26 - Deployed /home/ubuntu/vista/runs/all3_rerun_20260513_185405_UTC/outputs/k8s/sanity_policies/policies/network-policy-paymentservice.yaml:
+networkpolicy.networking.k8s.io/paymentservice created
+
+2026-05-14 03:03:30.066 | INFO     | deploy_policies:deploy_policies:26 - Deployed /home/ubuntu/vista/runs/all3_rerun_20260513_185405_UTC/outputs/k8s/sanity_policies/policies/network-policy-productcatalogservice.yaml:
+networkpolicy.networking.k8s.io/productcatalogservice created
+
+2026-05-14 03:03:30.138 | INFO     | deploy_policies:deploy_policies:26 - Deployed /home/ubuntu/vista/runs/all3_rerun_20260513_185405_UTC/outputs/k8s/sanity_policies/policies/network-policy-recommendationservice.yaml:
+networkpolicy.networking.k8s.io/recommendationservice created
+
+2026-05-14 03:03:30.214 | INFO     | deploy_policies:deploy_policies:26 - Deployed /home/ubuntu/vista/runs/all3_rerun_20260513_185405_UTC/outputs/k8s/sanity_policies/policies/network-policy-redis.yaml:
+networkpolicy.networking.k8s.io/redis-cart created
+
+2026-05-14 03:03:30.288 | INFO     | deploy_policies:deploy_policies:26 - Deployed /home/ubuntu/vista/runs/all3_rerun_20260513_185405_UTC/outputs/k8s/sanity_policies/policies/network-policy-shippingservice.yaml:
+networkpolicy.networking.k8s.io/shippingservice created
+
+2026-05-14 03:03:30.429 | INFO     | correctness_check:create_debug_container:227 - Creating debug container in pod adservice-b4856c769-fnq2n targeting container server
+2026-05-14 03:03:30.429 | DEBUG    | correctness_check:create_debug_container:228 - Debug command: kubectl debug -it adservice-b4856c769-fnq2n --image=busybox:1.36.1-local --target=server --quiet --attach=false -- sleep infinity
+debug_container adservice debugger-f2lzn
+2026-05-14 03:03:31.774 | INFO     | correctness_check:create_debug_container:227 - Creating debug container in pod cartservice-5784f94fb6-6gcjz targeting container server
+2026-05-14 03:03:31.774 | DEBUG    | correctness_check:create_debug_container:228 - Debug command: kubectl debug -it cartservice-5784f94fb6-6gcjz --image=busybox:1.36.1-local --target=server --quiet --attach=false -- sleep infinity
+debug_container cartservice debugger-qdptq
+2026-05-14 03:03:33.138 | INFO     | correctness_check:create_debug_container:227 - Creating debug container in pod checkoutservice-56c5cffd57-9swjp targeting container server
+2026-05-14 03:03:33.138 | DEBUG    | correctness_check:create_debug_container:228 - Debug command: kubectl debug -it checkoutservice-56c5cffd57-9swjp --image=busybox:1.36.1-local --target=server --quiet --attach=false -- sleep infinity
+debug_container checkoutservice debugger-mqpf9
+2026-05-14 03:03:34.499 | INFO     | correctness_check:create_debug_container:227 - Creating debug container in pod currencyservice-66c885779c-pbsk5 targeting container server
+2026-05-14 03:03:34.499 | DEBUG    | correctness_check:create_debug_container:228 - Debug command: kubectl debug -it currencyservice-66c885779c-pbsk5 --image=busybox:1.36.1-local --target=server --quiet --attach=false -- sleep infinity
+debug_container currencyservice debugger-wrps7
+2026-05-14 03:03:35.842 | INFO     | correctness_check:create_debug_container:227 - Creating debug container in pod emailservice-bc487bdb7-v9g8k targeting container server
+2026-05-14 03:03:35.842 | DEBUG    | correctness_check:create_debug_container:228 - Debug command: kubectl debug -it emailservice-bc487bdb7-v9g8k --image=busybox:1.36.1-local --target=server --quiet --attach=false -- sleep infinity
+debug_container emailservice debugger-scmjj
+2026-05-14 03:03:37.185 | INFO     | correctness_check:create_debug_container:227 - Creating debug container in pod frontend-5965c589c8-gg4jh targeting container server
+2026-05-14 03:03:37.185 | DEBUG    | correctness_check:create_debug_container:228 - Debug command: kubectl debug -it frontend-5965c589c8-gg4jh --image=busybox:1.36.1-local --target=server --quiet --attach=false -- sleep infinity
+debug_container frontend debugger-lhrpj
+2026-05-14 03:03:38.526 | INFO     | correctness_check:create_debug_container:227 - Creating debug container in pod loadgenerator-7596c75d7f-crwkm targeting container main
+2026-05-14 03:03:38.526 | DEBUG    | correctness_check:create_debug_container:228 - Debug command: kubectl debug -it loadgenerator-7596c75d7f-crwkm --image=busybox:1.36.1-local --target=main --quiet --attach=false -- sleep infinity
+debug_container loadgenerator debugger-58nk9
+2026-05-14 03:03:39.871 | INFO     | correctness_check:create_debug_container:227 - Creating debug container in pod paymentservice-656fb48df5-cptwd targeting container server
+2026-05-14 03:03:39.872 | DEBUG    | correctness_check:create_debug_container:228 - Debug command: kubectl debug -it paymentservice-656fb48df5-cptwd --image=busybox:1.36.1-local --target=server --quiet --attach=false -- sleep infinity
+debug_container paymentservice debugger-5bshr
+2026-05-14 03:03:41.219 | INFO     | correctness_check:create_debug_container:227 - Creating debug container in pod productcatalogservice-5db55dcfbc-vz5d5 targeting container server
+2026-05-14 03:03:41.219 | DEBUG    | correctness_check:create_debug_container:228 - Debug command: kubectl debug -it productcatalogservice-5db55dcfbc-vz5d5 --image=busybox:1.36.1-local --target=server --quiet --attach=false -- sleep infinity
+debug_container productcatalogservice debugger-jbnsx
+2026-05-14 03:03:42.562 | INFO     | correctness_check:create_debug_container:227 - Creating debug container in pod recommendationservice-7f8c5fcbff-zbhf4 targeting container server
+2026-05-14 03:03:42.562 | DEBUG    | correctness_check:create_debug_container:228 - Debug command: kubectl debug -it recommendationservice-7f8c5fcbff-zbhf4 --image=busybox:1.36.1-local --target=server --quiet --attach=false -- sleep infinity
+debug_container recommendationservice debugger-5s9sx
+2026-05-14 03:03:43.907 | INFO     | correctness_check:create_debug_container:227 - Creating debug container in pod redis-cart-c4fc658fb-bxvhq targeting container redis
+2026-05-14 03:03:43.907 | DEBUG    | correctness_check:create_debug_container:228 - Debug command: kubectl debug -it redis-cart-c4fc658fb-bxvhq --image=busybox:1.36.1-local --target=redis --quiet --attach=false -- sleep infinity
+debug_container redis-cart debugger-tff6h
+2026-05-14 03:03:45.263 | INFO     | correctness_check:create_debug_container:227 - Creating debug container in pod shippingservice-7fdc84f79-6hc4h targeting container server
+2026-05-14 03:03:45.263 | DEBUG    | correctness_check:create_debug_container:228 - Debug command: kubectl debug -it shippingservice-7fdc84f79-6hc4h --image=busybox:1.36.1-local --target=server --quiet --attach=false -- sleep infinity
+debug_container shippingservice debugger-5fvqh
+{
+  "all_match": true,
+  "mismatch": "No mismatches found.",
+  "debug_mapping": {
+    "adservice": "debugger-f2lzn",
+    "cartservice": "debugger-qdptq",
+    "checkoutservice": "debugger-mqpf9",
+    "currencyservice": "debugger-wrps7",
+    "emailservice": "debugger-scmjj",
+    "frontend": "debugger-lhrpj",
+    "loadgenerator": "debugger-58nk9",
+    "paymentservice": "debugger-5bshr",
+    "productcatalogservice": "debugger-jbnsx",
+    "recommendationservice": "debugger-5s9sx",
+    "redis-cart": "debugger-tff6h",
+    "shippingservice": "debugger-5fvqh"
+  }
+}

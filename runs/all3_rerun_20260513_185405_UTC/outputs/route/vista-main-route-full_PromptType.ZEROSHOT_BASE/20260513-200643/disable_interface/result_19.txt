@@ -1,0 +1,184 @@
+Pingall result:
+p1_h1 -> X X 
+p1_h2 -> X p1_r0 
+p1_r0 -> X p1_h2 
+*** Results: 66% dropped (2/6 received)
+
+Machine: p1_r0
+Command: ip route show
+Packet Loss: 66%
+Elapsed Time: 0.5979433930006053 seconds
+
+Command Output:
+192.168.1.0/24 dev p1_r0-eth1 proto kernel scope link src 192.168.1.1 
+192.168.2.0/24 dev p1_r0-eth2 proto kernel scope link src 192.168.2.1 
+
+
+Pingall result:
+p1_h1 -> X X 
+p1_h2 -> X p1_r0 
+p1_r0 -> X p1_h2 
+*** Results: 66% dropped (2/6 received)
+
+Machine: p1_r0
+Command: ip rule show
+Packet Loss: 66%
+Elapsed Time: 0.6000394390030124 seconds
+
+Command Output:
+0:	from all lookup local
+32766:	from all lookup main
+32767:	from all lookup default
+
+
+Pingall result:
+p1_h1 -> X X 
+p1_h2 -> X p1_r0 
+p1_r0 -> X p1_h2 
+*** Results: 66% dropped (2/6 received)
+
+Machine: p1_r0
+Command: sysctl net.ipv4.ip_forward
+Packet Loss: 66%
+Elapsed Time: 1.2354578209997271 seconds
+
+Command Output:
+net.ipv4.ip_forward = 1
+
+
+Pingall result:
+p1_h1 -> X X 
+p1_h2 -> X p1_r0 
+p1_r0 -> X p1_h2 
+*** Results: 66% dropped (2/6 received)
+
+Machine: p1_r0
+Command: ip addr show
+Packet Loss: 66%
+Elapsed Time: 1.2778496540013293 seconds
+
+Command Output:
+1: lo: <LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN group default qlen 1000
+    link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00
+    inet 127.0.0.1/8 scope host lo
+       valid_lft forever preferred_lft forever
+    inet6 ::1/128 scope host 
+       valid_lft forever preferred_lft forever
+2: tunl0@NONE: <NOARP> mtu 1480 qdisc noop state DOWN group default qlen 1000
+    link/ipip 0.0.0.0 brd 0.0.0.0
+3: p1_r0-eth1@if1342: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 68 qdisc noqueue state UP group default qlen 1000
+    link/ether 00:00:00:00:00:03 brd ff:ff:ff:ff:ff:ff link-netnsid 0
+    inet 192.168.1.1/24 brd 192.168.1.255 scope global p1_r0-eth1
+       valid_lft forever preferred_lft forever
+4: p1_r0-eth2@if1343: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue state UP group default qlen 1000
+    link/ether aa:dc:cc:f6:b6:0f brd ff:ff:ff:ff:ff:ff link-netnsid 0
+    inet 192.168.2.1/24 brd 192.168.2.255 scope global p1_r0-eth2
+       valid_lft forever preferred_lft forever
+    inet6 fe80::a8dc:ccff:fef6:b60f/64 scope link 
+       valid_lft forever preferred_lft forever
+
+
+Pingall result:
+p1_h1 -> X X 
+p1_h2 -> X p1_r0 
+p1_r0 -> X p1_h2 
+*** Results: 66% dropped (2/6 received)
+
+Machine: p1_r0
+Command: ip link show
+Packet Loss: 66%
+Elapsed Time: 1.3729605999978958 seconds
+
+Command Output:
+1: lo: <LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN mode DEFAULT group default qlen 1000
+    link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00
+2: tunl0@NONE: <NOARP> mtu 1480 qdisc noop state DOWN mode DEFAULT group default qlen 1000
+    link/ipip 0.0.0.0 brd 0.0.0.0
+3: p1_r0-eth1@if1342: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 68 qdisc noqueue state UP mode DEFAULT group default qlen 1000
+    link/ether 00:00:00:00:00:03 brd ff:ff:ff:ff:ff:ff link-netnsid 0
+4: p1_r0-eth2@if1343: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue state UP mode DEFAULT group default qlen 1000
+    link/ether aa:dc:cc:f6:b6:0f brd ff:ff:ff:ff:ff:ff link-netnsid 0
+
+
+Pingall result:
+p1_h1 -> X X 
+p1_h2 -> X p1_r0 
+p1_r0 -> X p1_h2 
+*** Results: 66% dropped (2/6 received)
+
+Machine: p1_r0
+Command: ip route add default via 192.168.1.2
+Packet Loss: 66%
+Elapsed Time: 0.9942508210006054 seconds
+
+Command Output:
+
+
+Pingall result:
+p1_h1 -> X X 
+p1_h2 -> X p1_r0 
+p1_r0 -> X p1_h2 
+*** Results: 66% dropped (2/6 received)
+
+Machine: p1_r0
+Command: iptables -S
+Packet Loss: 66%
+Elapsed Time: 1.4904996629993548 seconds
+
+Command Output:
+-P INPUT ACCEPT
+-P FORWARD ACCEPT
+-P OUTPUT ACCEPT
+
+
+Pingall result:
+p1_h1 -> X X 
+p1_h2 -> X p1_r0 
+p1_r0 -> X p1_h2 
+*** Results: 66% dropped (2/6 received)
+
+Machine: p1_r0
+Command: tc qdisc show
+Packet Loss: 66%
+Elapsed Time: 1.4915115229996445 seconds
+
+Command Output:
+qdisc noqueue 0: dev lo root refcnt 2 
+qdisc noqueue 0: dev p1_r0-eth1 root refcnt 2 
+qdisc noqueue 0: dev p1_r0-eth2 root refcnt 2 
+
+
+Pingall result:
+p1_h1 -> X X 
+p1_h2 -> X p1_r0 
+p1_r0 -> X p1_h2 
+*** Results: 66% dropped (2/6 received)
+
+Machine: p1_r0
+Command: ip route show
+Packet Loss: 66%
+Elapsed Time: 1.5178360899990366 seconds
+
+Command Output:
+default via 192.168.1.2 dev p1_r0-eth1 
+192.168.1.0/24 dev p1_r0-eth1 proto kernel scope link src 192.168.1.1 
+192.168.2.0/24 dev p1_r0-eth2 proto kernel scope link src 192.168.2.1 
+
+
+Pingall result:
+p1_h1 -> X X 
+p1_h2 -> X p1_r0 
+p1_r0 -> X p1_h2 
+*** Results: 66% dropped (2/6 received)
+
+Machine: p1_r0
+Command: ip route show
+Packet Loss: 66%
+Elapsed Time: 1.5258487979990605 seconds
+
+Command Output:
+default via 192.168.1.2 dev p1_r0-eth1 
+192.168.1.0/24 dev p1_r0-eth1 proto kernel scope link src 192.168.1.1 
+192.168.2.0/24 dev p1_r0-eth2 proto kernel scope link src 192.168.2.1 
+
+

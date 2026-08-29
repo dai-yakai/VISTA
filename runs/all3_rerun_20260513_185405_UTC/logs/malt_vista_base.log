@@ -1,0 +1,270 @@
+2026-05-14 02:59:32.186 | INFO     | src.retrieval:build_or_load:54 - [retrieval] loading cache fcff12679ed4
+INFO 05-14 02:59:32 __init__.py:190] Automatically detected platform cuda.
+2026-05-14 02:59:32.843 | INFO     | src.llm_engine:__init__:38 - [LLMEngine] loading model: /home/ubuntu/vista/models/Qwen2.5-Coder-7B-Instruct
+INFO 05-14 02:59:39 config.py:542] This model supports multiple tasks: {'score', 'generate', 'embed', 'reward', 'classify'}. Defaulting to 'generate'.
+INFO 05-14 02:59:39 llm_engine.py:234] Initializing a V0 LLM engine (v0.7.2) with config: model='/home/ubuntu/vista/models/Qwen2.5-Coder-7B-Instruct', speculative_config=None, tokenizer='/home/ubuntu/vista/models/Qwen2.5-Coder-7B-Instruct', skip_tokenizer_init=False, tokenizer_mode=auto, revision=None, override_neuron_config=None, tokenizer_revision=None, trust_remote_code=True, dtype=torch.bfloat16, max_seq_len=4096, download_dir=None, load_format=auto, tensor_parallel_size=1, pipeline_parallel_size=1, disable_custom_all_reduce=False, quantization=None, enforce_eager=False, kv_cache_dtype=auto,  device_config=cuda, decoding_config=DecodingConfig(guided_decoding_backend='xgrammar'), observability_config=ObservabilityConfig(otlp_traces_endpoint=None, collect_model_forward_time=False, collect_model_execute_time=False), seed=42, served_model_name=/home/ubuntu/vista/models/Qwen2.5-Coder-7B-Instruct, num_scheduler_steps=1, multi_step_stream_outputs=True, enable_prefix_caching=False, chunked_prefill_enabled=False, use_async_output_proc=True, disable_mm_preprocessor_cache=False, mm_processor_kwargs=None, pooler_config=None, compilation_config={"splitting_ops":[],"compile_sizes":[],"cudagraph_capture_sizes":[256,248,240,232,224,216,208,200,192,184,176,168,160,152,144,136,128,120,112,104,96,88,80,72,64,56,48,40,32,24,16,8,4,2,1],"max_capture_size":256}, use_cached_outputs=False, 
+INFO 05-14 02:59:41 cuda.py:230] Using Flash Attention backend.
+INFO 05-14 02:59:44 model_runner.py:1110] Starting to load model /home/ubuntu/vista/models/Qwen2.5-Coder-7B-Instruct...
+Loading safetensors checkpoint shards:   0% Completed | 0/4 [00:00<?, ?it/s]
+Loading safetensors checkpoint shards:  25% Completed | 1/4 [00:00<00:02,  1.36it/s]
+Loading safetensors checkpoint shards:  50% Completed | 2/4 [00:00<00:00,  2.23it/s]
+Loading safetensors checkpoint shards:  75% Completed | 3/4 [00:01<00:00,  1.59it/s]
+Loading safetensors checkpoint shards: 100% Completed | 4/4 [00:02<00:00,  1.35it/s]
+Loading safetensors checkpoint shards: 100% Completed | 4/4 [00:02<00:00,  1.46it/s]
+
+INFO 05-14 02:59:47 model_runner.py:1115] Loading model weights took 14.2487 GB
+INFO 05-14 02:59:48 worker.py:267] Memory profiling takes 0.95 seconds
+INFO 05-14 02:59:48 worker.py:267] the current vLLM instance can use total_gpu_memory (23.53GiB) x gpu_memory_utilization (0.85) = 20.00GiB
+INFO 05-14 02:59:48 worker.py:267] model weights take 14.25GiB; non_torch_memory takes 0.08GiB; PyTorch activation peak memory takes 1.42GiB; the rest of the memory reserved for KV Cache is 4.26GiB.
+INFO 05-14 02:59:49 executor_base.py:110] # CUDA blocks: 4982, # CPU blocks: 4681
+INFO 05-14 02:59:49 executor_base.py:115] Maximum concurrency for 4096 tokens per request: 19.46x
+INFO 05-14 02:59:52 model_runner.py:1434] Capturing cudagraphs for decoding. This may lead to unexpected consequences if the model is not static. To run the model in eager mode, set 'enforce_eager=True' or use '--enforce-eager' in the CLI. If out-of-memory error occurs during cudagraph capture, consider decreasing `gpu_memory_utilization` or switching to eager mode. You can also reduce the `max_num_seqs` as needed to decrease memory usage.
+Capturing CUDA graph shapes:   0%|          | 0/35 [00:00<?, ?it/s]Capturing CUDA graph shapes:   3%|▎         | 1/35 [00:00<00:22,  1.51it/s]Capturing CUDA graph shapes:   6%|▌         | 2/35 [00:01<00:21,  1.54it/s]Capturing CUDA graph shapes:   9%|▊         | 3/35 [00:01<00:20,  1.53it/s]Capturing CUDA graph shapes:  11%|█▏        | 4/35 [00:02<00:20,  1.54it/s]Capturing CUDA graph shapes:  14%|█▍        | 5/35 [00:03<00:19,  1.55it/s]Capturing CUDA graph shapes:  17%|█▋        | 6/35 [00:03<00:18,  1.55it/s]Capturing CUDA graph shapes:  20%|██        | 7/35 [00:04<00:18,  1.55it/s]Capturing CUDA graph shapes:  23%|██▎       | 8/35 [00:05<00:17,  1.54it/s]Capturing CUDA graph shapes:  26%|██▌       | 9/35 [00:05<00:16,  1.55it/s]Capturing CUDA graph shapes:  29%|██▊       | 10/35 [00:06<00:16,  1.56it/s]Capturing CUDA graph shapes:  31%|███▏      | 11/35 [00:07<00:15,  1.57it/s]Capturing CUDA graph shapes:  34%|███▍      | 12/35 [00:07<00:14,  1.57it/s]Capturing CUDA graph shapes:  37%|███▋      | 13/35 [00:08<00:14,  1.57it/s]Capturing CUDA graph shapes:  40%|████      | 14/35 [00:09<00:13,  1.56it/s]Capturing CUDA graph shapes:  43%|████▎     | 15/35 [00:09<00:12,  1.58it/s]Capturing CUDA graph shapes:  46%|████▌     | 16/35 [00:10<00:12,  1.58it/s]Capturing CUDA graph shapes:  49%|████▊     | 17/35 [00:10<00:11,  1.57it/s]Capturing CUDA graph shapes:  51%|█████▏    | 18/35 [00:11<00:10,  1.57it/s]Capturing CUDA graph shapes:  54%|█████▍    | 19/35 [00:12<00:10,  1.58it/s]Capturing CUDA graph shapes:  57%|█████▋    | 20/35 [00:12<00:09,  1.58it/s]Capturing CUDA graph shapes:  60%|██████    | 21/35 [00:13<00:08,  1.58it/s]Capturing CUDA graph shapes:  63%|██████▎   | 22/35 [00:14<00:08,  1.58it/s]Capturing CUDA graph shapes:  66%|██████▌   | 23/35 [00:14<00:07,  1.60it/s]Capturing CUDA graph shapes:  69%|██████▊   | 24/35 [00:15<00:06,  1.60it/s]Capturing CUDA graph shapes:  71%|███████▏  | 25/35 [00:15<00:06,  1.60it/s]Capturing CUDA graph shapes:  74%|███████▍  | 26/35 [00:16<00:05,  1.60it/s]Capturing CUDA graph shapes:  77%|███████▋  | 27/35 [00:17<00:04,  1.60it/s]Capturing CUDA graph shapes:  80%|████████  | 28/35 [00:17<00:04,  1.60it/s]Capturing CUDA graph shapes:  83%|████████▎ | 29/35 [00:18<00:03,  1.60it/s]Capturing CUDA graph shapes:  86%|████████▌ | 30/35 [00:19<00:03,  1.60it/s]Capturing CUDA graph shapes:  89%|████████▊ | 31/35 [00:19<00:02,  1.62it/s]Capturing CUDA graph shapes:  91%|█████████▏| 32/35 [00:20<00:01,  1.63it/s]Capturing CUDA graph shapes:  94%|█████████▍| 33/35 [00:20<00:01,  1.63it/s]Capturing CUDA graph shapes:  97%|█████████▋| 34/35 [00:21<00:00,  1.63it/s]Capturing CUDA graph shapes: 100%|██████████| 35/35 [00:22<00:00,  1.63it/s]Capturing CUDA graph shapes: 100%|██████████| 35/35 [00:22<00:00,  1.58it/s]
+INFO 05-14 03:00:14 model_runner.py:1562] Graph capturing finished in 22 secs, took 0.21 GiB
+INFO 05-14 03:00:14 llm_engine.py:431] init engine (profile, create kv cache, warmup model) took 27.04 seconds
+2026-05-14 03:00:14.680 | INFO     | src.llm_engine:__init__:57 - [LLMEngine] model loaded
+/home/ubuntu/.venvs/ai_gym_env/lib/python3.10/site-packages/networkx/readwrite/json_graph/node_link.py:142: FutureWarning: 
+The default value will be `edges="edges" in NetworkX 3.6.
+
+To make this warning go away, explicitly set the edges kwarg, e.g.:
+
+  nx.node_link_data(G, edges="links") to preserve current behavior, or
+  nx.node_link_data(G, edges="edges") for forward compatibility.
+  warnings.warn(
+2026-05-14 03:00:20.034 | INFO     | __main__:phase1_vista_generate:90 - [phase1:vista_base] running on 1000 examples → /home/ubuntu/vista/runs/all3_rerun_20260513_185405_UTC/outputs/malt/raw_vista_base.jsonl; n_hyp=5, max_repair=3, lora=None
+/home/ubuntu/.venvs/ai_gym_env/lib/python3.10/site-packages/networkx/readwrite/json_graph/node_link.py:287: FutureWarning: 
+The default value will be changed to `edges="edges" in NetworkX 3.6.
+
+To make this warning go away, explicitly set the edges kwarg, e.g.:
+
+  nx.node_link_graph(data, edges="links") to preserve current behavior, or
+  nx.node_link_graph(data, edges="edges") for forward compatibility.
+  warnings.warn(
+2026-05-14 03:00:40.731 | INFO     | __main__:phase1_vista_generate:178 - [phase1:vista_base] chunk 1/125 initial_pass=8/8 repairs+=0 running pass=8/8
+2026-05-14 03:01:02.363 | INFO     | __main__:phase1_vista_generate:178 - [phase1:vista_base] chunk 2/125 initial_pass=8/8 repairs+=0 running pass=16/16
+2026-05-14 03:01:24.435 | INFO     | __main__:phase1_vista_generate:178 - [phase1:vista_base] chunk 3/125 initial_pass=8/8 repairs+=0 running pass=24/24
+2026-05-14 03:01:46.497 | INFO     | __main__:phase1_vista_generate:178 - [phase1:vista_base] chunk 4/125 initial_pass=8/8 repairs+=0 running pass=32/32
+2026-05-14 03:02:08.778 | INFO     | __main__:phase1_vista_generate:178 - [phase1:vista_base] chunk 5/125 initial_pass=8/8 repairs+=0 running pass=40/40
+2026-05-14 03:02:30.896 | INFO     | __main__:phase1_vista_generate:178 - [phase1:vista_base] chunk 6/125 initial_pass=8/8 repairs+=0 running pass=48/48
+2026-05-14 03:02:53.987 | INFO     | __main__:phase1_vista_generate:178 - [phase1:vista_base] chunk 7/125 initial_pass=8/8 repairs+=0 running pass=56/56
+2026-05-14 03:03:14.663 | INFO     | __main__:phase1_vista_generate:178 - [phase1:vista_base] chunk 8/125 initial_pass=8/8 repairs+=0 running pass=64/64
+2026-05-14 03:03:35.836 | INFO     | __main__:phase1_vista_generate:178 - [phase1:vista_base] chunk 9/125 initial_pass=8/8 repairs+=0 running pass=72/72
+2026-05-14 03:03:58.795 | INFO     | __main__:phase1_vista_generate:178 - [phase1:vista_base] chunk 10/125 initial_pass=8/8 repairs+=0 running pass=80/80
+2026-05-14 03:04:19.496 | INFO     | __main__:phase1_vista_generate:178 - [phase1:vista_base] chunk 11/125 initial_pass=8/8 repairs+=0 running pass=88/88
+2026-05-14 03:04:41.741 | INFO     | __main__:phase1_vista_generate:178 - [phase1:vista_base] chunk 12/125 initial_pass=8/8 repairs+=0 running pass=96/96
+2026-05-14 03:05:03.329 | INFO     | __main__:phase1_vista_generate:178 - [phase1:vista_base] chunk 13/125 initial_pass=8/8 repairs+=0 running pass=104/104
+2026-05-14 03:05:23.924 | INFO     | __main__:phase1_vista_generate:178 - [phase1:vista_base] chunk 14/125 initial_pass=8/8 repairs+=0 running pass=112/112
+2026-05-14 03:05:44.430 | INFO     | __main__:phase1_vista_generate:178 - [phase1:vista_base] chunk 15/125 initial_pass=8/8 repairs+=0 running pass=120/120
+2026-05-14 03:06:05.275 | INFO     | __main__:phase1_vista_generate:178 - [phase1:vista_base] chunk 16/125 initial_pass=8/8 repairs+=0 running pass=128/128
+2026-05-14 03:06:26.102 | INFO     | __main__:phase1_vista_generate:178 - [phase1:vista_base] chunk 17/125 initial_pass=8/8 repairs+=0 running pass=136/136
+2026-05-14 03:06:47.200 | INFO     | __main__:phase1_vista_generate:178 - [phase1:vista_base] chunk 18/125 initial_pass=8/8 repairs+=0 running pass=144/144
+2026-05-14 03:07:07.501 | INFO     | __main__:phase1_vista_generate:178 - [phase1:vista_base] chunk 19/125 initial_pass=8/8 repairs+=0 running pass=152/152
+2026-05-14 03:07:26.244 | INFO     | __main__:phase1_vista_generate:178 - [phase1:vista_base] chunk 20/125 initial_pass=8/8 repairs+=0 running pass=160/160
+2026-05-14 03:07:45.628 | INFO     | __main__:phase1_vista_generate:178 - [phase1:vista_base] chunk 21/125 initial_pass=8/8 repairs+=0 running pass=168/168
+2026-05-14 03:08:04.510 | INFO     | __main__:phase1_vista_generate:178 - [phase1:vista_base] chunk 22/125 initial_pass=8/8 repairs+=0 running pass=176/176
+2026-05-14 03:08:24.010 | INFO     | __main__:phase1_vista_generate:178 - [phase1:vista_base] chunk 23/125 initial_pass=8/8 repairs+=0 running pass=184/184
+2026-05-14 03:08:43.129 | INFO     | __main__:phase1_vista_generate:178 - [phase1:vista_base] chunk 24/125 initial_pass=8/8 repairs+=0 running pass=192/192
+2026-05-14 03:09:02.269 | INFO     | __main__:phase1_vista_generate:178 - [phase1:vista_base] chunk 25/125 initial_pass=8/8 repairs+=0 running pass=200/200
+2026-05-14 03:09:21.968 | INFO     | __main__:phase1_vista_generate:178 - [phase1:vista_base] chunk 26/125 initial_pass=8/8 repairs+=0 running pass=208/208
+2026-05-14 03:09:41.204 | INFO     | __main__:phase1_vista_generate:178 - [phase1:vista_base] chunk 27/125 initial_pass=8/8 repairs+=0 running pass=216/216
+2026-05-14 03:10:00.455 | INFO     | __main__:phase1_vista_generate:178 - [phase1:vista_base] chunk 28/125 initial_pass=8/8 repairs+=0 running pass=224/224
+2026-05-14 03:10:19.723 | INFO     | __main__:phase1_vista_generate:178 - [phase1:vista_base] chunk 29/125 initial_pass=8/8 repairs+=0 running pass=232/232
+2026-05-14 03:10:39.555 | INFO     | __main__:phase1_vista_generate:178 - [phase1:vista_base] chunk 30/125 initial_pass=8/8 repairs+=0 running pass=240/240
+2026-05-14 03:10:58.947 | INFO     | __main__:phase1_vista_generate:178 - [phase1:vista_base] chunk 31/125 initial_pass=8/8 repairs+=0 running pass=248/248
+2026-05-14 03:11:18.240 | INFO     | __main__:phase1_vista_generate:178 - [phase1:vista_base] chunk 32/125 initial_pass=8/8 repairs+=0 running pass=256/256
+2026-05-14 03:11:37.561 | INFO     | __main__:phase1_vista_generate:178 - [phase1:vista_base] chunk 33/125 initial_pass=8/8 repairs+=0 running pass=264/264
+2026-05-14 03:11:56.891 | INFO     | __main__:phase1_vista_generate:178 - [phase1:vista_base] chunk 34/125 initial_pass=8/8 repairs+=0 running pass=272/272
+2026-05-14 03:12:16.215 | INFO     | __main__:phase1_vista_generate:178 - [phase1:vista_base] chunk 35/125 initial_pass=8/8 repairs+=0 running pass=280/280
+2026-05-14 03:12:35.738 | INFO     | __main__:phase1_vista_generate:178 - [phase1:vista_base] chunk 36/125 initial_pass=8/8 repairs+=0 running pass=288/288
+2026-05-14 03:12:56.037 | INFO     | __main__:phase1_vista_generate:178 - [phase1:vista_base] chunk 37/125 initial_pass=8/8 repairs+=0 running pass=296/296
+2026-05-14 03:13:25.760 | INFO     | __main__:phase1_vista_generate:178 - [phase1:vista_base] chunk 38/125 initial_pass=6/8 repairs+=6 running pass=302/304
+2026-05-14 03:13:57.093 | INFO     | __main__:phase1_vista_generate:178 - [phase1:vista_base] chunk 39/125 initial_pass=6/8 repairs+=6 running pass=308/312
+2026-05-14 03:14:32.592 | INFO     | __main__:phase1_vista_generate:178 - [phase1:vista_base] chunk 40/125 initial_pass=3/8 repairs+=15 running pass=311/320
+2026-05-14 03:15:08.725 | INFO     | __main__:phase1_vista_generate:178 - [phase1:vista_base] chunk 41/125 initial_pass=4/8 repairs+=12 running pass=315/328
+2026-05-14 03:15:45.614 | INFO     | __main__:phase1_vista_generate:178 - [phase1:vista_base] chunk 42/125 initial_pass=3/8 repairs+=15 running pass=318/336
+2026-05-14 03:16:20.507 | INFO     | __main__:phase1_vista_generate:178 - [phase1:vista_base] chunk 43/125 initial_pass=4/8 repairs+=12 running pass=322/344
+2026-05-14 03:16:52.023 | INFO     | __main__:phase1_vista_generate:178 - [phase1:vista_base] chunk 44/125 initial_pass=6/8 repairs+=6 running pass=328/352
+2026-05-14 03:17:27.936 | INFO     | __main__:phase1_vista_generate:178 - [phase1:vista_base] chunk 45/125 initial_pass=3/8 repairs+=15 running pass=331/360
+2026-05-14 03:17:58.090 | INFO     | __main__:phase1_vista_generate:178 - [phase1:vista_base] chunk 46/125 initial_pass=6/8 repairs+=6 running pass=337/368
+2026-05-14 03:18:36.295 | INFO     | __main__:phase1_vista_generate:178 - [phase1:vista_base] chunk 47/125 initial_pass=3/8 repairs+=15 running pass=340/376
+2026-05-14 03:19:05.004 | INFO     | __main__:phase1_vista_generate:178 - [phase1:vista_base] chunk 48/125 initial_pass=6/8 repairs+=6 running pass=346/384
+2026-05-14 03:19:35.027 | INFO     | __main__:phase1_vista_generate:178 - [phase1:vista_base] chunk 49/125 initial_pass=5/8 repairs+=9 running pass=351/392
+2026-05-14 03:20:06.115 | INFO     | __main__:phase1_vista_generate:178 - [phase1:vista_base] chunk 50/125 initial_pass=4/8 repairs+=12 running pass=355/400
+WARNING 05-14 03:20:14 scheduler.py:1560] Sequence group 542_parallel_sample_1 is preempted by PreemptionMode.RECOMPUTE mode because there is not enough KV cache space. This can affect the end-to-end performance. Increase gpu_memory_utilization or tensor_parallel_size to provide more KV cache memory. total_num_cumulative_preemption=1
+2026-05-14 03:20:31.764 | INFO     | __main__:phase1_vista_generate:178 - [phase1:vista_base] chunk 51/125 initial_pass=8/8 repairs+=0 running pass=363/408
+2026-05-14 03:20:58.492 | INFO     | __main__:phase1_vista_generate:178 - [phase1:vista_base] chunk 52/125 initial_pass=8/8 repairs+=0 running pass=371/416
+2026-05-14 03:21:24.131 | INFO     | __main__:phase1_vista_generate:178 - [phase1:vista_base] chunk 53/125 initial_pass=8/8 repairs+=0 running pass=379/424
+2026-05-14 03:21:50.208 | INFO     | __main__:phase1_vista_generate:178 - [phase1:vista_base] chunk 54/125 initial_pass=8/8 repairs+=0 running pass=387/432
+2026-05-14 03:22:15.891 | INFO     | __main__:phase1_vista_generate:178 - [phase1:vista_base] chunk 55/125 initial_pass=8/8 repairs+=0 running pass=395/440
+2026-05-14 03:22:42.375 | INFO     | __main__:phase1_vista_generate:178 - [phase1:vista_base] chunk 56/125 initial_pass=8/8 repairs+=0 running pass=403/448
+2026-05-14 03:23:09.876 | INFO     | __main__:phase1_vista_generate:178 - [phase1:vista_base] chunk 57/125 initial_pass=8/8 repairs+=0 running pass=411/456
+2026-05-14 03:23:37.133 | INFO     | __main__:phase1_vista_generate:178 - [phase1:vista_base] chunk 58/125 initial_pass=8/8 repairs+=0 running pass=419/464
+2026-05-14 03:24:05.204 | INFO     | __main__:phase1_vista_generate:178 - [phase1:vista_base] chunk 59/125 initial_pass=8/8 repairs+=0 running pass=427/472
+2026-05-14 03:24:32.987 | INFO     | __main__:phase1_vista_generate:178 - [phase1:vista_base] chunk 60/125 initial_pass=8/8 repairs+=0 running pass=435/480
+2026-05-14 03:25:00.469 | INFO     | __main__:phase1_vista_generate:178 - [phase1:vista_base] chunk 61/125 initial_pass=8/8 repairs+=0 running pass=443/488
+2026-05-14 03:25:29.281 | INFO     | __main__:phase1_vista_generate:178 - [phase1:vista_base] chunk 62/125 initial_pass=8/8 repairs+=0 running pass=451/496
+2026-05-14 03:25:56.385 | INFO     | __main__:phase1_vista_generate:178 - [phase1:vista_base] chunk 63/125 initial_pass=8/8 repairs+=0 running pass=459/504
+2026-05-14 03:26:22.948 | INFO     | __main__:phase1_vista_generate:178 - [phase1:vista_base] chunk 64/125 initial_pass=8/8 repairs+=0 running pass=467/512
+2026-05-14 03:26:49.924 | INFO     | __main__:phase1_vista_generate:178 - [phase1:vista_base] chunk 65/125 initial_pass=8/8 repairs+=0 running pass=475/520
+2026-05-14 03:27:17.247 | INFO     | __main__:phase1_vista_generate:178 - [phase1:vista_base] chunk 66/125 initial_pass=8/8 repairs+=0 running pass=483/528
+2026-05-14 03:27:44.270 | INFO     | __main__:phase1_vista_generate:178 - [phase1:vista_base] chunk 67/125 initial_pass=8/8 repairs+=0 running pass=491/536
+2026-05-14 03:28:10.716 | INFO     | __main__:phase1_vista_generate:178 - [phase1:vista_base] chunk 68/125 initial_pass=8/8 repairs+=0 running pass=499/544
+2026-05-14 03:28:35.996 | INFO     | __main__:phase1_vista_generate:178 - [phase1:vista_base] chunk 69/125 initial_pass=8/8 repairs+=0 running pass=507/552
+2026-05-14 03:29:01.372 | INFO     | __main__:phase1_vista_generate:178 - [phase1:vista_base] chunk 70/125 initial_pass=8/8 repairs+=0 running pass=515/560
+2026-05-14 03:29:26.537 | INFO     | __main__:phase1_vista_generate:178 - [phase1:vista_base] chunk 71/125 initial_pass=8/8 repairs+=0 running pass=523/568
+2026-05-14 03:29:54.832 | INFO     | __main__:phase1_vista_generate:178 - [phase1:vista_base] chunk 72/125 initial_pass=8/8 repairs+=0 running pass=531/576
+2026-05-14 03:30:19.835 | INFO     | __main__:phase1_vista_generate:178 - [phase1:vista_base] chunk 73/125 initial_pass=8/8 repairs+=0 running pass=539/584
+2026-05-14 03:30:46.174 | INFO     | __main__:phase1_vista_generate:178 - [phase1:vista_base] chunk 74/125 initial_pass=8/8 repairs+=0 running pass=547/592
+2026-05-14 03:31:11.278 | INFO     | __main__:phase1_vista_generate:178 - [phase1:vista_base] chunk 75/125 initial_pass=8/8 repairs+=0 running pass=555/600
+2026-05-14 03:31:38.284 | INFO     | __main__:phase1_vista_generate:178 - [phase1:vista_base] chunk 76/125 initial_pass=8/8 repairs+=0 running pass=563/608
+2026-05-14 03:32:03.847 | INFO     | __main__:phase1_vista_generate:178 - [phase1:vista_base] chunk 77/125 initial_pass=8/8 repairs+=0 running pass=571/616
+2026-05-14 03:32:28.749 | INFO     | __main__:phase1_vista_generate:178 - [phase1:vista_base] chunk 78/125 initial_pass=8/8 repairs+=0 running pass=579/624
+2026-05-14 03:32:56.214 | INFO     | __main__:phase1_vista_generate:178 - [phase1:vista_base] chunk 79/125 initial_pass=8/8 repairs+=0 running pass=587/632
+2026-05-14 03:33:22.648 | INFO     | __main__:phase1_vista_generate:178 - [phase1:vista_base] chunk 80/125 initial_pass=8/8 repairs+=0 running pass=595/640
+2026-05-14 03:33:49.981 | INFO     | __main__:phase1_vista_generate:178 - [phase1:vista_base] chunk 81/125 initial_pass=8/8 repairs+=0 running pass=603/648
+2026-05-14 03:34:17.808 | INFO     | __main__:phase1_vista_generate:178 - [phase1:vista_base] chunk 82/125 initial_pass=8/8 repairs+=0 running pass=611/656
+2026-05-14 03:34:43.671 | INFO     | __main__:phase1_vista_generate:178 - [phase1:vista_base] chunk 83/125 initial_pass=8/8 repairs+=0 running pass=619/664
+2026-05-14 03:35:09.179 | INFO     | __main__:phase1_vista_generate:178 - [phase1:vista_base] chunk 84/125 initial_pass=8/8 repairs+=0 running pass=627/672
+2026-05-14 03:35:35.695 | INFO     | __main__:phase1_vista_generate:178 - [phase1:vista_base] chunk 85/125 initial_pass=8/8 repairs+=0 running pass=635/680
+2026-05-14 03:36:02.570 | INFO     | __main__:phase1_vista_generate:178 - [phase1:vista_base] chunk 86/125 initial_pass=8/8 repairs+=0 running pass=643/688
+2026-05-14 03:36:29.519 | INFO     | __main__:phase1_vista_generate:178 - [phase1:vista_base] chunk 87/125 initial_pass=8/8 repairs+=0 running pass=651/696
+2026-05-14 03:36:57.588 | INFO     | __main__:phase1_vista_generate:178 - [phase1:vista_base] chunk 88/125 initial_pass=8/8 repairs+=0 running pass=659/704
+WARNING 05-14 03:37:06 scheduler.py:1560] Sequence group 846_parallel_sample_0 is preempted by PreemptionMode.RECOMPUTE mode because there is not enough KV cache space. This can affect the end-to-end performance. Increase gpu_memory_utilization or tensor_parallel_size to provide more KV cache memory. total_num_cumulative_preemption=51
+2026-05-14 03:37:27.064 | INFO     | __main__:phase1_vista_generate:178 - [phase1:vista_base] chunk 89/125 initial_pass=8/8 repairs+=0 running pass=667/712
+2026-05-14 03:37:56.570 | INFO     | __main__:phase1_vista_generate:178 - [phase1:vista_base] chunk 90/125 initial_pass=8/8 repairs+=0 running pass=675/720
+2026-05-14 03:38:25.924 | INFO     | __main__:phase1_vista_generate:178 - [phase1:vista_base] chunk 91/125 initial_pass=8/8 repairs+=0 running pass=683/728
+2026-05-14 03:38:54.203 | INFO     | __main__:phase1_vista_generate:178 - [phase1:vista_base] chunk 92/125 initial_pass=8/8 repairs+=0 running pass=691/736
+2026-05-14 03:39:23.677 | INFO     | __main__:phase1_vista_generate:178 - [phase1:vista_base] chunk 93/125 initial_pass=8/8 repairs+=0 running pass=699/744
+2026-05-14 03:39:53.094 | INFO     | __main__:phase1_vista_generate:178 - [phase1:vista_base] chunk 94/125 initial_pass=8/8 repairs+=0 running pass=707/752
+2026-05-14 03:40:21.523 | INFO     | __main__:phase1_vista_generate:178 - [phase1:vista_base] chunk 95/125 initial_pass=8/8 repairs+=0 running pass=715/760
+2026-05-14 03:40:51.007 | INFO     | __main__:phase1_vista_generate:178 - [phase1:vista_base] chunk 96/125 initial_pass=8/8 repairs+=0 running pass=723/768
+2026-05-14 03:41:19.627 | INFO     | __main__:phase1_vista_generate:178 - [phase1:vista_base] chunk 97/125 initial_pass=8/8 repairs+=0 running pass=731/776
+2026-05-14 03:41:48.966 | INFO     | __main__:phase1_vista_generate:178 - [phase1:vista_base] chunk 98/125 initial_pass=8/8 repairs+=0 running pass=739/784
+2026-05-14 03:42:17.600 | INFO     | __main__:phase1_vista_generate:178 - [phase1:vista_base] chunk 99/125 initial_pass=8/8 repairs+=0 running pass=747/792
+2026-05-14 03:42:47.494 | INFO     | __main__:phase1_vista_generate:178 - [phase1:vista_base] chunk 100/125 initial_pass=8/8 repairs+=0 running pass=755/800
+2026-05-14 03:43:30.194 | INFO     | __main__:phase1_vista_generate:178 - [phase1:vista_base] chunk 101/125 initial_pass=3/8 repairs+=15 running pass=758/808
+2026-05-14 03:44:13.007 | INFO     | __main__:phase1_vista_generate:178 - [phase1:vista_base] chunk 102/125 initial_pass=3/8 repairs+=15 running pass=761/816
+2026-05-14 03:44:57.204 | INFO     | __main__:phase1_vista_generate:178 - [phase1:vista_base] chunk 103/125 initial_pass=2/8 repairs+=18 running pass=763/824
+2026-05-14 03:45:35.045 | INFO     | __main__:phase1_vista_generate:178 - [phase1:vista_base] chunk 104/125 initial_pass=6/8 repairs+=6 running pass=769/832
+2026-05-14 03:46:14.406 | INFO     | __main__:phase1_vista_generate:178 - [phase1:vista_base] chunk 105/125 initial_pass=5/8 repairs+=9 running pass=774/840
+2026-05-14 03:46:56.291 | INFO     | __main__:phase1_vista_generate:178 - [phase1:vista_base] chunk 106/125 initial_pass=4/8 repairs+=12 running pass=778/848
+2026-05-14 03:47:35.482 | INFO     | __main__:phase1_vista_generate:178 - [phase1:vista_base] chunk 107/125 initial_pass=5/8 repairs+=9 running pass=783/856
+2026-05-14 03:48:17.240 | INFO     | __main__:phase1_vista_generate:178 - [phase1:vista_base] chunk 108/125 initial_pass=4/8 repairs+=12 running pass=787/864
+2026-05-14 03:48:56.025 | INFO     | __main__:phase1_vista_generate:178 - [phase1:vista_base] chunk 109/125 initial_pass=5/8 repairs+=9 running pass=792/872
+2026-05-14 03:49:36.884 | INFO     | __main__:phase1_vista_generate:178 - [phase1:vista_base] chunk 110/125 initial_pass=3/8 repairs+=15 running pass=795/880
+2026-05-14 03:50:19.212 | INFO     | __main__:phase1_vista_generate:178 - [phase1:vista_base] chunk 111/125 initial_pass=3/8 repairs+=15 running pass=798/888
+2026-05-14 03:51:01.350 | INFO     | __main__:phase1_vista_generate:178 - [phase1:vista_base] chunk 112/125 initial_pass=4/8 repairs+=12 running pass=802/896
+2026-05-14 03:51:37.638 | INFO     | __main__:phase1_vista_generate:178 - [phase1:vista_base] chunk 113/125 initial_pass=6/8 repairs+=6 running pass=808/904
+WARNING 05-14 03:51:46 scheduler.py:1560] Sequence group 1199_parallel_sample_1 is preempted by PreemptionMode.RECOMPUTE mode because there is not enough KV cache space. This can affect the end-to-end performance. Increase gpu_memory_utilization or tensor_parallel_size to provide more KV cache memory. total_num_cumulative_preemption=101
+2026-05-14 03:52:12.154 | INFO     | __main__:phase1_vista_generate:178 - [phase1:vista_base] chunk 114/125 initial_pass=7/8 repairs+=3 running pass=815/912
+2026-05-14 03:52:46.936 | INFO     | __main__:phase1_vista_generate:178 - [phase1:vista_base] chunk 115/125 initial_pass=6/8 repairs+=6 running pass=821/920
+2026-05-14 03:53:22.274 | INFO     | __main__:phase1_vista_generate:178 - [phase1:vista_base] chunk 116/125 initial_pass=6/8 repairs+=6 running pass=827/928
+2026-05-14 03:53:59.869 | INFO     | __main__:phase1_vista_generate:178 - [phase1:vista_base] chunk 117/125 initial_pass=5/8 repairs+=9 running pass=832/936
+2026-05-14 03:54:32.831 | INFO     | __main__:phase1_vista_generate:178 - [phase1:vista_base] chunk 118/125 initial_pass=6/8 repairs+=6 running pass=838/944
+2026-05-14 03:55:08.639 | INFO     | __main__:phase1_vista_generate:178 - [phase1:vista_base] chunk 119/125 initial_pass=5/8 repairs+=9 running pass=843/952
+2026-05-14 03:55:46.284 | INFO     | __main__:phase1_vista_generate:178 - [phase1:vista_base] chunk 120/125 initial_pass=4/8 repairs+=12 running pass=847/960
+2026-05-14 03:56:23.959 | INFO     | __main__:phase1_vista_generate:178 - [phase1:vista_base] chunk 121/125 initial_pass=4/8 repairs+=12 running pass=851/968
+2026-05-14 03:57:03.564 | INFO     | __main__:phase1_vista_generate:178 - [phase1:vista_base] chunk 122/125 initial_pass=4/8 repairs+=12 running pass=855/976
+2026-05-14 03:57:43.261 | INFO     | __main__:phase1_vista_generate:178 - [phase1:vista_base] chunk 123/125 initial_pass=4/8 repairs+=12 running pass=859/984
+2026-05-14 03:58:19.559 | INFO     | __main__:phase1_vista_generate:178 - [phase1:vista_base] chunk 124/125 initial_pass=6/8 repairs+=6 running pass=865/992
+2026-05-14 03:59:00.179 | INFO     | __main__:phase1_vista_generate:178 - [phase1:vista_base] chunk 125/125 initial_pass=4/8 repairs+=12 running pass=869/1000
+2026-05-14 03:59:00.179 | INFO     | __main__:phase1_vista_generate:182 - [phase1:vista_base] generation complete: initial_pass=869/1000 repair_pass=0/1000 total_repair_iters=393
+2026-05-14 03:59:00.805 | INFO     | __main__:phase2_vista_score:188 - [phase2:vista_base] scoring /home/ubuntu/vista/runs/all3_rerun_20260513_185405_UTC/outputs/malt/raw_vista_base.jsonl with 12 workers → /home/ubuntu/vista/runs/all3_rerun_20260513_185405_UTC/outputs/malt/vista_base.jsonl
+/home/ubuntu/.venvs/ai_gym_env/lib/python3.10/site-packages/networkx/readwrite/json_graph/node_link.py:142: FutureWarning: 
+The default value will be `edges="edges" in NetworkX 3.6.
+
+To make this warning go away, explicitly set the edges kwarg, e.g.:
+
+  nx.node_link_data(G, edges="links") to preserve current behavior, or
+  nx.node_link_data(G, edges="edges") for forward compatibility.
+  warnings.warn(
+/home/ubuntu/.venvs/ai_gym_env/lib/python3.10/site-packages/networkx/readwrite/json_graph/node_link.py:142: FutureWarning: 
+The default value will be `edges="edges" in NetworkX 3.6.
+
+To make this warning go away, explicitly set the edges kwarg, e.g.:
+
+  nx.node_link_data(G, edges="links") to preserve current behavior, or
+  nx.node_link_data(G, edges="edges") for forward compatibility.
+  warnings.warn(
+/home/ubuntu/.venvs/ai_gym_env/lib/python3.10/site-packages/networkx/readwrite/json_graph/node_link.py:142: FutureWarning: 
+The default value will be `edges="edges" in NetworkX 3.6.
+
+To make this warning go away, explicitly set the edges kwarg, e.g.:
+
+  nx.node_link_data(G, edges="links") to preserve current behavior, or
+  nx.node_link_data(G, edges="edges") for forward compatibility.
+  warnings.warn(
+/home/ubuntu/.venvs/ai_gym_env/lib/python3.10/site-packages/networkx/readwrite/json_graph/node_link.py:142: FutureWarning: 
+The default value will be `edges="edges" in NetworkX 3.6.
+
+To make this warning go away, explicitly set the edges kwarg, e.g.:
+
+  nx.node_link_data(G, edges="links") to preserve current behavior, or
+  nx.node_link_data(G, edges="edges") for forward compatibility.
+  warnings.warn(
+/home/ubuntu/.venvs/ai_gym_env/lib/python3.10/site-packages/networkx/readwrite/json_graph/node_link.py:142: FutureWarning: 
+The default value will be `edges="edges" in NetworkX 3.6.
+
+To make this warning go away, explicitly set the edges kwarg, e.g.:
+
+  nx.node_link_data(G, edges="links") to preserve current behavior, or
+  nx.node_link_data(G, edges="edges") for forward compatibility.
+  warnings.warn(
+/home/ubuntu/.venvs/ai_gym_env/lib/python3.10/site-packages/networkx/readwrite/json_graph/node_link.py:142: FutureWarning: 
+The default value will be `edges="edges" in NetworkX 3.6.
+
+To make this warning go away, explicitly set the edges kwarg, e.g.:
+
+  nx.node_link_data(G, edges="links") to preserve current behavior, or
+  nx.node_link_data(G, edges="edges") for forward compatibility.
+  warnings.warn(
+/home/ubuntu/.venvs/ai_gym_env/lib/python3.10/site-packages/networkx/readwrite/json_graph/node_link.py:142: FutureWarning: 
+The default value will be `edges="edges" in NetworkX 3.6.
+
+To make this warning go away, explicitly set the edges kwarg, e.g.:
+
+  nx.node_link_data(G, edges="links") to preserve current behavior, or
+  nx.node_link_data(G, edges="edges") for forward compatibility.
+  warnings.warn(
+/home/ubuntu/.venvs/ai_gym_env/lib/python3.10/site-packages/networkx/readwrite/json_graph/node_link.py:142: FutureWarning: 
+The default value will be `edges="edges" in NetworkX 3.6.
+
+To make this warning go away, explicitly set the edges kwarg, e.g.:
+
+  nx.node_link_data(G, edges="links") to preserve current behavior, or
+  nx.node_link_data(G, edges="edges") for forward compatibility.
+  warnings.warn(
+/home/ubuntu/.venvs/ai_gym_env/lib/python3.10/site-packages/networkx/readwrite/json_graph/node_link.py:142: FutureWarning: 
+The default value will be `edges="edges" in NetworkX 3.6.
+
+To make this warning go away, explicitly set the edges kwarg, e.g.:
+
+  nx.node_link_data(G, edges="links") to preserve current behavior, or
+  nx.node_link_data(G, edges="edges") for forward compatibility.
+  warnings.warn(
+/home/ubuntu/.venvs/ai_gym_env/lib/python3.10/site-packages/networkx/readwrite/json_graph/node_link.py:142: FutureWarning: 
+The default value will be `edges="edges" in NetworkX 3.6.
+
+To make this warning go away, explicitly set the edges kwarg, e.g.:
+
+  nx.node_link_data(G, edges="links") to preserve current behavior, or
+  nx.node_link_data(G, edges="edges") for forward compatibility.
+  warnings.warn(
+/home/ubuntu/.venvs/ai_gym_env/lib/python3.10/site-packages/networkx/readwrite/json_graph/node_link.py:142: FutureWarning: 
+The default value will be `edges="edges" in NetworkX 3.6.
+
+To make this warning go away, explicitly set the edges kwarg, e.g.:
+
+  nx.node_link_data(G, edges="links") to preserve current behavior, or
+  nx.node_link_data(G, edges="edges") for forward compatibility.
+  warnings.warn(
+/home/ubuntu/.venvs/ai_gym_env/lib/python3.10/site-packages/networkx/readwrite/json_graph/node_link.py:142: FutureWarning: 
+The default value will be `edges="edges" in NetworkX 3.6.
+
+To make this warning go away, explicitly set the edges kwarg, e.g.:
+
+  nx.node_link_data(G, edges="links") to preserve current behavior, or
+  nx.node_link_data(G, edges="edges") for forward compatibility.
+  warnings.warn(
+/usr/lib/python3.10/multiprocessing/resource_tracker.py:224: UserWarning: resource_tracker: There appear to be 5 leaked semaphore objects to clean up at shutdown
+  warnings.warn('resource_tracker: There appear to be %d '

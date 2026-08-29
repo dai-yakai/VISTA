@@ -1,0 +1,8 @@
+{
+  "method": "vista_base",
+  "n": 1000,
+  "correctness": 0.992,
+  "safety": 0.869,
+  "avg_latency_s": 3.519984071264982,
+  "out_path": "/home/ubuntu/vista/runs/all3_rerun_20260513_185405_UTC/outputs/malt/vista_base.jsonl"
+}

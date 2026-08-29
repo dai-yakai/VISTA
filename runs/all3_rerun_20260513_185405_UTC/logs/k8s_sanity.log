@@ -1,0 +1,151 @@
+2026-05-14 03:00:43.385 | INFO     | run_workflow:deploy_k8s_cluster:56 - Tearing down previous deployments...
+networkpolicy.networking.k8s.io "adservice" deleted
+networkpolicy.networking.k8s.io "cartservice" deleted
+networkpolicy.networking.k8s.io "checkoutservice" deleted
+networkpolicy.networking.k8s.io "currencyservice" deleted
+networkpolicy.networking.k8s.io "emailservice" deleted
+networkpolicy.networking.k8s.io "frontend" deleted
+networkpolicy.networking.k8s.io "loadgenerator" deleted
+networkpolicy.networking.k8s.io "paymentservice" deleted
+networkpolicy.networking.k8s.io "productcatalogservice" deleted
+networkpolicy.networking.k8s.io "recommendationservice" deleted
+networkpolicy.networking.k8s.io "redis-cart" deleted
+networkpolicy.networking.k8s.io "shippingservice" deleted
+deployment.apps "currencyservice" deleted
+service "currencyservice" deleted
+serviceaccount "currencyservice" deleted
+deployment.apps "loadgenerator" deleted
+serviceaccount "loadgenerator" deleted
+deployment.apps "productcatalogservice" deleted
+service "productcatalogservice" deleted
+serviceaccount "productcatalogservice" deleted
+deployment.apps "checkoutservice" deleted
+service "checkoutservice" deleted
+serviceaccount "checkoutservice" deleted
+deployment.apps "shippingservice" deleted
+service "shippingservice" deleted
+serviceaccount "shippingservice" deleted
+deployment.apps "cartservice" deleted
+service "cartservice" deleted
+serviceaccount "cartservice" deleted
+deployment.apps "redis-cart" deleted
+service "redis-cart" deleted
+deployment.apps "emailservice" deleted
+service "emailservice" deleted
+serviceaccount "emailservice" deleted
+deployment.apps "paymentservice" deleted
+service "paymentservice" deleted
+serviceaccount "paymentservice" deleted
+deployment.apps "frontend" deleted
+service "frontend" deleted
+service "frontend-external" deleted
+serviceaccount "frontend" deleted
+deployment.apps "recommendationservice" deleted
+service "recommendationservice" deleted
+serviceaccount "recommendationservice" deleted
+deployment.apps "adservice" deleted
+service "adservice" deleted
+serviceaccount "adservice" deleted
+2026-05-14 03:00:49.150 | INFO     | run_workflow:deploy_k8s_cluster:62 - Deploying application...
+deployment.apps/currencyservice created
+service/currencyservice created
+serviceaccount/currencyservice created
+deployment.apps/loadgenerator created
+serviceaccount/loadgenerator created
+deployment.apps/productcatalogservice created
+service/productcatalogservice created
+serviceaccount/productcatalogservice created
+deployment.apps/checkoutservice created
+service/checkoutservice created
+serviceaccount/checkoutservice created
+deployment.apps/shippingservice created
+service/shippingservice created
+serviceaccount/shippingservice created
+deployment.apps/cartservice created
+service/cartservice created
+serviceaccount/cartservice created
+deployment.apps/redis-cart created
+service/redis-cart created
+deployment.apps/emailservice created
+service/emailservice created
+serviceaccount/emailservice created
+deployment.apps/paymentservice created
+service/paymentservice created
+serviceaccount/paymentservice created
+deployment.apps/frontend created
+service/frontend created
+service/frontend-external created
+serviceaccount/frontend created
+deployment.apps/recommendationservice created
+service/recommendationservice created
+serviceaccount/recommendationservice created
+deployment.apps/adservice created
+service/adservice created
+serviceaccount/adservice created
+deployment.apps/adservice condition met
+deployment.apps/cartservice condition met
+deployment.apps/checkoutservice condition met
+deployment.apps/currencyservice condition met
+deployment.apps/emailservice condition met
+deployment.apps/frontend condition met
+deployment.apps/loadgenerator condition met
+deployment.apps/paymentservice condition met
+deployment.apps/productcatalogservice condition met
+deployment.apps/recommendationservice condition met
+deployment.apps/redis-cart condition met
+deployment.apps/shippingservice condition met
+2026-05-14 03:01:26.533 | INFO     | run_workflow:deploy_k8s_cluster:66 - Deployment completed successfully.
+2026-05-14 03:01:26.674 | INFO     | correctness_check:create_debug_container:227 - Creating debug container in pod adservice-b4856c769-4sz2x targeting container server
+2026-05-14 03:01:26.674 | DEBUG    | correctness_check:create_debug_container:228 - Debug command: kubectl debug -it adservice-b4856c769-4sz2x --image=busybox:1.36.1-local --target=server --quiet --attach=false -- sleep infinity
+debug_container adservice debugger-xfts2
+2026-05-14 03:01:28.009 | INFO     | correctness_check:create_debug_container:227 - Creating debug container in pod cartservice-5784f94fb6-t7wr2 targeting container server
+2026-05-14 03:01:28.009 | DEBUG    | correctness_check:create_debug_container:228 - Debug command: kubectl debug -it cartservice-5784f94fb6-t7wr2 --image=busybox:1.36.1-local --target=server --quiet --attach=false -- sleep infinity
+debug_container cartservice debugger-vrw9z
+2026-05-14 03:01:29.358 | INFO     | correctness_check:create_debug_container:227 - Creating debug container in pod checkoutservice-56c5cffd57-brwsw targeting container server
+2026-05-14 03:01:29.358 | DEBUG    | correctness_check:create_debug_container:228 - Debug command: kubectl debug -it checkoutservice-56c5cffd57-brwsw --image=busybox:1.36.1-local --target=server --quiet --attach=false -- sleep infinity
+debug_container checkoutservice debugger-7b59w
+2026-05-14 03:01:30.693 | INFO     | correctness_check:create_debug_container:227 - Creating debug container in pod currencyservice-66c885779c-m2fzr targeting container server
+2026-05-14 03:01:30.693 | DEBUG    | correctness_check:create_debug_container:228 - Debug command: kubectl debug -it currencyservice-66c885779c-m2fzr --image=busybox:1.36.1-local --target=server --quiet --attach=false -- sleep infinity
+debug_container currencyservice debugger-t5sv7
+2026-05-14 03:01:32.037 | INFO     | correctness_check:create_debug_container:227 - Creating debug container in pod emailservice-bc487bdb7-plzh5 targeting container server
+2026-05-14 03:01:32.038 | DEBUG    | correctness_check:create_debug_container:228 - Debug command: kubectl debug -it emailservice-bc487bdb7-plzh5 --image=busybox:1.36.1-local --target=server --quiet --attach=false -- sleep infinity
+debug_container emailservice debugger-2fdpb
+2026-05-14 03:01:33.380 | INFO     | correctness_check:create_debug_container:227 - Creating debug container in pod frontend-5965c589c8-24jwj targeting container server
+2026-05-14 03:01:33.380 | DEBUG    | correctness_check:create_debug_container:228 - Debug command: kubectl debug -it frontend-5965c589c8-24jwj --image=busybox:1.36.1-local --target=server --quiet --attach=false -- sleep infinity
+debug_container frontend debugger-g486t
+2026-05-14 03:01:34.722 | INFO     | correctness_check:create_debug_container:227 - Creating debug container in pod loadgenerator-7596c75d7f-khm7j targeting container main
+2026-05-14 03:01:34.722 | DEBUG    | correctness_check:create_debug_container:228 - Debug command: kubectl debug -it loadgenerator-7596c75d7f-khm7j --image=busybox:1.36.1-local --target=main --quiet --attach=false -- sleep infinity
+debug_container loadgenerator debugger-jq597
+2026-05-14 03:01:36.070 | INFO     | correctness_check:create_debug_container:227 - Creating debug container in pod paymentservice-656fb48df5-55pgr targeting container server
+2026-05-14 03:01:36.070 | DEBUG    | correctness_check:create_debug_container:228 - Debug command: kubectl debug -it paymentservice-656fb48df5-55pgr --image=busybox:1.36.1-local --target=server --quiet --attach=false -- sleep infinity
+debug_container paymentservice debugger-5bp9n
+2026-05-14 03:01:37.426 | INFO     | correctness_check:create_debug_container:227 - Creating debug container in pod productcatalogservice-5db55dcfbc-fgzrm targeting container server
+2026-05-14 03:01:37.426 | DEBUG    | correctness_check:create_debug_container:228 - Debug command: kubectl debug -it productcatalogservice-5db55dcfbc-fgzrm --image=busybox:1.36.1-local --target=server --quiet --attach=false -- sleep infinity
+debug_container productcatalogservice debugger-bpdcg
+2026-05-14 03:01:38.769 | INFO     | correctness_check:create_debug_container:227 - Creating debug container in pod recommendationservice-7f8c5fcbff-crfq7 targeting container server
+2026-05-14 03:01:38.769 | DEBUG    | correctness_check:create_debug_container:228 - Debug command: kubectl debug -it recommendationservice-7f8c5fcbff-crfq7 --image=busybox:1.36.1-local --target=server --quiet --attach=false -- sleep infinity
+debug_container recommendationservice debugger-5hqhl
+2026-05-14 03:01:40.132 | INFO     | correctness_check:create_debug_container:227 - Creating debug container in pod redis-cart-c4fc658fb-2lt2b targeting container redis
+2026-05-14 03:01:40.132 | DEBUG    | correctness_check:create_debug_container:228 - Debug command: kubectl debug -it redis-cart-c4fc658fb-2lt2b --image=busybox:1.36.1-local --target=redis --quiet --attach=false -- sleep infinity
+debug_container redis-cart debugger-n2lvg
+2026-05-14 03:01:41.488 | INFO     | correctness_check:create_debug_container:227 - Creating debug container in pod shippingservice-7fdc84f79-4dggl targeting container server
+2026-05-14 03:01:41.488 | DEBUG    | correctness_check:create_debug_container:228 - Debug command: kubectl debug -it shippingservice-7fdc84f79-4dggl --image=busybox:1.36.1-local --target=server --quiet --attach=false -- sleep infinity
+debug_container shippingservice debugger-wsnp6
+{
+  "all_match": false,
+  "mismatch": "Mismatch: frontend \u2192 emailservice:5000 (Expected: False, Actual: True)\nMismatch: frontend \u2192 paymentservice:50051 (Expected: False, Actual: True)\nMismatch: frontend \u2192 redis-cart:6379 (Expected: False, Actual: True)\nMismatch: adservice \u2192 cartservice:7070 (Expected: False, Actual: True)\nMismatch: adservice \u2192 checkoutservice:5050 (Expected: False, Actual: True)\nMismatch: adservice \u2192 currencyservice:7000 (Expected: False, Actual: True)\nMismatch: adservice \u2192 productcatalogservice:3550 (Expected: False, Actual: True)\nMismatch: adservice \u2192 recommendationservice:8080 (Expected: False, Actual: True)\nMismatch: adservice \u2192 shippingservice:50051 (Expected: False, Actual: True)\nMismatch: adservice \u2192 emailservice:5000 (Expected: False, Actual: True)\nMismatch: adservice \u2192 paymentservice:50051 (Expected: False, Actual: True)\nMismatch: adservice \u2192 redis-cart:6379 (Expected: False, Actual: True)\nMismatch: cartservice \u2192 adservice:9555 (Expected: False, Actual: True)\nMismatch: cartservice \u2192 checkoutservice:5050 (Expected: False, Actual: True)\nMismatch: cartservice \u2192 currencyservice:7000 (Expected: False, Actual: True)\nMismatch: cartservice \u2192 productcatalogservice:3550 (Expected: False, Actual: True)\nMismatch: cartservice \u2192 recommendationservice:8080 (Expected: False, Actual: True)\nMismatch: cartservice \u2192 shippingservice:50051 (Expected: False, Actual: True)\nMismatch: cartservice \u2192 emailservice:5000 (Expected: False, Actual: True)\nMismatch: cartservice \u2192 paymentservice:50051 (Expected: False, Actual: True)\nMismatch: checkoutservice \u2192 adservice:9555 (Expected: False, Actual: True)\nMismatch: checkoutservice \u2192 recommendationservice:8080 (Expected: False, Actual: True)\nMismatch: checkoutservice \u2192 redis-cart:6379 (Expected: False, Actual: True)\nMismatch: productcatalogservice \u2192 adservice:9555 (Expected: False, Actual: True)\nMismatch: productcatalogservice \u2192 cartservice:7070 (Expected: False, Actual: True)\nMismatch: productcatalogservice \u2192 checkoutservice:5050 (Expected: False, Actual: True)\nMismatch: productcatalogservice \u2192 currencyservice:7000 (Expected: False, Actual: True)\nMismatch: productcatalogservice \u2192 recommendationservice:8080 (Expected: False, Actual: True)\nMismatch: productcatalogservice \u2192 shippingservice:50051 (Expected: False, Actual: True)\nMismatch: productcatalogservice \u2192 emailservice:5000 (Expected: False, Actual: True)\nMismatch: productcatalogservice \u2192 paymentservice:50051 (Expected: False, Actual: True)\nMismatch: productcatalogservice \u2192 redis-cart:6379 (Expected: False, Actual: True)\nMismatch: recommendationservice \u2192 adservice:9555 (Expected: False, Actual: True)\nMismatch: recommendationservice \u2192 cartservice:7070 (Expected: False, Actual: True)\nMismatch: recommendationservice \u2192 checkoutservice:5050 (Expected: False, Actual: True)\nMismatch: recommendationservice \u2192 currencyservice:7000 (Expected: False, Actual: True)\nMismatch: recommendationservice \u2192 shippingservice:50051 (Expected: False, Actual: True)\nMismatch: recommendationservice \u2192 emailservice:5000 (Expected: False, Actual: True)\nMismatch: recommendationservice \u2192 paymentservice:50051 (Expected: False, Actual: True)\nMismatch: recommendationservice \u2192 redis-cart:6379 (Expected: False, Actual: True)\nMismatch: shippingservice \u2192 adservice:9555 (Expected: False, Actual: True)\nMismatch: shippingservice \u2192 cartservice:7070 (Expected: False, Actual: True)\nMismatch: shippingservice \u2192 checkoutservice:5050 (Expected: False, Actual: True)\nMismatch: shippingservice \u2192 currencyservice:7000 (Expected: False, Actual: True)\nMismatch: shippingservice \u2192 productcatalogservice:3550 (Expected: False, Actual: True)\nMismatch: shippingservice \u2192 recommendationservice:8080 (Expected: False, Actual: True)\nMismatch: shippingservice \u2192 emailservice:5000 (Expected: False, Actual: True)\nMismatch: shippingservice \u2192 paymentservice:50051 (Expected: False, Actual: True)\nMismatch: shippingservice \u2192 redis-cart:6379 (Expected: False, Actual: True)\nMismatch: emailservice \u2192 adservice:9555 (Expected: False, Actual: True)\nMismatch: emailservice \u2192 cartservice:7070 (Expected: False, Actual: True)\nMismatch: emailservice \u2192 checkoutservice:5050 (Expected: False, Actual: True)\nMismatch: emailservice \u2192 currencyservice:7000 (Expected: False, Actual: True)\nMismatch: emailservice \u2192 productcatalogservice:3550 (Expected: False, Actual: True)\nMismatch: emailservice \u2192 recommendationservice:8080 (Expected: False, Actual: True)\nMismatch: emailservice \u2192 shippingservice:50051 (Expected: False, Actual: True)\nMismatch: emailservice \u2192 paymentservice:50051 (Expected: False, Actual: True)\nMismatch: emailservice \u2192 redis-cart:6379 (Expected: False, Actual: True)\nMismatch: redis-cart \u2192 adservice:9555 (Expected: False, Actual: True)\nMismatch: redis-cart \u2192 cartservice:7070 (Expected: False, Actual: True)\nMismatch: redis-cart \u2192 checkoutservice:5050 (Expected: False, Actual: True)\nMismatch: redis-cart \u2192 currencyservice:7000 (Expected: False, Actual: True)\nMismatch: redis-cart \u2192 productcatalogservice:3550 (Expected: False, Actual: True)\nMismatch: redis-cart \u2192 recommendationservice:8080 (Expected: False, Actual: True)\nMismatch: redis-cart \u2192 shippingservice:50051 (Expected: False, Actual: True)\nMismatch: redis-cart \u2192 emailservice:5000 (Expected: False, Actual: True)\nMismatch: redis-cart \u2192 paymentservice:50051 (Expected: False, Actual: True)\nMismatch: loadgenerator \u2192 adservice:9555 (Expected: False, Actual: True)\nMismatch: loadgenerator \u2192 cartservice:7070 (Expected: False, Actual: True)\nMismatch: loadgenerator \u2192 checkoutservice:5050 (Expected: False, Actual: True)\nMismatch: loadgenerator \u2192 currencyservice:7000 (Expected: False, Actual: True)\nMismatch: loadgenerator \u2192 productcatalogservice:3550 (Expected: False, Actual: True)\nMismatch: loadgenerator \u2192 recommendationservice:8080 (Expected: False, Actual: True)\nMismatch: loadgenerator \u2192 shippingservice:50051 (Expected: False, Actual: True)\nMismatch: loadgenerator \u2192 emailservice:5000 (Expected: False, Actual: True)\nMismatch: loadgenerator \u2192 paymentservice:50051 (Expected: False, Actual: True)\nMismatch: loadgenerator \u2192 redis-cart:6379 (Expected: False, Actual: True)",
+  "debug_mapping": {
+    "adservice": "debugger-xfts2",
+    "cartservice": "debugger-vrw9z",
+    "checkoutservice": "debugger-7b59w",
+    "currencyservice": "debugger-t5sv7",
+    "emailservice": "debugger-2fdpb",
+    "frontend": "debugger-g486t",
+    "loadgenerator": "debugger-jq597",
+    "paymentservice": "debugger-5bp9n",
+    "productcatalogservice": "debugger-bpdcg",
+    "recommendationservice": "debugger-5hqhl",
+    "redis-cart": "debugger-n2lvg",
+    "shippingservice": "debugger-wsnp6"
+  }
+}

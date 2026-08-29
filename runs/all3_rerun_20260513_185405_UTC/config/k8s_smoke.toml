@@ -1,0 +1,12 @@
+prompt_type = "zeroshot_base"
+num_queries = 1
+benchmark_path = "/home/ubuntu/vista/runs/all3_rerun_20260513_185405_UTC/config/k8s_smoke_errors.json"
+regenerate_config = true
+output_dir = "/home/ubuntu/vista/runs/all3_rerun_20260513_185405_UTC/outputs/k8s_smoke"
+microservice_dir = "/home/ubuntu/NetArena/app-k8s/microservices-demo"
+max_iterations = 10
+
+[[agent_client_configs]]
+name = "vista-main-k8s-smoke"
+base_url = "http://127.0.0.1:8000"
+prompt_type = "zeroshot_base"

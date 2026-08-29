@@ -1,0 +1,74 @@
+Pingall result:
+p1_h1 -> X X 
+p1_h2 -> X X 
+p1_r0 -> X X 
+*** Results: 100% dropped (0/6 received)
+
+Machine: p1_r0
+Command: sysctl net.ipv4.ip_forward
+Packet Loss: 100%
+Elapsed Time: 0.8446077299995522 seconds
+
+Command Output:
+net.ipv4.ip_forward = 1
+
+
+Pingall result:
+p1_h1 -> X X 
+p1_h2 -> X X 
+p1_r0 -> X X 
+*** Results: 100% dropped (0/6 received)
+
+Machine: p1_r0
+Command: ip route show
+Packet Loss: 100%
+Elapsed Time: 0.6213714449986583 seconds
+
+Command Output:
+192.168.1.0/24 dev p1_r0-eth1 proto kernel scope link src 192.168.1.1 
+192.168.2.0/24 dev p1_r0-eth2 proto kernel scope link src 192.168.2.1 
+
+
+Pingall result:
+p1_h1 -> X X 
+p1_h2 -> X X 
+p1_r0 -> X X 
+*** Results: 100% dropped (0/6 received)
+
+Machine: p1_r0
+Command: ip rule show
+Packet Loss: 100%
+Elapsed Time: 0.618554980999761 seconds
+
+Command Output:
+0:	from all lookup local
+0:	from all prohibit
+32766:	from all lookup main
+32767:	from all lookup default
+
+
+Pingall result:
+p1_h1 -> X X 
+p1_h2 -> X X 
+p1_r0 -> X X 
+*** Results: 100% dropped (0/6 received)
+
+Machine: p1_r0
+Command: ip rule del prohibit pref 0
+Packet Loss: 100%
+Elapsed Time: 0.005796044999442529 seconds
+
+Command Output:
+
+
+Pingall result:
+p1_h1 -> p1_h2 p1_r0 
+p1_h2 -> p1_h1 p1_r0 
+p1_r0 -> p1_h1 p1_h2 
+*** Results: 0% dropped (6/6 received)
+
+Machine: p1_r0
+Command: ip link show
+Packet Loss: 0%
+Elapsed Time: 1.3048765090024972 seconds
+

@@ -1,0 +1,91 @@
+Pingall result:
+p1_h1 -> X p1_r0 
+p1_h2 -> X p1_r0 
+p1_r0 -> p1_h1 p1_h2 
+*** Results: 33% dropped (4/6 received)
+
+Machine: p1_r0
+Command: sysctl net.ipv4.ip_forward
+Packet Loss: 33%
+Elapsed Time: 0.6933718530017359 seconds
+
+Command Output:
+net.ipv4.ip_forward = 1
+
+
+Pingall result:
+p1_h1 -> X p1_r0 
+p1_h2 -> X p1_r0 
+p1_r0 -> p1_h1 p1_h2 
+*** Results: 33% dropped (4/6 received)
+
+Machine: p1_r0
+Command: ip route show
+Packet Loss: 33%
+Elapsed Time: 0.6141063510003733 seconds
+
+Command Output:
+192.168.1.0/24 dev p1_r0-eth1 proto kernel scope link src 192.168.1.1 
+192.168.2.0/24 dev p1_r0-eth2 proto kernel scope link src 192.168.2.1 
+
+
+Pingall result:
+p1_h1 -> X p1_r0 
+p1_h2 -> X p1_r0 
+p1_r0 -> p1_h1 p1_h2 
+*** Results: 33% dropped (4/6 received)
+
+Machine: p1_r0
+Command: ip rule show
+Packet Loss: 33%
+Elapsed Time: 0.6298552620028204 seconds
+
+Command Output:
+0:	from all lookup local
+32766:	from all lookup main
+32767:	from all lookup default
+
+
+Pingall result:
+p1_h1 -> X p1_r0 
+p1_h2 -> X p1_r0 
+p1_r0 -> p1_h1 p1_h2 
+*** Results: 33% dropped (4/6 received)
+
+Machine: p1_r0
+Command: iptables -S
+Packet Loss: 33%
+Elapsed Time: 1.2772170620010002 seconds
+
+Command Output:
+-P INPUT ACCEPT
+-P FORWARD ACCEPT
+-P OUTPUT ACCEPT
+-A FORWARD -s 192.168.1.0/24 -j DROP
+
+
+Pingall result:
+p1_h1 -> X p1_r0 
+p1_h2 -> X p1_r0 
+p1_r0 -> p1_h1 p1_h2 
+*** Results: 33% dropped (4/6 received)
+
+Machine: p1_r0
+Command: iptables -D FORWARD -s 192.168.1.0/24 -j DROP
+Packet Loss: 33%
+Elapsed Time: 0.006790036000893451 seconds
+
+Command Output:
+
+
+Pingall result:
+p1_h1 -> p1_h2 p1_r0 
+p1_h2 -> p1_h1 p1_r0 
+p1_r0 -> p1_h1 p1_h2 
+*** Results: 0% dropped (6/6 received)
+
+Machine: p1_r0
+Command: ip link show
+Packet Loss: 0%
+Elapsed Time: 1.3432039780018385 seconds
+

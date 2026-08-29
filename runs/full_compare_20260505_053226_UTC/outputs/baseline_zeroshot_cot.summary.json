@@ -1,0 +1,8 @@
+{
+  "method": "zeroshot_cot",
+  "n": 1000,
+  "correctness": 0.418,
+  "safety": 0.418,
+  "avg_latency_s": 0.39184507612138986,
+  "out_path": "/home/ubuntu/vista/outputs/baseline_zeroshot_cot.jsonl"
+}

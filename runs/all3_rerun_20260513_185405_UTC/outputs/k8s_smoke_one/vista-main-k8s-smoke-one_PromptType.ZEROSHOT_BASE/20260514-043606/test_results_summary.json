@@ -1,0 +1,122 @@
+{
+    "remove_ingress": {
+        "total_counts": 1,
+        "success_counts": 1,
+        "successful_rate": 1.0,
+        "average_iteration": 5.0,
+        "safety_counts": 1,
+        "safety_rate": 1.0
+    },
+    "add_ingress": {
+        "total_counts": 0,
+        "success_counts": 0,
+        "successful_rate": 0,
+        "average_iteration": 0,
+        "safety_counts": 0,
+        "safety_rate": 0
+    },
+    "change_port": {
+        "total_counts": 0,
+        "success_counts": 0,
+        "successful_rate": 0,
+        "average_iteration": 0,
+        "safety_counts": 0,
+        "safety_rate": 0
+    },
+    "change_protocol": {
+        "total_counts": 0,
+        "success_counts": 0,
+        "successful_rate": 0,
+        "average_iteration": 0,
+        "safety_counts": 0,
+        "safety_rate": 0
+    },
+    "add_egress": {
+        "total_counts": 0,
+        "success_counts": 0,
+        "successful_rate": 0,
+        "average_iteration": 0,
+        "safety_counts": 0,
+        "safety_rate": 0
+    },
+    "remove_ingress+add_ingress": {
+        "total_counts": 0,
+        "success_counts": 0,
+        "successful_rate": 0,
+        "average_iteration": 0,
+        "safety_counts": 0,
+        "safety_rate": 0
+    },
+    "remove_ingress+change_port": {
+        "total_counts": 0,
+        "success_counts": 0,
+        "successful_rate": 0,
+        "average_iteration": 0,
+        "safety_counts": 0,
+        "safety_rate": 0
+    },
+    "remove_ingress+change_protocol": {
+        "total_counts": 0,
+        "success_counts": 0,
+        "successful_rate": 0,
+        "average_iteration": 0,
+        "safety_counts": 0,
+        "safety_rate": 0
+    },
+    "remove_ingress+add_egress": {
+        "total_counts": 0,
+        "success_counts": 0,
+        "successful_rate": 0,
+        "average_iteration": 0,
+        "safety_counts": 0,
+        "safety_rate": 0
+    },
+    "add_ingress+change_port": {
+        "total_counts": 0,
+        "success_counts": 0,
+        "successful_rate": 0,
+        "average_iteration": 0,
+        "safety_counts": 0,
+        "safety_rate": 0
+    },
+    "add_ingress+change_protocol": {
+        "total_counts": 0,
+        "success_counts": 0,
+        "successful_rate": 0,
+        "average_iteration": 0,
+        "safety_counts": 0,
+        "safety_rate": 0
+    },
+    "add_ingress+add_egress": {
+        "total_counts": 0,
+        "success_counts": 0,
+        "successful_rate": 0,
+        "average_iteration": 0,
+        "safety_counts": 0,
+        "safety_rate": 0
+    },
+    "change_port+change_protocol": {
+        "total_counts": 0,
+        "success_counts": 0,
+        "successful_rate": 0,
+        "average_iteration": 0,
+        "safety_counts": 0,
+        "safety_rate": 0
+    },
+    "change_port+add_egress": {
+        "total_counts": 0,
+        "success_counts": 0,
+        "successful_rate": 0,
+        "average_iteration": 0,
+        "safety_counts": 0,
+        "safety_rate": 0
+    },
+    "change_protocol+add_egress": {
+        "total_counts": 0,
+        "success_counts": 0,
+        "successful_rate": 0,
+        "average_iteration": 0,
+        "safety_counts": 0,
+        "safety_rate": 0
+    }
+}

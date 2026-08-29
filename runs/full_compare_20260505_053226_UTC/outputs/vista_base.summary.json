@@ -1,0 +1,8 @@
+{
+  "method": "vista_base",
+  "n": 1000,
+  "correctness": 1.0,
+  "safety": 0.709,
+  "avg_latency_s": 2.4600954618677497,
+  "out_path": "/home/ubuntu/vista/outputs/vista_base.jsonl"
+}

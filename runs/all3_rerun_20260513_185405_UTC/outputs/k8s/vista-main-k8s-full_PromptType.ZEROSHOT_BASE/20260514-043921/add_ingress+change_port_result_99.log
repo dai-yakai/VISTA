@@ -1,0 +1,264 @@
+LLM Command: ```kubectl get networkpolicy frontend -o yaml```
+Output: ```apiVersion: networking.k8s.io/v1
+kind: NetworkPolicy
+metadata:
+  annotations:
+    kubectl.kubernetes.io/last-applied-configuration: |
+      {"apiVersion":"networking.k8s.io/v1","kind":"NetworkPolicy","metadata":{"annotations":{},"name":"frontend","namespace":"default"},"spec":{"egress":[{}],"ingress":[{}],"podSelector":{"matchLabels":{"app":"frontend"}},"policyTypes":["Ingress","Egress"]}}
+  creationTimestamp: "2026-05-13T20:40:21Z"
+  generation: 40
+  name: frontend
+  namespace: default
+  resourceVersion: "366028"
+  uid: 07174b3a-dd44-4738-bdc8-32c899640d56
+spec:
+  egress:
+  - {}
+  ingress:
+  - {}
+  podSelector:
+    matchLabels:
+      app: frontend
+  policyTypes:
+  - Ingress
+  - Egress
+```
+Mismatch Summary: ```Mismatch: frontend → shippingservice:50051 (Expected: True, Actual: False)
+Mismatch: frontend → paymentservice:50051 (Expected: False, Actual: True)
+Mismatch: checkoutservice → shippingservice:50051 (Expected: True, Actual: False)
+Mismatch: shippingservice → paymentservice:50051 (Expected: False, Actual: True)```
+
+LLM Command: ```kubectl get networkpolicy shippingservice -o yaml```
+Output: ```apiVersion: networking.k8s.io/v1
+kind: NetworkPolicy
+metadata:
+  annotations:
+    kubectl.kubernetes.io/last-applied-configuration: |
+      {"apiVersion":"networking.k8s.io/v1","kind":"NetworkPolicy","metadata":{"annotations":{},"name":"shippingservice","namespace":"default"},"spec":{"egress":[{}],"ingress":[{"from":[{"podSelector":{"matchLabels":{"app":"frontend"}}},{"podSelector":{"matchLabels":{"app":"checkoutservice"}}}],"ports":[{"port":17563,"protocol":"TCP"}]}],"podSelector":{"matchLabels":{"app":"shippingservice"}},"policyTypes":["Ingress","Egress"]}}
+  creationTimestamp: "2026-05-13T20:40:21Z"
+  generation: 42
+  name: shippingservice
+  namespace: default
+  resourceVersion: "366123"
+  uid: a01e9fd4-3eb7-45dc-968f-02e2b166dbd2
+spec:
+  egress:
+  - {}
+  ingress:
+  - from:
+    - podSelector:
+        matchLabels:
+          app: frontend
+    - podSelector:
+        matchLabels:
+          app: checkoutservice
+    ports:
+    - port: 17563
+      protocol: TCP
+  podSelector:
+    matchLabels:
+      app: shippingservice
+  policyTypes:
+  - Ingress
+  - Egress
+```
+Mismatch Summary: ```Mismatch: frontend → shippingservice:50051 (Expected: True, Actual: False)
+Mismatch: frontend → paymentservice:50051 (Expected: False, Actual: True)
+Mismatch: checkoutservice → shippingservice:50051 (Expected: True, Actual: False)
+Mismatch: shippingservice → paymentservice:50051 (Expected: False, Actual: True)```
+
+LLM Command: ```kubectl get networkpolicy paymentservice -o yaml```
+Output: ```apiVersion: networking.k8s.io/v1
+kind: NetworkPolicy
+metadata:
+  annotations:
+    kubectl.kubernetes.io/last-applied-configuration: |
+      {"apiVersion":"networking.k8s.io/v1","kind":"NetworkPolicy","metadata":{"annotations":{},"name":"paymentservice","namespace":"default"},"spec":{"egress":[{}],"ingress":[{"from":[{"podSelector":{"matchLabels":{"app":"checkoutservice"}}}],"ports":[{"port":50051,"protocol":"TCP"}]},{"from":[{"podSelector":{"matchLabels":{"app":"frontend"}}}]},{"from":[{"podSelector":{"matchLabels":{"app":"shippingservice"}}}]}],"podSelector":{"matchLabels":{"app":"paymentservice"}},"policyTypes":["Ingress","Egress"]}}
+  creationTimestamp: "2026-05-13T20:40:21Z"
+  generation: 30
+  name: paymentservice
+  namespace: default
+  resourceVersion: "366122"
+  uid: 13259353-d5cf-4f28-b417-ce3e7723437b
+spec:
+  egress:
+  - {}
+  ingress:
+  - from:
+    - podSelector:
+        matchLabels:
+          app: checkoutservice
+    ports:
+    - port: 50051
+      protocol: TCP
+  - from:
+    - podSelector:
+        matchLabels:
+          app: frontend
+  - from:
+    - podSelector:
+        matchLabels:
+          app: shippingservice
+  podSelector:
+    matchLabels:
+      app: paymentservice
+  policyTypes:
+  - Ingress
+  - Egress
+```
+Mismatch Summary: ```Mismatch: frontend → shippingservice:50051 (Expected: True, Actual: False)
+Mismatch: frontend → paymentservice:50051 (Expected: False, Actual: True)
+Mismatch: checkoutservice → shippingservice:50051 (Expected: True, Actual: False)
+Mismatch: shippingservice → paymentservice:50051 (Expected: False, Actual: True)```
+
+LLM Command: ```kubectl patch networkpolicy shippingservice --type=json -p='[{"op":"add","path":"/spec/ingress/0/from/2","value":{"podSelector":{"matchLabels":{"app":"paymentservice"}}}}]'```
+Output: ```networkpolicy.networking.k8s.io/shippingservice patched
+```
+Mismatch Summary: ```Mismatch: frontend → shippingservice:50051 (Expected: True, Actual: False)
+Mismatch: frontend → paymentservice:50051 (Expected: False, Actual: True)
+Mismatch: checkoutservice → shippingservice:50051 (Expected: True, Actual: False)
+Mismatch: shippingservice → paymentservice:50051 (Expected: False, Actual: True)```
+
+LLM Command: ```kubectl get networkpolicy paymentservice -o yaml```
+Output: ```apiVersion: networking.k8s.io/v1
+kind: NetworkPolicy
+metadata:
+  annotations:
+    kubectl.kubernetes.io/last-applied-configuration: |
+      {"apiVersion":"networking.k8s.io/v1","kind":"NetworkPolicy","metadata":{"annotations":{},"name":"paymentservice","namespace":"default"},"spec":{"egress":[{}],"ingress":[{"from":[{"podSelector":{"matchLabels":{"app":"checkoutservice"}}}],"ports":[{"port":50051,"protocol":"TCP"}]},{"from":[{"podSelector":{"matchLabels":{"app":"frontend"}}}]},{"from":[{"podSelector":{"matchLabels":{"app":"shippingservice"}}}]}],"podSelector":{"matchLabels":{"app":"paymentservice"}},"policyTypes":["Ingress","Egress"]}}
+  creationTimestamp: "2026-05-13T20:40:21Z"
+  generation: 30
+  name: paymentservice
+  namespace: default
+  resourceVersion: "366122"
+  uid: 13259353-d5cf-4f28-b417-ce3e7723437b
+spec:
+  egress:
+  - {}
+  ingress:
+  - from:
+    - podSelector:
+        matchLabels:
+          app: checkoutservice
+    ports:
+    - port: 50051
+      protocol: TCP
+  - from:
+    - podSelector:
+        matchLabels:
+          app: frontend
+  - from:
+    - podSelector:
+        matchLabels:
+          app: shippingservice
+  podSelector:
+    matchLabels:
+      app: paymentservice
+  policyTypes:
+  - Ingress
+  - Egress
+```
+Mismatch Summary: ```Mismatch: frontend → shippingservice:50051 (Expected: True, Actual: False)
+Mismatch: frontend → paymentservice:50051 (Expected: False, Actual: True)
+Mismatch: checkoutservice → shippingservice:50051 (Expected: True, Actual: False)
+Mismatch: shippingservice → paymentservice:50051 (Expected: False, Actual: True)```
+
+LLM Command: ```kubectl patch networkpolicy shippingservice --type=json -p='[{"op":"add","path":"/spec/ingress/0/from/3","value":{"podSelector":{"matchLabels":{"app":"paymentservice"}}}}]'```
+Output: ```networkpolicy.networking.k8s.io/shippingservice patched
+```
+Mismatch Summary: ```Mismatch: frontend → shippingservice:50051 (Expected: True, Actual: False)
+Mismatch: frontend → paymentservice:50051 (Expected: False, Actual: True)
+Mismatch: checkoutservice → shippingservice:50051 (Expected: True, Actual: False)
+Mismatch: shippingservice → paymentservice:50051 (Expected: False, Actual: True)```
+
+LLM Command: ```kubectl get networkpolicy shippingservice -o yaml```
+Output: ```apiVersion: networking.k8s.io/v1
+kind: NetworkPolicy
+metadata:
+  annotations:
+    kubectl.kubernetes.io/last-applied-configuration: |
+      {"apiVersion":"networking.k8s.io/v1","kind":"NetworkPolicy","metadata":{"annotations":{},"name":"shippingservice","namespace":"default"},"spec":{"egress":[{}],"ingress":[{"from":[{"podSelector":{"matchLabels":{"app":"frontend"}}},{"podSelector":{"matchLabels":{"app":"checkoutservice"}}}],"ports":[{"port":17563,"protocol":"TCP"}]}],"podSelector":{"matchLabels":{"app":"shippingservice"}},"policyTypes":["Ingress","Egress"]}}
+  creationTimestamp: "2026-05-13T20:40:21Z"
+  generation: 44
+  name: shippingservice
+  namespace: default
+  resourceVersion: "366170"
+  uid: a01e9fd4-3eb7-45dc-968f-02e2b166dbd2
+spec:
+  egress:
+  - {}
+  ingress:
+  - from:
+    - podSelector:
+        matchLabels:
+          app: frontend
+    - podSelector:
+        matchLabels:
+          app: checkoutservice
+    - podSelector:
+        matchLabels:
+          app: paymentservice
+    - podSelector:
+        matchLabels:
+          app: paymentservice
+    ports:
+    - port: 17563
+      protocol: TCP
+  podSelector:
+    matchLabels:
+      app: shippingservice
+  policyTypes:
+  - Ingress
+  - Egress
+```
+Mismatch Summary: ```Mismatch: frontend → shippingservice:50051 (Expected: True, Actual: False)
+Mismatch: frontend → paymentservice:50051 (Expected: False, Actual: True)
+Mismatch: checkoutservice → shippingservice:50051 (Expected: True, Actual: False)
+Mismatch: shippingservice → paymentservice:50051 (Expected: False, Actual: True)```
+
+LLM Command: ```kubectl patch networkpolicy shippingservice --type=json -p='[{"op":"replace","path":"/spec/ingress/0/from/3","value":{"podSelector":{"matchLabels":{"app":"paymentservice"}}}}]'```
+Output: ```networkpolicy.networking.k8s.io/shippingservice patched (no change)
+```
+Mismatch Summary: ```Mismatch: frontend → shippingservice:50051 (Expected: True, Actual: False)
+Mismatch: frontend → paymentservice:50051 (Expected: False, Actual: True)
+Mismatch: checkoutservice → shippingservice:50051 (Expected: True, Actual: False)
+Mismatch: shippingservice → paymentservice:50051 (Expected: False, Actual: True)```
+
+LLM Command: ```kubectl get networkpolicy frontend -o yaml```
+Output: ```apiVersion: networking.k8s.io/v1
+kind: NetworkPolicy
+metadata:
+  annotations:
+    kubectl.kubernetes.io/last-applied-configuration: |
+      {"apiVersion":"networking.k8s.io/v1","kind":"NetworkPolicy","metadata":{"annotations":{},"name":"frontend","namespace":"default"},"spec":{"egress":[{}],"ingress":[{}],"podSelector":{"matchLabels":{"app":"frontend"}},"policyTypes":["Ingress","Egress"]}}
+  creationTimestamp: "2026-05-13T20:40:21Z"
+  generation: 40
+  name: frontend
+  namespace: default
+  resourceVersion: "366028"
+  uid: 07174b3a-dd44-4738-bdc8-32c899640d56
+spec:
+  egress:
+  - {}
+  ingress:
+  - {}
+  podSelector:
+    matchLabels:
+      app: frontend
+  policyTypes:
+  - Ingress
+  - Egress
+```
+Mismatch Summary: ```Mismatch: frontend → shippingservice:50051 (Expected: True, Actual: False)
+Mismatch: frontend → paymentservice:50051 (Expected: False, Actual: True)
+Mismatch: checkoutservice → shippingservice:50051 (Expected: True, Actual: False)
+Mismatch: shippingservice → paymentservice:50051 (Expected: False, Actual: True)```
+
+LLM Command: ```kubectl patch networkpolicy shippingservice --type=json -p='[{"op":"replace","path":"/spec/ingress/0/from/3","value":{"podSelector":{"matchLabels":{"app":"paymentservice"}}}}]'```
+Output: ```networkpolicy.networking.k8s.io/shippingservice patched (no change)
+```
+Mismatch Summary: ```Mismatch: frontend → shippingservice:50051 (Expected: True, Actual: False)
+Mismatch: frontend → paymentservice:50051 (Expected: False, Actual: True)
+Mismatch: checkoutservice → shippingservice:50051 (Expected: True, Actual: False)
+Mismatch: shippingservice → paymentservice:50051 (Expected: False, Actual: True)```
+

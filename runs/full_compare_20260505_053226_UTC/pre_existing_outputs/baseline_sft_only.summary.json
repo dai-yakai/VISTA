@@ -1,0 +1,8 @@
+{
+  "method": "sft_only",
+  "n": 1000,
+  "correctness": 1.0,
+  "safety": 0.0,
+  "avg_latency_s": 0.23419264888763427,
+  "out_path": "/home/ubuntu/vista/outputs/baseline_sft_only.jsonl"
+}

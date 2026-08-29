@@ -1,0 +1,32 @@
+# Python/runtime artifacts
+__pycache__/
+*.py[cod]
+*.pyo
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Local environments and secrets
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.crt
+
+# Large external model assets are kept outside git.
+# In this workspace, models is a symlink to /home/ubuntu/models.
+/models
+
+# Rebuildable local caches
+/cache/
+
+# Generated strict experiment artifacts are packaged separately when needed.
+/runs/strict_replay_*/
+/runs/strict_full_*/
+/runs/LATEST_STRICT_*
+
+# Editor/OS files
+.DS_Store
+.idea/
+.vscode/

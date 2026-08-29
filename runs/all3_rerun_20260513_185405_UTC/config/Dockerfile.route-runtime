@@ -1,0 +1,3 @@
+FROM netarena-route-runtime-base:latest
+COPY route_container_requirements.txt /tmp/route_container_requirements.txt
+RUN python3 -m pip install --break-system-packages --no-cache-dir -r /tmp/route_container_requirements.txt

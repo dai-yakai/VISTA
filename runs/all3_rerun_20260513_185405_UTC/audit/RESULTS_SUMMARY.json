@@ -1,0 +1,92 @@
+{
+  "run_dir": "/home/ubuntu/vista/runs/all3_rerun_20260513_185405_UTC",
+  "created_at_local": "2026-05-14T07:00:16+08:00",
+  "model": {
+    "path": "/home/ubuntu/vista/models/Qwen2.5-Coder-7B-Instruct",
+    "served_name": "qwen-local",
+    "api_base": "http://127.0.0.1:8008/v1",
+    "temperature": 0,
+    "max_tokens_for_a2a": 384
+  },
+  "malt": {
+    "n": 1000,
+    "correctness": 0.992,
+    "safety": 0.869,
+    "avg_latency_s": 3.519984071264982,
+    "raw_records": 1000,
+    "scored_records": 1000,
+    "initial_validation_pass": 869,
+    "total_repair_iters": 393,
+    "raw_path": "/home/ubuntu/vista/runs/all3_rerun_20260513_185405_UTC/outputs/malt/raw_vista_base.jsonl",
+    "scored_path": "/home/ubuntu/vista/runs/all3_rerun_20260513_185405_UTC/outputs/malt/vista_base.jsonl",
+    "summary_path": "/home/ubuntu/vista/runs/all3_rerun_20260513_185405_UTC/outputs/malt/vista_base.summary.json"
+  },
+  "route": {
+    "n": 150,
+    "success_rate": 0.36666666666666664,
+    "safety_rate": 0.9866666666666667,
+    "avg_iterations": 9.046666666666667,
+    "avg_packet_loss_reduction": 25.573333333333334,
+    "per_query_result_files": 150,
+    "type_summary_files": 15,
+    "query_file_sha256": "4ee206f50f3368382c0c4431c3412ec422334bb08215fbd0c82d353803c376ec",
+    "query_file_used_copy": "/home/ubuntu/vista/runs/all3_rerun_20260513_185405_UTC/config/route_full_150_queries.used.json",
+    "output_dir": "/home/ubuntu/vista/runs/all3_rerun_20260513_185405_UTC/outputs/route/vista-main-route-full_PromptType.ZEROSHOT_BASE/20260513-200643",
+    "per_type": {
+      "disable_interface": {"n": 10, "success_rate": 0.7, "safety_rate": 1.0, "avg_iterations": 6.5},
+      "disable_interface+drop_traffic_to_from_subnet": {"n": 10, "success_rate": 0.4, "safety_rate": 1.0, "avg_iterations": 9.6},
+      "disable_interface+remove_ip": {"n": 10, "success_rate": 0.1, "safety_rate": 1.0, "avg_iterations": 9.5},
+      "disable_interface+wrong_routing_table": {"n": 10, "success_rate": 0.3, "safety_rate": 0.8, "avg_iterations": 8.5},
+      "disable_routing": {"n": 10, "success_rate": 1.0, "safety_rate": 1.0, "avg_iterations": 5.4},
+      "disable_routing+disable_interface": {"n": 10, "success_rate": 0.6, "safety_rate": 1.0, "avg_iterations": 9.3},
+      "disable_routing+drop_traffic_to_from_subnet": {"n": 10, "success_rate": 1.0, "safety_rate": 1.0, "avg_iterations": 9.2},
+      "disable_routing+remove_ip": {"n": 10, "success_rate": 0.0, "safety_rate": 1.0, "avg_iterations": 10.0},
+      "disable_routing+wrong_routing_table": {"n": 10, "success_rate": 0.0, "safety_rate": 1.0, "avg_iterations": 10.0},
+      "drop_traffic_to_from_subnet": {"n": 10, "success_rate": 1.0, "safety_rate": 1.0, "avg_iterations": 9.0},
+      "drop_traffic_to_from_subnet+wrong_routing_table": {"n": 10, "success_rate": 0.0, "safety_rate": 1.0, "avg_iterations": 10.0},
+      "remove_ip": {"n": 10, "success_rate": 0.1, "safety_rate": 1.0, "avg_iterations": 9.1},
+      "remove_ip+drop_traffic_to_from_subnet": {"n": 10, "success_rate": 0.3, "safety_rate": 1.0, "avg_iterations": 9.6},
+      "remove_ip+wrong_routing_table": {"n": 10, "success_rate": 0.0, "safety_rate": 1.0, "avg_iterations": 10.0},
+      "wrong_routing_table": {"n": 10, "success_rate": 0.0, "safety_rate": 1.0, "avg_iterations": 10.0}
+    }
+  },
+  "k8s": {
+    "n": 150,
+    "success_rate": 0.29333333333333333,
+    "safety_rate": 0.88,
+    "avg_iterations": 8.513333333333334,
+    "per_query_result_files": 150,
+    "generated_config_sha256": "2847942248fcbc65e0ba24965e4d52ff0bcaa95ca1abceb291785c6de6c9cd46",
+    "summary_path": "/home/ubuntu/vista/runs/all3_rerun_20260513_185405_UTC/outputs/k8s/vista-main-k8s-full_PromptType.ZEROSHOT_BASE/20260514-043921/test_results_summary.json",
+    "generated_config_path": "/home/ubuntu/vista/runs/all3_rerun_20260513_185405_UTC/config/k8s_full_errors.json",
+    "per_type": {
+      "add_egress": {"n": 10, "success": 0, "safety": 10, "avg_iterations": 10.0},
+      "add_ingress": {"n": 10, "success": 5, "safety": 10, "avg_iterations": 6.7},
+      "add_ingress+add_egress": {"n": 10, "success": 0, "safety": 8, "avg_iterations": 10.0},
+      "add_ingress+change_port": {"n": 10, "success": 3, "safety": 9, "avg_iterations": 9.2},
+      "add_ingress+change_protocol": {"n": 10, "success": 4, "safety": 9, "avg_iterations": 8.7},
+      "change_port": {"n": 10, "success": 8, "safety": 10, "avg_iterations": 5.0},
+      "change_port+add_egress": {"n": 10, "success": 0, "safety": 8, "avg_iterations": 10.0},
+      "change_port+change_protocol": {"n": 10, "success": 5, "safety": 9, "avg_iterations": 8.0},
+      "change_protocol": {"n": 10, "success": 8, "safety": 10, "avg_iterations": 4.7},
+      "change_protocol+add_egress": {"n": 10, "success": 0, "safety": 10, "avg_iterations": 10.0},
+      "remove_ingress": {"n": 10, "success": 3, "safety": 7, "avg_iterations": 8.0},
+      "remove_ingress+add_egress": {"n": 10, "success": 0, "safety": 6, "avg_iterations": 10.0},
+      "remove_ingress+add_ingress": {"n": 10, "success": 1, "safety": 8, "avg_iterations": 9.3},
+      "remove_ingress+change_port": {"n": 10, "success": 2, "safety": 8, "avg_iterations": 9.6},
+      "remove_ingress+change_protocol": {"n": 10, "success": 5, "safety": 10, "avg_iterations": 8.5}
+    }
+  },
+  "audit_conclusion": {
+    "route_previous_90_percent_result": "not_accepted",
+    "current_route_result_credible": true,
+    "current_k8s_result_credible": true,
+    "inflating_trick_found": false,
+    "notes": [
+      "Route was rerun with the official app-route workflow and 150 fixed queries.",
+      "K8s was rerun with the full 150-query main workflow after sanity checks.",
+      "Logs contain many failed and max-iteration cases, so the results are not artificially inflated.",
+      "K8s local changes are environment adapters for image/wait stability, not answer logic."
+    ]
+  }
+}

@@ -1,0 +1,148 @@
+2026-05-04 02:17:23.220 | INFO     | src.retrieval:build_or_load:54 - [retrieval] loading cache fcff12679ed4
+/root/miniconda3/lib/python3.12/site-packages/vllm/connections.py:8: RuntimeWarning: Failed to read commit hash:
+No module named 'vllm._version'
+  from vllm.version import __version__ as VLLM_VERSION
+2026-05-04 02:17:28.575 | INFO     | src.llm_engine:__init__:38 - [LLMEngine] loading model: /root/autodl-tmp/vista/models/Qwen2.5-Coder-7B-Instruct
+INFO 05-04 02:17:36 llm_engine.py:237] Initializing an LLM engine (vdev) with config: model='/root/autodl-tmp/vista/models/Qwen2.5-Coder-7B-Instruct', speculative_config=None, tokenizer='/root/autodl-tmp/vista/models/Qwen2.5-Coder-7B-Instruct', skip_tokenizer_init=False, tokenizer_mode=auto, revision=None, override_neuron_config=None, rope_scaling=None, rope_theta=None, tokenizer_revision=None, trust_remote_code=True, dtype=torch.bfloat16, max_seq_len=4096, download_dir=None, load_format=LoadFormat.AUTO, tensor_parallel_size=1, pipeline_parallel_size=1, disable_custom_all_reduce=False, quantization=None, enforce_eager=False, kv_cache_dtype=auto, quantization_param_path=None, device_config=cuda, decoding_config=DecodingConfig(guided_decoding_backend='outlines'), observability_config=ObservabilityConfig(otlp_traces_endpoint=None, collect_model_forward_time=False, collect_model_execute_time=False), seed=42, served_model_name=/root/autodl-tmp/vista/models/Qwen2.5-Coder-7B-Instruct, use_v2_block_manager=True, num_scheduler_steps=1, chunked_prefill_enabled=False multi_step_stream_outputs=True, enable_prefix_caching=False, use_async_output_proc=True, use_cached_outputs=False, mm_processor_kwargs=None)
+INFO 05-04 02:17:37 model_runner.py:1060] Starting to load model /root/autodl-tmp/vista/models/Qwen2.5-Coder-7B-Instruct...
+Loading safetensors checkpoint shards:   0% Completed | 0/4 [00:00<?, ?it/s]
+Loading safetensors checkpoint shards:  25% Completed | 1/4 [00:00<00:00,  4.05it/s]
+Loading safetensors checkpoint shards:  50% Completed | 2/4 [00:01<00:01,  1.36it/s]
+Loading safetensors checkpoint shards:  75% Completed | 3/4 [00:02<00:01,  1.02s/it]
+Loading safetensors checkpoint shards: 100% Completed | 4/4 [00:04<00:00,  1.16s/it]
+Loading safetensors checkpoint shards: 100% Completed | 4/4 [00:04<00:00,  1.02s/it]
+
+INFO 05-04 02:17:41 model_runner.py:1071] Loading model weights took 14.2487 GB
+INFO 05-04 02:17:43 gpu_executor.py:122] # GPU blocks: 4450, # CPU blocks: 4681
+INFO 05-04 02:17:43 gpu_executor.py:126] Maximum concurrency for 4096 tokens per request: 17.38x
+INFO 05-04 02:17:46 model_runner.py:1402] Capturing the model for CUDA graphs. This may lead to unexpected consequences if the model is not static. To run the model in eager mode, set 'enforce_eager=True' or use '--enforce-eager' in the CLI.
+INFO 05-04 02:17:46 model_runner.py:1406] CUDA graphs can take additional 1~3 GiB memory per GPU. If you are running out of memory, consider decreasing `gpu_memory_utilization` or enforcing eager mode. You can also reduce the `max_num_seqs` as needed to decrease memory usage.
+INFO 05-04 02:18:09 model_runner.py:1530] Graph capturing finished in 23 secs.
+2026-05-04 02:18:09.218 | INFO     | src.llm_engine:__init__:57 - [LLMEngine] model loaded
+2026-05-04 02:18:09.219 | INFO     | __main__:_gen_vista:74 - [gen:vista_sft] 1000 → /root/autodl-tmp/vista/outputs/raw_vista_sft.jsonl; n_hyp=5 max_repair=3
+2026-05-04 02:18:28.314 | INFO     | __main__:_gen_vista:143 - [gen:vista_sft] chunk 1/125 init_pass=8/8 +repairs=0 running pass=8/8
+2026-05-04 02:18:46.517 | INFO     | __main__:_gen_vista:143 - [gen:vista_sft] chunk 2/125 init_pass=8/8 +repairs=0 running pass=16/16
+2026-05-04 02:19:04.546 | INFO     | __main__:_gen_vista:143 - [gen:vista_sft] chunk 3/125 init_pass=8/8 +repairs=0 running pass=24/24
+2026-05-04 02:19:23.278 | INFO     | __main__:_gen_vista:143 - [gen:vista_sft] chunk 4/125 init_pass=8/8 +repairs=0 running pass=32/32
+2026-05-04 02:19:42.141 | INFO     | __main__:_gen_vista:143 - [gen:vista_sft] chunk 5/125 init_pass=8/8 +repairs=0 running pass=40/40
+2026-05-04 02:20:00.842 | INFO     | __main__:_gen_vista:143 - [gen:vista_sft] chunk 6/125 init_pass=8/8 +repairs=0 running pass=48/48
+2026-05-04 02:20:19.544 | INFO     | __main__:_gen_vista:143 - [gen:vista_sft] chunk 7/125 init_pass=8/8 +repairs=0 running pass=56/56
+2026-05-04 02:20:38.566 | INFO     | __main__:_gen_vista:143 - [gen:vista_sft] chunk 8/125 init_pass=8/8 +repairs=0 running pass=64/64
+2026-05-04 02:20:57.333 | INFO     | __main__:_gen_vista:143 - [gen:vista_sft] chunk 9/125 init_pass=8/8 +repairs=0 running pass=72/72
+2026-05-04 02:21:16.084 | INFO     | __main__:_gen_vista:143 - [gen:vista_sft] chunk 10/125 init_pass=8/8 +repairs=0 running pass=80/80
+2026-05-04 02:21:35.821 | INFO     | __main__:_gen_vista:143 - [gen:vista_sft] chunk 11/125 init_pass=8/8 +repairs=0 running pass=88/88
+2026-05-04 02:21:54.968 | INFO     | __main__:_gen_vista:143 - [gen:vista_sft] chunk 12/125 init_pass=8/8 +repairs=0 running pass=96/96
+2026-05-04 02:22:13.746 | INFO     | __main__:_gen_vista:143 - [gen:vista_sft] chunk 13/125 init_pass=8/8 +repairs=0 running pass=104/104
+2026-05-04 02:22:31.771 | INFO     | __main__:_gen_vista:143 - [gen:vista_sft] chunk 14/125 init_pass=8/8 +repairs=0 running pass=112/112
+2026-05-04 02:22:49.557 | INFO     | __main__:_gen_vista:143 - [gen:vista_sft] chunk 15/125 init_pass=8/8 +repairs=0 running pass=120/120
+2026-05-04 02:23:07.305 | INFO     | __main__:_gen_vista:143 - [gen:vista_sft] chunk 16/125 init_pass=8/8 +repairs=0 running pass=128/128
+2026-05-04 02:23:25.457 | INFO     | __main__:_gen_vista:143 - [gen:vista_sft] chunk 17/125 init_pass=8/8 +repairs=0 running pass=136/136
+2026-05-04 02:23:43.604 | INFO     | __main__:_gen_vista:143 - [gen:vista_sft] chunk 18/125 init_pass=8/8 +repairs=0 running pass=144/144
+2026-05-04 02:24:01.675 | INFO     | __main__:_gen_vista:143 - [gen:vista_sft] chunk 19/125 init_pass=8/8 +repairs=0 running pass=152/152
+2026-05-04 02:24:19.813 | INFO     | __main__:_gen_vista:143 - [gen:vista_sft] chunk 20/125 init_pass=8/8 +repairs=0 running pass=160/160
+2026-05-04 02:24:37.475 | INFO     | __main__:_gen_vista:143 - [gen:vista_sft] chunk 21/125 init_pass=8/8 +repairs=0 running pass=168/168
+2026-05-04 02:24:55.170 | INFO     | __main__:_gen_vista:143 - [gen:vista_sft] chunk 22/125 init_pass=8/8 +repairs=0 running pass=176/176
+2026-05-04 02:25:13.523 | INFO     | __main__:_gen_vista:143 - [gen:vista_sft] chunk 23/125 init_pass=8/8 +repairs=0 running pass=184/184
+2026-05-04 02:25:31.889 | INFO     | __main__:_gen_vista:143 - [gen:vista_sft] chunk 24/125 init_pass=8/8 +repairs=0 running pass=192/192
+2026-05-04 02:25:50.307 | INFO     | __main__:_gen_vista:143 - [gen:vista_sft] chunk 25/125 init_pass=8/8 +repairs=0 running pass=200/200
+2026-05-04 02:26:08.476 | INFO     | __main__:_gen_vista:143 - [gen:vista_sft] chunk 26/125 init_pass=8/8 +repairs=0 running pass=208/208
+2026-05-04 02:26:26.800 | INFO     | __main__:_gen_vista:143 - [gen:vista_sft] chunk 27/125 init_pass=8/8 +repairs=0 running pass=216/216
+2026-05-04 02:26:44.347 | INFO     | __main__:_gen_vista:143 - [gen:vista_sft] chunk 28/125 init_pass=8/8 +repairs=0 running pass=224/224
+2026-05-04 02:27:02.113 | INFO     | __main__:_gen_vista:143 - [gen:vista_sft] chunk 29/125 init_pass=8/8 +repairs=0 running pass=232/232
+2026-05-04 02:27:19.853 | INFO     | __main__:_gen_vista:143 - [gen:vista_sft] chunk 30/125 init_pass=8/8 +repairs=0 running pass=240/240
+2026-05-04 02:27:37.868 | INFO     | __main__:_gen_vista:143 - [gen:vista_sft] chunk 31/125 init_pass=8/8 +repairs=0 running pass=248/248
+2026-05-04 02:27:56.075 | INFO     | __main__:_gen_vista:143 - [gen:vista_sft] chunk 32/125 init_pass=8/8 +repairs=0 running pass=256/256
+2026-05-04 02:28:14.061 | INFO     | __main__:_gen_vista:143 - [gen:vista_sft] chunk 33/125 init_pass=8/8 +repairs=0 running pass=264/264
+2026-05-04 02:28:32.162 | INFO     | __main__:_gen_vista:143 - [gen:vista_sft] chunk 34/125 init_pass=8/8 +repairs=0 running pass=272/272
+2026-05-04 02:28:50.160 | INFO     | __main__:_gen_vista:143 - [gen:vista_sft] chunk 35/125 init_pass=8/8 +repairs=0 running pass=280/280
+2026-05-04 02:29:08.150 | INFO     | __main__:_gen_vista:143 - [gen:vista_sft] chunk 36/125 init_pass=8/8 +repairs=0 running pass=288/288
+2026-05-04 02:29:26.199 | INFO     | __main__:_gen_vista:143 - [gen:vista_sft] chunk 37/125 init_pass=8/8 +repairs=0 running pass=296/296
+2026-05-04 02:29:51.267 | INFO     | __main__:_gen_vista:143 - [gen:vista_sft] chunk 38/125 init_pass=6/8 +repairs=6 running pass=302/304
+2026-05-04 02:30:17.811 | INFO     | __main__:_gen_vista:143 - [gen:vista_sft] chunk 39/125 init_pass=5/8 +repairs=9 running pass=307/312
+2026-05-04 02:30:48.182 | INFO     | __main__:_gen_vista:143 - [gen:vista_sft] chunk 40/125 init_pass=3/8 +repairs=15 running pass=310/320
+2026-05-04 02:31:16.670 | INFO     | __main__:_gen_vista:143 - [gen:vista_sft] chunk 41/125 init_pass=4/8 +repairs=12 running pass=314/328
+2026-05-04 02:31:46.577 | INFO     | __main__:_gen_vista:143 - [gen:vista_sft] chunk 42/125 init_pass=3/8 +repairs=15 running pass=317/336
+2026-05-04 02:32:15.476 | INFO     | __main__:_gen_vista:143 - [gen:vista_sft] chunk 43/125 init_pass=4/8 +repairs=12 running pass=321/344
+2026-05-04 02:32:46.446 | INFO     | __main__:_gen_vista:143 - [gen:vista_sft] chunk 44/125 init_pass=3/8 +repairs=15 running pass=324/352
+2026-05-04 02:33:18.597 | INFO     | __main__:_gen_vista:143 - [gen:vista_sft] chunk 45/125 init_pass=2/8 +repairs=18 running pass=326/360
+2026-05-04 02:33:43.943 | INFO     | __main__:_gen_vista:143 - [gen:vista_sft] chunk 46/125 init_pass=6/8 +repairs=6 running pass=332/368
+2026-05-04 02:34:18.735 | INFO     | __main__:_gen_vista:143 - [gen:vista_sft] chunk 47/125 init_pass=1/8 +repairs=21 running pass=333/376
+2026-05-04 02:34:47.489 | INFO     | __main__:_gen_vista:143 - [gen:vista_sft] chunk 48/125 init_pass=5/8 +repairs=9 running pass=338/384
+2026-05-04 02:35:16.506 | INFO     | __main__:_gen_vista:143 - [gen:vista_sft] chunk 49/125 init_pass=5/8 +repairs=9 running pass=343/392
+2026-05-04 02:35:45.714 | INFO     | __main__:_gen_vista:143 - [gen:vista_sft] chunk 50/125 init_pass=4/8 +repairs=12 running pass=347/400
+2026-05-04 02:36:06.159 | INFO     | __main__:_gen_vista:143 - [gen:vista_sft] chunk 51/125 init_pass=8/8 +repairs=0 running pass=355/408
+2026-05-04 02:36:26.389 | INFO     | __main__:_gen_vista:143 - [gen:vista_sft] chunk 52/125 init_pass=8/8 +repairs=0 running pass=363/416
+2026-05-04 02:36:47.118 | INFO     | __main__:_gen_vista:143 - [gen:vista_sft] chunk 53/125 init_pass=8/8 +repairs=0 running pass=371/424
+2026-05-04 02:37:07.926 | INFO     | __main__:_gen_vista:143 - [gen:vista_sft] chunk 54/125 init_pass=8/8 +repairs=0 running pass=379/432
+2026-05-04 02:37:28.643 | INFO     | __main__:_gen_vista:143 - [gen:vista_sft] chunk 55/125 init_pass=8/8 +repairs=0 running pass=387/440
+2026-05-04 02:37:48.670 | INFO     | __main__:_gen_vista:143 - [gen:vista_sft] chunk 56/125 init_pass=8/8 +repairs=0 running pass=395/448
+2026-05-04 02:38:09.077 | INFO     | __main__:_gen_vista:143 - [gen:vista_sft] chunk 57/125 init_pass=8/8 +repairs=0 running pass=403/456
+2026-05-04 02:38:30.355 | INFO     | __main__:_gen_vista:143 - [gen:vista_sft] chunk 58/125 init_pass=8/8 +repairs=0 running pass=411/464
+2026-05-04 02:38:50.688 | INFO     | __main__:_gen_vista:143 - [gen:vista_sft] chunk 59/125 init_pass=8/8 +repairs=0 running pass=419/472
+2026-05-04 02:39:11.822 | INFO     | __main__:_gen_vista:143 - [gen:vista_sft] chunk 60/125 init_pass=8/8 +repairs=0 running pass=427/480
+2026-05-04 02:39:33.246 | INFO     | __main__:_gen_vista:143 - [gen:vista_sft] chunk 61/125 init_pass=8/8 +repairs=0 running pass=435/488
+2026-05-04 02:39:53.576 | INFO     | __main__:_gen_vista:143 - [gen:vista_sft] chunk 62/125 init_pass=8/8 +repairs=0 running pass=443/496
+2026-05-04 02:40:13.828 | INFO     | __main__:_gen_vista:143 - [gen:vista_sft] chunk 63/125 init_pass=8/8 +repairs=0 running pass=451/504
+2026-05-04 02:40:33.476 | INFO     | __main__:_gen_vista:143 - [gen:vista_sft] chunk 64/125 init_pass=8/8 +repairs=0 running pass=459/512
+2026-05-04 02:40:53.507 | INFO     | __main__:_gen_vista:143 - [gen:vista_sft] chunk 65/125 init_pass=8/8 +repairs=0 running pass=467/520
+2026-05-04 02:41:12.881 | INFO     | __main__:_gen_vista:143 - [gen:vista_sft] chunk 66/125 init_pass=8/8 +repairs=0 running pass=475/528
+2026-05-04 02:41:32.527 | INFO     | __main__:_gen_vista:143 - [gen:vista_sft] chunk 67/125 init_pass=8/8 +repairs=0 running pass=483/536
+2026-05-04 02:41:52.410 | INFO     | __main__:_gen_vista:143 - [gen:vista_sft] chunk 68/125 init_pass=8/8 +repairs=0 running pass=491/544
+2026-05-04 02:42:11.971 | INFO     | __main__:_gen_vista:143 - [gen:vista_sft] chunk 69/125 init_pass=8/8 +repairs=0 running pass=499/552
+2026-05-04 02:42:31.397 | INFO     | __main__:_gen_vista:143 - [gen:vista_sft] chunk 70/125 init_pass=8/8 +repairs=0 running pass=507/560
+2026-05-04 02:42:58.072 | INFO     | __main__:_gen_vista:143 - [gen:vista_sft] chunk 71/125 init_pass=7/8 +repairs=3 running pass=514/568
+2026-05-04 02:43:25.101 | INFO     | __main__:_gen_vista:143 - [gen:vista_sft] chunk 72/125 init_pass=7/8 +repairs=3 running pass=521/576
+2026-05-04 02:43:44.720 | INFO     | __main__:_gen_vista:143 - [gen:vista_sft] chunk 73/125 init_pass=8/8 +repairs=0 running pass=529/584
+2026-05-04 02:44:04.446 | INFO     | __main__:_gen_vista:143 - [gen:vista_sft] chunk 74/125 init_pass=8/8 +repairs=0 running pass=537/592
+2026-05-04 02:44:24.054 | INFO     | __main__:_gen_vista:143 - [gen:vista_sft] chunk 75/125 init_pass=8/8 +repairs=0 running pass=545/600
+2026-05-04 02:44:43.207 | INFO     | __main__:_gen_vista:143 - [gen:vista_sft] chunk 76/125 init_pass=8/8 +repairs=0 running pass=553/608
+2026-05-04 02:45:02.580 | INFO     | __main__:_gen_vista:143 - [gen:vista_sft] chunk 77/125 init_pass=8/8 +repairs=0 running pass=561/616
+2026-05-04 02:45:22.241 | INFO     | __main__:_gen_vista:143 - [gen:vista_sft] chunk 78/125 init_pass=8/8 +repairs=0 running pass=569/624
+2026-05-04 02:45:41.903 | INFO     | __main__:_gen_vista:143 - [gen:vista_sft] chunk 79/125 init_pass=8/8 +repairs=0 running pass=577/632
+2026-05-04 02:46:01.695 | INFO     | __main__:_gen_vista:143 - [gen:vista_sft] chunk 80/125 init_pass=8/8 +repairs=0 running pass=585/640
+2026-05-04 02:46:22.071 | INFO     | __main__:_gen_vista:143 - [gen:vista_sft] chunk 81/125 init_pass=8/8 +repairs=0 running pass=593/648
+2026-05-04 02:46:41.646 | INFO     | __main__:_gen_vista:143 - [gen:vista_sft] chunk 82/125 init_pass=8/8 +repairs=0 running pass=601/656
+2026-05-04 02:47:01.072 | INFO     | __main__:_gen_vista:143 - [gen:vista_sft] chunk 83/125 init_pass=8/8 +repairs=0 running pass=609/664
+2026-05-04 02:47:21.003 | INFO     | __main__:_gen_vista:143 - [gen:vista_sft] chunk 84/125 init_pass=8/8 +repairs=0 running pass=617/672
+2026-05-04 02:47:40.616 | INFO     | __main__:_gen_vista:143 - [gen:vista_sft] chunk 85/125 init_pass=8/8 +repairs=0 running pass=625/680
+2026-05-04 02:48:00.319 | INFO     | __main__:_gen_vista:143 - [gen:vista_sft] chunk 86/125 init_pass=8/8 +repairs=0 running pass=633/688
+2026-05-04 02:48:20.126 | INFO     | __main__:_gen_vista:143 - [gen:vista_sft] chunk 87/125 init_pass=8/8 +repairs=0 running pass=641/696
+2026-05-04 02:48:40.933 | INFO     | __main__:_gen_vista:143 - [gen:vista_sft] chunk 88/125 init_pass=8/8 +repairs=0 running pass=649/704
+2026-05-04 02:49:02.411 | INFO     | __main__:_gen_vista:143 - [gen:vista_sft] chunk 89/125 init_pass=8/8 +repairs=0 running pass=657/712
+2026-05-04 02:49:23.833 | INFO     | __main__:_gen_vista:143 - [gen:vista_sft] chunk 90/125 init_pass=8/8 +repairs=0 running pass=665/720
+2026-05-04 02:49:45.555 | INFO     | __main__:_gen_vista:143 - [gen:vista_sft] chunk 91/125 init_pass=8/8 +repairs=0 running pass=673/728
+2026-05-04 02:50:07.445 | INFO     | __main__:_gen_vista:143 - [gen:vista_sft] chunk 92/125 init_pass=8/8 +repairs=0 running pass=681/736
+2026-05-04 02:50:29.664 | INFO     | __main__:_gen_vista:143 - [gen:vista_sft] chunk 93/125 init_pass=8/8 +repairs=0 running pass=689/744
+2026-05-04 02:50:51.081 | INFO     | __main__:_gen_vista:143 - [gen:vista_sft] chunk 94/125 init_pass=8/8 +repairs=0 running pass=697/752
+2026-05-04 02:51:13.231 | INFO     | __main__:_gen_vista:143 - [gen:vista_sft] chunk 95/125 init_pass=8/8 +repairs=0 running pass=705/760
+2026-05-04 02:51:35.411 | INFO     | __main__:_gen_vista:143 - [gen:vista_sft] chunk 96/125 init_pass=8/8 +repairs=0 running pass=713/768
+2026-05-04 02:51:57.679 | INFO     | __main__:_gen_vista:143 - [gen:vista_sft] chunk 97/125 init_pass=8/8 +repairs=0 running pass=721/776
+2026-05-04 02:52:19.862 | INFO     | __main__:_gen_vista:143 - [gen:vista_sft] chunk 98/125 init_pass=8/8 +repairs=0 running pass=729/784
+2026-05-04 02:52:42.053 | INFO     | __main__:_gen_vista:143 - [gen:vista_sft] chunk 99/125 init_pass=8/8 +repairs=0 running pass=737/792
+2026-05-04 02:53:03.943 | INFO     | __main__:_gen_vista:143 - [gen:vista_sft] chunk 100/125 init_pass=8/8 +repairs=0 running pass=745/800
+2026-05-04 02:53:23.677 | INFO     | __main__:_gen_vista:143 - [gen:vista_sft] chunk 101/125 init_pass=8/8 +repairs=0 running pass=753/808
+2026-05-04 02:53:43.689 | INFO     | __main__:_gen_vista:143 - [gen:vista_sft] chunk 102/125 init_pass=8/8 +repairs=0 running pass=761/816
+2026-05-04 02:54:04.446 | INFO     | __main__:_gen_vista:143 - [gen:vista_sft] chunk 103/125 init_pass=8/8 +repairs=0 running pass=769/824
+2026-05-04 02:54:25.471 | INFO     | __main__:_gen_vista:143 - [gen:vista_sft] chunk 104/125 init_pass=8/8 +repairs=0 running pass=777/832
+2026-05-04 02:54:46.038 | INFO     | __main__:_gen_vista:143 - [gen:vista_sft] chunk 105/125 init_pass=8/8 +repairs=0 running pass=785/840
+2026-05-04 02:55:06.253 | INFO     | __main__:_gen_vista:143 - [gen:vista_sft] chunk 106/125 init_pass=8/8 +repairs=0 running pass=793/848
+2026-05-04 02:55:26.917 | INFO     | __main__:_gen_vista:143 - [gen:vista_sft] chunk 107/125 init_pass=8/8 +repairs=0 running pass=801/856
+2026-05-04 02:55:46.937 | INFO     | __main__:_gen_vista:143 - [gen:vista_sft] chunk 108/125 init_pass=8/8 +repairs=0 running pass=809/864
+2026-05-04 02:56:07.694 | INFO     | __main__:_gen_vista:143 - [gen:vista_sft] chunk 109/125 init_pass=8/8 +repairs=0 running pass=817/872
+2026-05-04 02:56:28.159 | INFO     | __main__:_gen_vista:143 - [gen:vista_sft] chunk 110/125 init_pass=8/8 +repairs=0 running pass=825/880
+2026-05-04 02:56:49.358 | INFO     | __main__:_gen_vista:143 - [gen:vista_sft] chunk 111/125 init_pass=8/8 +repairs=0 running pass=833/888
+2026-05-04 02:57:09.866 | INFO     | __main__:_gen_vista:143 - [gen:vista_sft] chunk 112/125 init_pass=8/8 +repairs=0 running pass=841/896
+2026-05-04 02:57:30.797 | INFO     | __main__:_gen_vista:143 - [gen:vista_sft] chunk 113/125 init_pass=8/8 +repairs=0 running pass=849/904
+2026-05-04 02:57:51.551 | INFO     | __main__:_gen_vista:143 - [gen:vista_sft] chunk 114/125 init_pass=8/8 +repairs=0 running pass=857/912
+2026-05-04 02:58:12.050 | INFO     | __main__:_gen_vista:143 - [gen:vista_sft] chunk 115/125 init_pass=8/8 +repairs=0 running pass=865/920
+2026-05-04 02:58:32.801 | INFO     | __main__:_gen_vista:143 - [gen:vista_sft] chunk 116/125 init_pass=8/8 +repairs=0 running pass=873/928
+2026-05-04 02:58:53.377 | INFO     | __main__:_gen_vista:143 - [gen:vista_sft] chunk 117/125 init_pass=8/8 +repairs=0 running pass=881/936
+2026-05-04 02:59:14.023 | INFO     | __main__:_gen_vista:143 - [gen:vista_sft] chunk 118/125 init_pass=8/8 +repairs=0 running pass=889/944
+2026-05-04 02:59:35.609 | INFO     | __main__:_gen_vista:143 - [gen:vista_sft] chunk 119/125 init_pass=8/8 +repairs=0 running pass=897/952
+2026-05-04 02:59:55.899 | INFO     | __main__:_gen_vista:143 - [gen:vista_sft] chunk 120/125 init_pass=8/8 +repairs=0 running pass=905/960
+2026-05-04 03:00:15.823 | INFO     | __main__:_gen_vista:143 - [gen:vista_sft] chunk 121/125 init_pass=8/8 +repairs=0 running pass=913/968
+2026-05-04 03:00:36.658 | INFO     | __main__:_gen_vista:143 - [gen:vista_sft] chunk 122/125 init_pass=8/8 +repairs=0 running pass=921/976
+2026-05-04 03:00:57.382 | INFO     | __main__:_gen_vista:143 - [gen:vista_sft] chunk 123/125 init_pass=8/8 +repairs=0 running pass=929/984
+2026-05-04 03:01:17.362 | INFO     | __main__:_gen_vista:143 - [gen:vista_sft] chunk 124/125 init_pass=8/8 +repairs=0 running pass=937/992
+2026-05-04 03:01:37.185 | INFO     | __main__:_gen_vista:143 - [gen:vista_sft] chunk 125/125 init_pass=8/8 +repairs=0 running pass=945/1000
+2026-05-04 03:01:37.185 | INFO     | __main__:_gen_vista:146 - [gen:vista_sft] DONE  init_pass=945/1000 repair_iters=165

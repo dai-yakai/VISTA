@@ -1,0 +1,99 @@
+2026-05-14 04:03:09.442 | INFO     | __main__:phase2_vista_score:188 - [phase2:vista_base] scoring /home/ubuntu/vista/runs/all3_rerun_20260513_185405_UTC/outputs/malt/raw_vista_base.jsonl with 12 workers → /home/ubuntu/vista/runs/all3_rerun_20260513_185405_UTC/outputs/malt/vista_base.jsonl
+/home/ubuntu/.venvs/ai_gym_env/lib/python3.10/site-packages/networkx/readwrite/json_graph/node_link.py:142: FutureWarning: 
+The default value will be `edges="edges" in NetworkX 3.6.
+
+To make this warning go away, explicitly set the edges kwarg, e.g.:
+
+  nx.node_link_data(G, edges="links") to preserve current behavior, or
+  nx.node_link_data(G, edges="edges") for forward compatibility.
+  warnings.warn(
+/home/ubuntu/.venvs/ai_gym_env/lib/python3.10/site-packages/networkx/readwrite/json_graph/node_link.py:142: FutureWarning: 
+The default value will be `edges="edges" in NetworkX 3.6.
+
+To make this warning go away, explicitly set the edges kwarg, e.g.:
+
+  nx.node_link_data(G, edges="links") to preserve current behavior, or
+  nx.node_link_data(G, edges="edges") for forward compatibility.
+  warnings.warn(
+/home/ubuntu/.venvs/ai_gym_env/lib/python3.10/site-packages/networkx/readwrite/json_graph/node_link.py:142: FutureWarning: 
+The default value will be `edges="edges" in NetworkX 3.6.
+
+To make this warning go away, explicitly set the edges kwarg, e.g.:
+
+  nx.node_link_data(G, edges="links") to preserve current behavior, or
+  nx.node_link_data(G, edges="edges") for forward compatibility.
+  warnings.warn(
+/home/ubuntu/.venvs/ai_gym_env/lib/python3.10/site-packages/networkx/readwrite/json_graph/node_link.py:142: FutureWarning: 
+The default value will be `edges="edges" in NetworkX 3.6.
+
+To make this warning go away, explicitly set the edges kwarg, e.g.:
+
+  nx.node_link_data(G, edges="links") to preserve current behavior, or
+  nx.node_link_data(G, edges="edges") for forward compatibility.
+  warnings.warn(
+/home/ubuntu/.venvs/ai_gym_env/lib/python3.10/site-packages/networkx/readwrite/json_graph/node_link.py:142: FutureWarning: 
+The default value will be `edges="edges" in NetworkX 3.6.
+
+To make this warning go away, explicitly set the edges kwarg, e.g.:
+
+  nx.node_link_data(G, edges="links") to preserve current behavior, or
+  nx.node_link_data(G, edges="edges") for forward compatibility.
+  warnings.warn(
+/home/ubuntu/.venvs/ai_gym_env/lib/python3.10/site-packages/networkx/readwrite/json_graph/node_link.py:142: FutureWarning: 
+The default value will be `edges="edges" in NetworkX 3.6.
+
+To make this warning go away, explicitly set the edges kwarg, e.g.:
+
+  nx.node_link_data(G, edges="links") to preserve current behavior, or
+  nx.node_link_data(G, edges="edges") for forward compatibility.
+  warnings.warn(
+/home/ubuntu/.venvs/ai_gym_env/lib/python3.10/site-packages/networkx/readwrite/json_graph/node_link.py:142: FutureWarning: 
+The default value will be `edges="edges" in NetworkX 3.6.
+
+To make this warning go away, explicitly set the edges kwarg, e.g.:
+
+  nx.node_link_data(G, edges="links") to preserve current behavior, or
+  nx.node_link_data(G, edges="edges") for forward compatibility.
+  warnings.warn(
+/home/ubuntu/.venvs/ai_gym_env/lib/python3.10/site-packages/networkx/readwrite/json_graph/node_link.py:142: FutureWarning: 
+The default value will be `edges="edges" in NetworkX 3.6.
+
+To make this warning go away, explicitly set the edges kwarg, e.g.:
+
+  nx.node_link_data(G, edges="links") to preserve current behavior, or
+  nx.node_link_data(G, edges="edges") for forward compatibility.
+  warnings.warn(
+/home/ubuntu/.venvs/ai_gym_env/lib/python3.10/site-packages/networkx/readwrite/json_graph/node_link.py:142: FutureWarning: 
+The default value will be `edges="edges" in NetworkX 3.6.
+
+To make this warning go away, explicitly set the edges kwarg, e.g.:
+
+  nx.node_link_data(G, edges="links") to preserve current behavior, or
+  nx.node_link_data(G, edges="edges") for forward compatibility.
+  warnings.warn(
+/home/ubuntu/.venvs/ai_gym_env/lib/python3.10/site-packages/networkx/readwrite/json_graph/node_link.py:142: FutureWarning: 
+The default value will be `edges="edges" in NetworkX 3.6.
+
+To make this warning go away, explicitly set the edges kwarg, e.g.:
+
+  nx.node_link_data(G, edges="links") to preserve current behavior, or
+  nx.node_link_data(G, edges="edges") for forward compatibility.
+  warnings.warn(
+/home/ubuntu/.venvs/ai_gym_env/lib/python3.10/site-packages/networkx/readwrite/json_graph/node_link.py:142: FutureWarning: 
+The default value will be `edges="edges" in NetworkX 3.6.
+
+To make this warning go away, explicitly set the edges kwarg, e.g.:
+
+  nx.node_link_data(G, edges="links") to preserve current behavior, or
+  nx.node_link_data(G, edges="edges") for forward compatibility.
+  warnings.warn(
+/home/ubuntu/.venvs/ai_gym_env/lib/python3.10/site-packages/networkx/readwrite/json_graph/node_link.py:142: FutureWarning: 
+The default value will be `edges="edges" in NetworkX 3.6.
+
+To make this warning go away, explicitly set the edges kwarg, e.g.:
+
+  nx.node_link_data(G, edges="links") to preserve current behavior, or
+  nx.node_link_data(G, edges="edges") for forward compatibility.
+  warnings.warn(
+2026-05-14 04:13:39.020 | INFO     | __main__:phase2_vista_score:195 - [phase2:vista_base] scored 1000 records in 629.5s
+2026-05-14 04:13:39.118 | INFO     | __main__:phase2_vista_score:225 - [phase2:vista_base] DONE — {'method': 'vista_base', 'n': 1000, 'correctness': 0.992, 'safety': 0.869, 'avg_latency_s': 3.519984071264982, 'out_path': '/home/ubuntu/vista/runs/all3_rerun_20260513_185405_UTC/outputs/malt/vista_base.jsonl'}

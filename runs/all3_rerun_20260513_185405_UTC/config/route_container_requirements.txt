@@ -1,0 +1,7 @@
+a2a-sdk==0.3.22
+cattrs==25.3.0
+httpx==0.28.1
+loguru==0.7.3
+matplotlib==3.10.0
+numpy==1.26.4
+scipy==1.10.1

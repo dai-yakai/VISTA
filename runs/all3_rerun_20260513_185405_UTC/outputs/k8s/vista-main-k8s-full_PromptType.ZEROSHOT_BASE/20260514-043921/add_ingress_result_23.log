@@ -1,0 +1,113 @@
+LLM Command: ```kubectl get networkpolicy frontend -o yaml```
+Output: ```apiVersion: networking.k8s.io/v1
+kind: NetworkPolicy
+metadata:
+  annotations:
+    kubectl.kubernetes.io/last-applied-configuration: |
+      {"apiVersion":"networking.k8s.io/v1","kind":"NetworkPolicy","metadata":{"annotations":{},"name":"frontend","namespace":"default"},"spec":{"egress":[{}],"ingress":[{}],"podSelector":{"matchLabels":{"app":"frontend"}},"policyTypes":["Ingress","Egress"]}}
+  creationTimestamp: "2026-05-13T20:40:21Z"
+  generation: 7
+  name: frontend
+  namespace: default
+  resourceVersion: "359784"
+  uid: 07174b3a-dd44-4738-bdc8-32c899640d56
+spec:
+  egress:
+  - {}
+  ingress:
+  - {}
+  podSelector:
+    matchLabels:
+      app: frontend
+  policyTypes:
+  - Ingress
+  - Egress
+```
+Mismatch Summary: ```Mismatch: cartservice → emailservice:5000 (Expected: False, Actual: True)
+Mismatch: productcatalogservice → emailservice:5000 (Expected: False, Actual: True)```
+
+LLM Command: ```kubectl get networkpolicy email -o yaml```
+Output: ```Error from server (NotFound): networkpolicies.networking.k8s.io "email" not found
+```
+Mismatch Summary: ```Mismatch: cartservice → emailservice:5000 (Expected: False, Actual: True)
+Mismatch: productcatalogservice → emailservice:5000 (Expected: False, Actual: True)```
+
+LLM Command: ```kubectl get networkpolicy email -o yaml```
+Output: ```Error from server (NotFound): networkpolicies.networking.k8s.io "email" not found
+```
+Mismatch Summary: ```Mismatch: cartservice → emailservice:5000 (Expected: False, Actual: True)
+Mismatch: productcatalogservice → emailservice:5000 (Expected: False, Actual: True)```
+
+LLM Command: ```kubectl get networkpolicy email -o yaml```
+Output: ```Error from server (NotFound): networkpolicies.networking.k8s.io "email" not found
+```
+Mismatch Summary: ```Mismatch: cartservice → emailservice:5000 (Expected: False, Actual: True)
+Mismatch: productcatalogservice → emailservice:5000 (Expected: False, Actual: True)```
+
+LLM Command: ```kubectl get networkpolicy email -o yaml```
+Output: ```Error from server (NotFound): networkpolicies.networking.k8s.io "email" not found
+```
+Mismatch Summary: ```Mismatch: cartservice → emailservice:5000 (Expected: False, Actual: True)
+Mismatch: productcatalogservice → emailservice:5000 (Expected: False, Actual: True)```
+
+LLM Command: ```kubectl get networkpolicy email -o yaml```
+Output: ```Error from server (NotFound): networkpolicies.networking.k8s.io "email" not found
+```
+Mismatch Summary: ```Mismatch: cartservice → emailservice:5000 (Expected: False, Actual: True)
+Mismatch: productcatalogservice → emailservice:5000 (Expected: False, Actual: True)```
+
+LLM Command: ```kubectl get networkpolicy email -o yaml```
+Output: ```Error from server (NotFound): networkpolicies.networking.k8s.io "email" not found
+```
+Mismatch Summary: ```Mismatch: cartservice → emailservice:5000 (Expected: False, Actual: True)
+Mismatch: productcatalogservice → emailservice:5000 (Expected: False, Actual: True)```
+
+LLM Command: ```kubectl get networkpolicy email -o yaml```
+Output: ```Error from server (NotFound): networkpolicies.networking.k8s.io "email" not found
+```
+Mismatch Summary: ```Mismatch: cartservice → emailservice:5000 (Expected: False, Actual: True)
+Mismatch: productcatalogservice → emailservice:5000 (Expected: False, Actual: True)```
+
+LLM Command: ```kubectl get networkpolicy email -o yaml```
+Output: ```Error from server (NotFound): networkpolicies.networking.k8s.io "email" not found
+```
+Mismatch Summary: ```Mismatch: cartservice → emailservice:5000 (Expected: False, Actual: True)
+Mismatch: productcatalogservice → emailservice:5000 (Expected: False, Actual: True)```
+
+LLM Command: ```kubectl get networkpolicy cartservice -o yaml```
+Output: ```apiVersion: networking.k8s.io/v1
+kind: NetworkPolicy
+metadata:
+  annotations:
+    kubectl.kubernetes.io/last-applied-configuration: |
+      {"apiVersion":"networking.k8s.io/v1","kind":"NetworkPolicy","metadata":{"annotations":{},"name":"cartservice","namespace":"default"},"spec":{"egress":[{}],"ingress":[{"from":[{"podSelector":{"matchLabels":{"app":"frontend"}}},{"podSelector":{"matchLabels":{"app":"checkoutservice"}}}],"ports":[{"port":7070,"protocol":"TCP"}]}],"podSelector":{"matchLabels":{"app":"cartservice"}},"policyTypes":["Ingress","Egress"]}}
+  creationTimestamp: "2026-05-13T20:40:21Z"
+  generation: 11
+  name: cartservice
+  namespace: default
+  resourceVersion: "360014"
+  uid: 5deb26c3-2b2f-43f0-bd7e-62016792028a
+spec:
+  egress:
+  - {}
+  ingress:
+  - from:
+    - podSelector:
+        matchLabels:
+          app: frontend
+    - podSelector:
+        matchLabels:
+          app: checkoutservice
+    ports:
+    - port: 7070
+      protocol: TCP
+  podSelector:
+    matchLabels:
+      app: cartservice
+  policyTypes:
+  - Ingress
+  - Egress
+```
+Mismatch Summary: ```Mismatch: cartservice → emailservice:5000 (Expected: False, Actual: True)
+Mismatch: productcatalogservice → emailservice:5000 (Expected: False, Actual: True)```
+

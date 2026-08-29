@@ -1,0 +1,8 @@
+{
+  "method": "fewshot_base",
+  "n": 1000,
+  "correctness": 0.5,
+  "safety": 0.358,
+  "avg_latency_s": 0.27508270721137523,
+  "out_path": "/home/ubuntu/vista/outputs/baseline_fewshot_base.jsonl"
+}

@@ -1,0 +1,13 @@
+prompt_type = "zeroshot_base"
+num_queries = 10
+benchmark_path = "/home/ubuntu/vista/runs/route_full_compare_20260505_120708_UTC/config/route_full_150_queries.json"
+regenerate_benchmark = false
+output_dir = "/home/ubuntu/vista/runs/all3_rerun_20260513_185405_UTC/outputs/route"
+max_iterations = 10
+num_switches = 2
+num_hosts_per_subnet = 1
+
+[[agent_client_configs]]
+name = "vista-main-route-full"
+base_url = "http://127.0.0.1:8000"
+prompt_type = "zeroshot_base"

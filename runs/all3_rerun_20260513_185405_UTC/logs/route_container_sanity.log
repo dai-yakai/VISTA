@@ -1,0 +1,32 @@
+/etc/openvswitch/conf.db does not exist ... (warning).
+Creating empty database /etc/openvswitch/conf.db.
+Starting ovsdb-server.
+Configuring Open vSwitch system IDs.
+Starting ovs-vswitchd.
+Enabling remote OVSDB managers.
+  [DEBUG] Generating subnets...
+  [DEBUG] Building topology...
+  [DEBUG] Creating Mininet instance...
+  [DEBUG] Adding controller on port 6732...
+  [DEBUG] Starting network...
+  [DEBUG] Enabling IP forwarding on router...
+✅ Process 32: Mininet started with OVSController on port 6732
+switch_modes
+p32_s1 secure
+cookie=0x0, duration=0.011s, table=0, n_packets=0, n_bytes=0, priority=0 actions=CONTROLLER:128
+p32_s2 secure
+cookie=0x0, duration=0.019s, table=0, n_packets=0, n_bytes=0, priority=0 actions=CONTROLLER:128
+official_container_parallelPing_loss 0
+p32_h1 -> p32_h2 p32_r0 
+p32_h2 -> p32_h1 p32_r0 
+p32_r0 -> p32_h1 p32_h2 
+*** Results: 0% dropped (6/6 received)
+
+manual_h1_to_h2
+PING 192.168.2.100 (192.168.2.100) 56(84) bytes of data.
+64 bytes from 192.168.2.100: icmp_seq=1 ttl=63 time=0.694 ms
+
+--- 192.168.2.100 ping statistics ---
+1 packets transmitted, 1 received, 0% packet loss, time 0ms
+rtt min/avg/max/mdev = 0.694/0.694/0.694/0.000 ms
+

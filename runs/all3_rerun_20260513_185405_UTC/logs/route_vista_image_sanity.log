@@ -1,0 +1,19 @@
+/etc/openvswitch/conf.db does not exist ... (warning).
+Creating empty database /etc/openvswitch/conf.db.
+Starting ovsdb-server.
+Configuring Open vSwitch system IDs.
+Starting ovs-vswitchd.
+Enabling remote OVSDB managers.
+  [DEBUG] Generating subnets...
+  [DEBUG] Building topology...
+  [DEBUG] Creating Mininet instance...
+  [DEBUG] Adding controller on port 6741...
+  [DEBUG] Starting network...
+  [DEBUG] Enabling IP forwarding on router...
+✅ Process 41: Mininet started with OVSController on port 6741
+vista_image_parallelPing_loss 0
+p41_h1 -> p41_h2 p41_r0 
+p41_h2 -> p41_h1 p41_r0 
+p41_r0 -> p41_h1 p41_h2 
+*** Results: 0% dropped (6/6 received)
+

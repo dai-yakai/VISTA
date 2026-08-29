@@ -1,0 +1,14 @@
+2026-05-14T04:01:51+08:00 raw generation completed with 1000 records; stopping phase=all process during CPU scoring to free GPU.
+Restarting deterministic phase=score separately with the same raw/out paths.
+Killing orphaned old score workers: 626461
+626464
+626465
+626466
+626467
+626468
+626469
+626470
+626471
+626472
+626473
+626474
